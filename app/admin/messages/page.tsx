@@ -149,7 +149,7 @@ export default function AdminMessagesPage() {
     <div className="min-h-screen bg-[#050505] !text-[#FFFFFF]">
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="mb-8">
-          <p className="mb-2 text-sm font-bold uppercase tracking-[0.2em] text-gold">
+          <p className="mb-2 text-sm font-bold uppercase tracking-[0.2em] text-emerald-400">
             Administration
           </p>
 
@@ -169,7 +169,7 @@ export default function AdminMessagesPage() {
         )}
 
         {success && (
-          <div className="mb-6 rounded-xl border border-gold/30 bg-gold/10 px-4 py-3 text-sm text-gold-light">
+          <div className="mb-6 rounded-xl border border-emerald-500/30 bg-emerald-500/10 px-4 py-3 text-sm text-emerald-400-light">
             {success}
           </div>
         )}
@@ -192,7 +192,7 @@ export default function AdminMessagesPage() {
               value={search}
               onChange={(event) => setSearch(event.target.value)}
               placeholder="Search name or email..."
-              className="mb-4 w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold"
+              className="mb-4 w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500"
             />
 
             <div className="max-h-[500px] space-y-2 overflow-y-auto pr-1">
@@ -215,7 +215,7 @@ export default function AdminMessagesPage() {
                       onClick={() => setSelectedUserId(user.id)}
                       className={`w-full rounded-xl border p-4 text-left transition ${
                         selected
-                          ? "border-gold/50 bg-gold/10"
+                          ? "border-emerald-500/50 bg-emerald-500/10"
                           : "border-white/5 bg-black/20 hover:border-white/15 hover:bg-white/[0.03]"
                       }`}
                     >
@@ -233,10 +233,10 @@ export default function AdminMessagesPage() {
                         <span
                           className={`rounded-full px-2 py-1 text-[10px] font-medium uppercase ${
                             user.status === "ACTIVE"
-                              ? "bg-gold/10 text-gold"
+                              ? "bg-emerald-500/10 text-emerald-400"
                               : user.status === "BLOCKED"
                               ? "bg-red-500/10 text-red-400"
-                              : "bg-yellow-500/10 text-yellow-400"
+                              : "bg-blue-500/10 text-blue-400"
                           }`}
                         >
                           {user.status}
@@ -315,7 +315,7 @@ export default function AdminMessagesPage() {
                   onChange={(event) => setSubject(event.target.value)}
                   placeholder="Message subject"
                   maxLength={200}
-                  className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold"
+                  className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500"
                 />
               </div>
 
@@ -334,7 +334,7 @@ export default function AdminMessagesPage() {
                   placeholder="Write your message to the user..."
                   rows={9}
                   maxLength={5000}
-                  className="w-full resize-none rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm leading-6 text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold"
+                  className="w-full resize-none rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm leading-6 text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500"
                 />
 
                 <div className="mt-2 text-right text-xs !text-[#FFFFFF]">
@@ -345,7 +345,7 @@ export default function AdminMessagesPage() {
               <button
                 type="submit"
                 disabled={sending || !selectedUserId}
-                className="w-full rounded-xl bg-gold px-5 py-3.5 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold disabled:cursor-not-allowed disabled:opacity-40"
+                className="w-full rounded-xl bg-emerald-500 px-5 py-3.5 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500 disabled:cursor-not-allowed disabled:opacity-40"
               >
                 {sending ? "Sending..." : "Send Message"}
               </button>
@@ -397,8 +397,8 @@ export default function AdminMessagesPage() {
                       <span
                         className={`rounded-full px-2.5 py-1 text-[10px] font-semibold uppercase ${
                           item.isRead
-                            ? "bg-gold/10 text-gold"
-                            : "bg-yellow-500/10 text-yellow-400"
+                            ? "bg-emerald-500/10 text-emerald-400"
+                            : "bg-blue-500/10 text-blue-400"
                         }`}
                       >
                         {item.isRead ? "Read" : "Unread"}

@@ -17,7 +17,7 @@ const [message, setMessage] = useState("");
 
 useEffect(() => {
 const storedEmail = sessionStorage.getItem(
-"ThesorosLoginEmail"
+"EDGE PORTFOLIOLoginEmail"
 );
 
 if (!storedEmail) {
@@ -69,7 +69,7 @@ try {
   }
 
   
-sessionStorage.removeItem("ThesorosLoginEmail");
+sessionStorage.removeItem("EDGE PORTFOLIOLoginEmail");
 
 router.replace(data.redirectTo || "/kyc");
 
@@ -129,20 +129,20 @@ return (
 <div className="w-full max-w-md">
 <div className="mb-10 text-center">
 <Link href="/" className="mb-8 inline-flex items-center gap-3" >
-<div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gold font-bold !text-[#FFFFFF]">
+<div className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500 font-bold !text-[#FFFFFF]">
 EP
 </div>
 
           <span className="text-xl font-bold">
-            Thesoros
+            EDGE PORTFOLIO
           </span>
         </Link>
 
-        <div className="mx-auto mt-8 flex h-16 w-16 items-center justify-center rounded-2xl border border-gold/20 bg-gold/10">
+        <div className="mx-auto mt-8 flex h-16 w-16 items-center justify-center rounded-2xl border border-emerald-500/20 bg-emerald-500/10">
           <svg
             viewBox="0 0 24 24"
             fill="none"
-            className="h-7 w-7 text-gold"
+            className="h-7 w-7 text-emerald-400"
             aria-hidden="true"
           >
             <path
@@ -197,7 +197,7 @@ EP
             setCode(value);
           }}
           placeholder="000000"
-          className="h-14 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-center text-2xl font-bold tracking-[0.5em] text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/60 focus:bg-white/[0.06]"
+          className="h-14 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-center text-2xl font-bold tracking-[0.5em] text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/60 focus:bg-white/[0.06]"
         />
 
         {error && (
@@ -207,7 +207,7 @@ EP
         )}
 
         {message && (
-          <div className="mt-4 rounded-xl border border-gold/20 bg-gold/10 px-4 py-3 text-sm text-gold">
+          <div className="mt-4 rounded-xl border border-emerald-500/20 bg-emerald-500/10 px-4 py-3 text-sm text-emerald-400">
             {message}
           </div>
         )}
@@ -215,7 +215,7 @@ EP
         <button
           type="submit"
           disabled={loading || code.length !== 6}
-          className="mt-5 h-12 w-full rounded-xl bg-gold px-5 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold disabled:cursor-not-allowed disabled:opacity-40"
+          className="mt-5 h-12 w-full rounded-xl bg-emerald-500 px-5 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500 disabled:cursor-not-allowed disabled:opacity-40"
         >
           {loading ? "Verifying..." : "Verify and continue"}
         </button>
@@ -225,7 +225,7 @@ EP
             type="button"
             onClick={handleResend}
             disabled={resending}
-            className="text-sm font-bold text-gold transition hover:text-gold-light disabled:cursor-not-allowed disabled:opacity-50"
+            className="text-sm font-bold text-emerald-400 transition hover:text-emerald-400-light disabled:cursor-not-allowed disabled:opacity-50"
           >
             {resending
               ? "Sending..."

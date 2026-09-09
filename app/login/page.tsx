@@ -53,7 +53,7 @@ export default function LoginPage() {
       }
     } catch {
       setError(
-        "Unable to connect to THÉSOROS. Please try again."
+        "Unable to connect to Edge Portfolio. Please try again."
       );
     } finally {
       setLoading(false);
@@ -99,7 +99,7 @@ export default function LoginPage() {
       router.push(data.redirectTo || "/dashboard");
     } catch {
       setError(
-        "Unable to connect to THÉSOROS. Please try again."
+        "Unable to connect to Edge Portfolio. Please try again."
       );
     } finally {
       setLoading(false);
@@ -137,7 +137,7 @@ export default function LoginPage() {
       );
     } catch {
       setError(
-        "Unable to connect to THÉSOROS. Please try again."
+        "Unable to connect to Edge Portfolio. Please try again."
       );
     } finally {
       setResending(false);
@@ -183,7 +183,7 @@ export default function LoginPage() {
         <div className="absolute inset-0 bg-black/75" />
 
         {/* Gold atmosphere */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(212,175,55,0.10),transparent_32%),radial-gradient(circle_at_85%_80%,rgba(212,175,55,0.07),transparent_30%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(16,185,129,0.10),transparent_32%),radial-gradient(circle_at_85%_80%,rgba(16,185,129,0.07),transparent_30%)]" />
 
         {/* Subtle vignette */}
         <div className="absolute inset-0 bg-[radial-gradient(circle,transparent_25%,rgba(0,0,0,0.45)_100%)]" />
@@ -203,8 +203,8 @@ export default function LoginPage() {
             {/* Brand */}
             <div className="flex justify-center xl:justify-start">
               <Image
-                src="/branding/thesoros-logo.png"
-                alt="THÉSOROS"
+                src="/branding/edge-portfolio-logo.png"
+                alt="Edge Portfolio"
                 width={220}
                 height={64}
                 priority
@@ -214,7 +214,7 @@ export default function LoginPage() {
 
             {/* Hero copy */}
             <div className="mx-auto w-full max-w-xl xl:mx-0">
-              <p className="mb-5 text-sm font-bold uppercase tracking-[0.3em] text-gold">
+              <p className="mb-5 text-sm font-bold uppercase tracking-[0.3em] text-emerald-400">
                 Intelligent investing
               </p>
 
@@ -225,13 +225,13 @@ export default function LoginPage() {
               </h1>
 
               <p className="mt-7 max-w-lg text-base leading-7 !text-[#FFFFFF]">
-                Access your THÉSOROS account and manage
+                Access your Edge Portfolio account and manage
                 your investments across crypto, forex, and
                 global markets from one secure platform.
               </p>
 
               <div className="mt-10 grid max-w-lg grid-cols-3 gap-3">
-                <div className="rounded-2xl border border-gold/20 bg-black/50 p-4 backdrop-blur-sm">
+                <div className="rounded-2xl border border-emerald-500/20 bg-black/50 p-4 backdrop-blur-sm">
                   <p className="text-xs !text-[#FFFFFF]">
                     Markets
                   </p>
@@ -241,7 +241,7 @@ export default function LoginPage() {
                   </p>
                 </div>
 
-                <div className="rounded-2xl border border-gold/20 bg-black/50 p-4 backdrop-blur-sm">
+                <div className="rounded-2xl border border-emerald-500/20 bg-black/50 p-4 backdrop-blur-sm">
                   <p className="text-xs !text-[#FFFFFF]">
                     Security
                   </p>
@@ -251,7 +251,7 @@ export default function LoginPage() {
                   </p>
                 </div>
 
-                <div className="rounded-2xl border border-gold/20 bg-black/50 p-4 backdrop-blur-sm">
+                <div className="rounded-2xl border border-emerald-500/20 bg-black/50 p-4 backdrop-blur-sm">
                   <p className="text-xs !text-[#FFFFFF]">
                     Access
                   </p>
@@ -264,7 +264,7 @@ export default function LoginPage() {
             </div>
 
             <p className="text-sm !text-[#FFFFFF]">
-              © {new Date().getFullYear()} THÉSOROS
+              © {new Date().getFullYear()} Edge Portfolio
             </p>
           </div>
         </section>
@@ -278,8 +278,8 @@ export default function LoginPage() {
             {/* Mobile centered logo */}
             <div className="mb-10 flex justify-center lg:hidden">
               <Image
-                src="/branding/thesoros-logo.png"
-                alt="THÉSOROS"
+                src="/branding/edge-portfolio-logo.png"
+                alt="Edge Portfolio"
                 width={210}
                 height={62}
                 priority
@@ -288,11 +288,11 @@ export default function LoginPage() {
             </div>
 
             {/* Login card */}
-            <div className="rounded-3xl border border-gold/20 bg-[#0B0B0B]/90 p-6 shadow-2xl shadow-black/50 backdrop-blur-xl sm:p-8">
+            <div className="rounded-3xl border border-emerald-500/20 bg-[#0B0B0B]/90 p-6 shadow-2xl shadow-black/50 backdrop-blur-xl sm:p-8">
               {step === "login" ? (
                 <>
                   <div className="mb-8 text-center">
-                    <p className="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-gold">
+                    <p className="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-emerald-400">
                       Secure access
                     </p>
 
@@ -301,7 +301,7 @@ export default function LoginPage() {
                     </h2>
 
                     <p className="mt-3 text-sm leading-6 !text-[#FFFFFF]">
-                      Sign in to continue to your THÉSOROS
+                      Sign in to continue to your Edge Portfolio
                       account.
                     </p>
                   </div>
@@ -328,7 +328,7 @@ export default function LoginPage() {
                         }
                         placeholder="you@example.com"
                         required
-                        className="h-13 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10"
+                        className="h-13 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10"
                       />
                     </div>
 
@@ -343,7 +343,7 @@ export default function LoginPage() {
 
                         <button
                           type="button"
-                          className="text-xs font-bold text-gold transition hover:text-gold-light"
+                          className="text-xs font-bold text-emerald-400 transition hover:text-emerald-400-light"
                         >
                           Forgot password?
                         </button>
@@ -359,7 +359,7 @@ export default function LoginPage() {
                         }
                         placeholder="Enter your password"
                         required
-                        className="h-13 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10"
+                        className="h-13 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10"
                       />
                     </div>
 
@@ -372,7 +372,7 @@ export default function LoginPage() {
                     <button
                       type="submit"
                       disabled={loading}
-                      className="flex h-13 w-full items-center justify-center rounded-xl bg-gold px-5 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold-light disabled:cursor-not-allowed disabled:opacity-50"
+                      className="flex h-13 w-full items-center justify-center rounded-xl bg-emerald-500 px-5 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500-light disabled:cursor-not-allowed disabled:opacity-50"
                     >
                       {loading ? "Signing in..." : "Sign in"}
                     </button>
@@ -382,7 +382,7 @@ export default function LoginPage() {
                     Don&apos;t have an account?{" "}
                     <a
                       href="/signup"
-                      className="font-bold text-gold transition hover:text-gold-light"
+                      className="font-bold text-emerald-400 transition hover:text-emerald-400-light"
                     >
                       Create one
                     </a>
@@ -391,7 +391,7 @@ export default function LoginPage() {
               ) : (
                 <>
                   <div className="mb-8 text-center">
-                    <p className="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-gold">
+                    <p className="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-emerald-400">
                       Two-step verification
                     </p>
 
@@ -436,12 +436,12 @@ export default function LoginPage() {
                         }
                         placeholder="000000"
                         required
-                        className="h-16 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-center text-2xl font-bold tracking-[0.5em] text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10"
+                        className="h-16 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-center text-2xl font-bold tracking-[0.5em] text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10"
                       />
                     </div>
 
                     {message && (
-                      <div className="rounded-xl border border-gold/20 bg-gold/10 px-4 py-3 text-sm leading-6 text-gold-light">
+                      <div className="rounded-xl border border-emerald-500/20 bg-emerald-500/10 px-4 py-3 text-sm leading-6 text-emerald-400-light">
                         {message}
                       </div>
                     )}
@@ -457,7 +457,7 @@ export default function LoginPage() {
                       disabled={
                         loading || code.length !== 6
                       }
-                      className="flex h-13 w-full items-center justify-center rounded-xl bg-gold px-5 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold-light disabled:cursor-not-allowed disabled:opacity-50"
+                      className="flex h-13 w-full items-center justify-center rounded-xl bg-emerald-500 px-5 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500-light disabled:cursor-not-allowed disabled:opacity-50"
                     >
                       {loading
                         ? "Verifying..."
@@ -470,7 +470,7 @@ export default function LoginPage() {
                       type="button"
                       onClick={handleResendOtp}
                       disabled={resending}
-                      className="font-bold text-gold transition hover:text-gold-light disabled:cursor-not-allowed disabled:opacity-50"
+                      className="font-bold text-emerald-400 transition hover:text-emerald-400-light disabled:cursor-not-allowed disabled:opacity-50"
                     >
                       {resending
                         ? "Sending new code..."
@@ -489,7 +489,7 @@ export default function LoginPage() {
               )}
 
               <div className="mt-10 flex items-center justify-center gap-2 text-xs !text-[#FFFFFF]">
-                <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
                 Protected by secure authentication
               </div>
             </div>

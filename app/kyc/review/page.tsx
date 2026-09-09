@@ -112,7 +112,7 @@ export default function KycReviewPage() {
               onClick={() =>
                 window.location.reload()
               }
-              className="mt-6 rounded-xl bg-gold px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold"
+              className="mt-6 rounded-xl bg-emerald-500 px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500"
             >
               Try again
             </button>
@@ -130,12 +130,12 @@ export default function KycReviewPage() {
     return (
       <main className="min-h-screen bg-[#050505] px-5 py-10 !text-[#FFFFFF]">
         <div className="mx-auto flex min-h-[80vh] max-w-2xl items-center justify-center">
-          <div className="w-full rounded-3xl border border-gold/20 bg-gold/5 p-8 text-center sm:p-12">
-            <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-gold/10 text-2xl text-gold">
+          <div className="w-full rounded-3xl border border-emerald-500/20 bg-emerald-500/5 p-8 text-center sm:p-12">
+            <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-emerald-500/10 text-2xl text-emerald-400">
               ✓
             </div>
 
-            <p className="text-sm font-bold uppercase tracking-[0.2em] text-gold">
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-emerald-400">
               Verification approved
             </p>
 
@@ -144,7 +144,7 @@ export default function KycReviewPage() {
             </h1>
 
             <p className="mx-auto mt-4 max-w-md text-sm leading-6 !text-[#FFFFFF]">
-              Your Thesoros account has successfully
+              Your EDGE PORTFOLIO account has successfully
               completed identity verification.
             </p>
 
@@ -153,7 +153,7 @@ export default function KycReviewPage() {
               onClick={() =>
                 router.push("/dashboard")
               }
-              className="mt-8 rounded-xl bg-gold px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold"
+              className="mt-8 rounded-xl bg-emerald-500 px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500"
             >
               Go to dashboard
             </button>
@@ -174,16 +174,16 @@ export default function KycReviewPage() {
             }
             className="flex items-center gap-3"
           >
-            <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl border border-gold/30 bg-gold/10">
+            <div className="flex h-10 w-10 items-center justify-center overflow-hidden rounded-xl border border-emerald-500/30 bg-emerald-500/10">
               <img
-                src="/branding/thesoros-logo.png"
-                alt="THÉSOROS"
+                src="/branding/edge-portfolio-logo.png"
+                alt="Edge Portfolio"
                 className="h-8 w-auto object-contain"
               />
             </div>
 
             <span className="text-xl font-bold tracking-tight">
-              Thesoros
+              EDGE PORTFOLIO
             </span>
           </button>
 
@@ -193,11 +193,11 @@ export default function KycReviewPage() {
         </header>
 
         <div className="text-center">
-          <div className="mx-auto mb-7 flex h-20 w-20 items-center justify-center rounded-full border border-gold/20 bg-gold/10">
-            <div className="h-9 w-9 animate-pulse rounded-full border-2 border-gold/30 border-t-gold" />
+          <div className="mx-auto mb-7 flex h-20 w-20 items-center justify-center rounded-full border border-emerald-500/20 bg-emerald-500/10">
+            <div className="h-9 w-9 animate-pulse rounded-full border-2 border-emerald-500/30 border-t-gold" />
           </div>
 
-          <p className="text-sm font-bold uppercase tracking-[0.25em] text-gold">
+          <p className="text-sm font-bold uppercase tracking-[0.25em] text-emerald-400">
             Verification submitted
           </p>
 
@@ -224,7 +224,7 @@ export default function KycReviewPage() {
               </p>
             </div>
 
-            <div className="rounded-full border border-amber-400/20 bg-amber-400/10 px-4 py-2 text-xs font-bold text-amber-300">
+            <div className="rounded-full border border-blue-400/20 bg-blue-400/10 px-4 py-2 text-xs font-bold text-blue-300">
               UNDER REVIEW
             </div>
           </div>
@@ -317,9 +317,9 @@ function StatusItem({
         <div
           className={`flex h-9 w-9 items-center justify-center rounded-full text-xs font-semibold ${
             complete
-              ? "bg-gold/10 text-gold"
+              ? "bg-emerald-500/10 text-emerald-400"
               : active
-                ? "bg-amber-400/10 text-amber-300"
+                ? "bg-blue-400/10 text-blue-300"
                 : "bg-white/5 text-zinc-500"
           }`}
         >
@@ -329,7 +329,7 @@ function StatusItem({
         <p
           className={`text-sm font-medium ${
             active
-              ? "text-amber-300"
+              ? "text-blue-300"
               : complete
                 ? "text-zinc-200"
                 : "text-zinc-400"

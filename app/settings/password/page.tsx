@@ -102,17 +102,17 @@ export default function ChangePasswordPage() {
               href="/dashboard"
               className="flex items-center gap-3"
             >
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-gold/30 bg-gold/10">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-emerald-500/30 bg-emerald-500/10">
                 <img
-                  src="/branding/thesoros-logo.png"
-                  alt="THÉSOROS"
+                  src="/branding/edge-portfolio-logo.png"
+                  alt="Edge Portfolio"
                   className="h-8 w-auto object-contain"
                 />
               </div>
 
               <div>
                 <p className="font-bold tracking-tight">
-                  Thesoros
+                  EDGE PORTFOLIO
                 </p>
 
                 <p className="text-xs !text-[#FFFFFF]">
@@ -175,7 +175,7 @@ export default function ChangePasswordPage() {
 
             <Link
               href="/settings"
-              className="flex items-center gap-3 rounded-xl bg-gold/10 px-4 py-3 text-sm font-bold text-gold"
+              className="flex items-center gap-3 rounded-xl bg-emerald-500/10 px-4 py-3 text-sm font-bold text-emerald-400"
             >
               <Settings className="h-4 w-4 shrink-0" />
               Settings
@@ -197,7 +197,7 @@ export default function ChangePasswordPage() {
           <div className="mx-auto max-w-3xl px-5 py-8 sm:px-8 lg:px-10">
             {/* Header */}
             <div className="mb-8">
-              <p className="text-sm font-bold text-gold">
+              <p className="text-sm font-bold text-emerald-400">
                 Account security
               </p>
 
@@ -206,16 +206,16 @@ export default function ChangePasswordPage() {
               </h1>
 
               <p className="mt-2 max-w-2xl text-sm leading-6 !text-[#FFFFFF]">
-                Update your Thesoros account password.
+                Update your EDGE PORTFOLIO account password.
                 Choose a strong password that you do not use
                 elsewhere.
               </p>
             </div>
 
             {/* Security notice */}
-            <div className="mb-6 rounded-2xl border border-gold/20 bg-gold/[0.05] p-5">
+            <div className="mb-6 rounded-2xl border border-emerald-500/20 bg-emerald-500/[0.05] p-5">
               <div className="flex gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gold/10 text-gold">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400">
                   <LockKeyhole className="h-5 w-5" />
                 </div>
 
@@ -270,7 +270,7 @@ export default function ChangePasswordPage() {
                       setCurrentPassword(event.target.value)
                     }
                     placeholder="Enter your current password"
-                    className="h-13 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10"
+                    className="h-13 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10"
                   />
                 </div>
 
@@ -292,7 +292,7 @@ export default function ChangePasswordPage() {
                       setNewPassword(event.target.value)
                     }
                     placeholder="At least 8 characters"
-                    className="h-13 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10"
+                    className="h-13 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10"
                   />
                 </div>
 
@@ -314,7 +314,7 @@ export default function ChangePasswordPage() {
                       setConfirmPassword(event.target.value)
                     }
                     placeholder="Repeat your new password"
-                    className="h-13 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10"
+                    className="h-13 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10"
                   />
                 </div>
 
@@ -327,8 +327,8 @@ export default function ChangePasswordPage() {
                 )}
 
                 {success && (
-                  <div className="rounded-xl border border-gold/20 bg-gold/[0.05] px-4 py-3">
-                    <p className="text-sm text-gold">
+                  <div className="rounded-xl border border-emerald-500/20 bg-emerald-500/[0.05] px-4 py-3">
+                    <p className="text-sm text-emerald-400">
                       {success}
                     </p>
                   </div>
@@ -345,7 +345,7 @@ export default function ChangePasswordPage() {
                   <button
                     type="submit"
                     disabled={loading}
-                    className="rounded-xl bg-gold px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold disabled:cursor-not-allowed disabled:opacity-50"
+                    className="rounded-xl bg-emerald-500 px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500 disabled:cursor-not-allowed disabled:opacity-50"
                   >
                     {loading
                       ? "Updating password..."
@@ -368,7 +368,7 @@ export default function ChangePasswordPage() {
               <div className="mt-6 space-y-4">
                 <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
                   <div className="flex items-center gap-3">
-                    <ShieldCheck className="h-5 w-5 text-gold" />
+                    <ShieldCheck className="h-5 w-5 text-emerald-400" />
 
                     <p className="text-sm font-bold">
                       New-device verification
@@ -380,14 +380,14 @@ export default function ChangePasswordPage() {
                     before access is granted.
                   </p>
 
-                  <span className="mt-3 inline-block rounded-full bg-gold/10 px-3 py-1 text-xs font-bold text-gold">
+                  <span className="mt-3 inline-block rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-bold text-emerald-400">
                     Enabled
                   </span>
                 </div>
 
                 <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
                   <div className="flex items-center gap-3">
-                    <Bell className="h-5 w-5 text-gold" />
+                    <Bell className="h-5 w-5 text-emerald-400" />
 
                     <p className="text-sm font-bold">
                       Account notifications
@@ -401,7 +401,7 @@ export default function ChangePasswordPage() {
 
                   <Link
                     href="/notifications"
-                    className="mt-3 inline-flex items-center gap-1 text-sm text-gold transition hover:text-gold-light"
+                    className="mt-3 inline-flex items-center gap-1 text-sm text-emerald-400 transition hover:text-emerald-400-light"
                   >
                     View notifications
                     <ArrowRight className="h-4 w-4" />
@@ -421,7 +421,7 @@ export default function ChangePasswordPage() {
             </div>
 
             <p className="mt-6 text-center text-xs !text-[#FFFFFF]">
-              Thesoros • Account Security
+              EDGE PORTFOLIO • Account Security
             </p>
           </div>
         </section>

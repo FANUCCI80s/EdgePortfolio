@@ -301,7 +301,7 @@ export default function DepositPage() {
                 PAGE HEADER
             ================================================= */}
             <div className="mb-8">
-              <p className="mb-2 text-sm font-bold text-gold">
+              <p className="mb-2 text-sm font-bold text-emerald-400">
                 Fund your account
               </p>
 
@@ -320,14 +320,14 @@ export default function DepositPage() {
             {/* =================================================
                 SECURITY NOTICE
             ================================================= */}
-            <div className="mb-6 rounded-2xl border border-yellow-400/20 bg-yellow-400/5 p-5">
+            <div className="mb-6 rounded-2xl border border-blue-400/20 bg-blue-400/5 p-5">
               <div className="flex gap-3">
-                <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-yellow-400/10 text-yellow-400">
+                <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-400/10 text-blue-400">
                   !
                 </div>
 
                 <div>
-                  <p className="font-bold text-yellow-300">
+                  <p className="font-bold text-blue-300">
                     Important
                   </p>
 
@@ -347,7 +347,7 @@ export default function DepositPage() {
             {loadingConfig && (
               <div className="mb-6 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
                 <div className="flex items-center gap-3">
-                  <div className="h-4 w-4 animate-spin rounded-full border-2 border-gold/30 border-t-gold" />
+                  <div className="h-4 w-4 animate-spin rounded-full border-2 border-emerald-500/30 border-t-gold" />
 
                   <p className="text-sm !text-[#FFFFFF]">
                     Loading available deposit methods...
@@ -371,14 +371,14 @@ export default function DepositPage() {
                 SUCCESS
             ================================================= */}
             {message && (
-              <div className="mb-6 rounded-2xl border border-gold/20 bg-gold/5 p-5">
+              <div className="mb-6 rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-5">
                 <div className="flex items-start gap-3">
-                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gold/10 text-gold">
+                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-emerald-500/10 text-emerald-400">
                     ✓
                   </div>
 
                   <div>
-                    <p className="font-bold text-gold-light">
+                    <p className="font-bold text-emerald-400-light">
                       Deposit request submitted
                     </p>
 
@@ -388,7 +388,7 @@ export default function DepositPage() {
 
                     <Link
                       href="/transactions"
-                      className="mt-3 inline-block text-sm font-bold text-gold hover:text-gold-light"
+                      className="mt-3 inline-block text-sm font-bold text-emerald-400 hover:text-emerald-400-light"
                     >
                       View transactions →
                     </Link>
@@ -437,7 +437,7 @@ export default function DepositPage() {
                           }
                           className={`rounded-2xl border p-4 text-left transition ${
                             selected
-                              ? "border-gold/40 bg-gold/10"
+                              ? "border-emerald-500/40 bg-emerald-500/10"
                               : "border-white/10 bg-black/20 hover:border-white/20"
                           }`}
                         >
@@ -446,7 +446,7 @@ export default function DepositPage() {
                               <p
                                 className={`font-medium ${
                                   selected
-                                    ? "text-gold-light"
+                                    ? "text-emerald-400-light"
                                     : "text-white"
                                 }`}
                               >
@@ -465,7 +465,7 @@ export default function DepositPage() {
                             <div
                               className={`mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border ${
                                 selected
-                                  ? "border-gold bg-gold text-white"
+                                  ? "border-emerald-500 bg-emerald-500 text-white"
                                   : "border-white/20"
                               }`}
                             >
@@ -507,7 +507,7 @@ export default function DepositPage() {
                   config.bankAccount ? (
                     <div className="mt-6 space-y-4">
 
-                      <div className="rounded-2xl border border-gold/10 bg-gold/5 p-5">
+                      <div className="rounded-2xl border border-emerald-500/10 bg-emerald-500/5 p-5">
                         <p className="text-xs uppercase tracking-wider !text-[#FFFFFF]">
                           Bank name
                         </p>
@@ -673,12 +673,12 @@ export default function DepositPage() {
 
                       </div>
 
-                      <div className="rounded-2xl border border-gold/20 bg-gold/5 p-5">
+                      <div className="rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-5">
                         <p className="text-xs !text-[#FFFFFF]">
                           Wallet address
                         </p>
 
-                        <p className="mt-2 break-all font-mono text-sm leading-6 text-gold-light">
+                        <p className="mt-2 break-all font-mono text-sm leading-6 text-emerald-400-light">
                           {
                             selectedCryptoOption.walletAddress
                           }
@@ -711,13 +711,13 @@ export default function DepositPage() {
                 ) : selectedPaymentConfig ? (
                   <div className="mt-6 space-y-4">
 
-                    <div className="rounded-2xl border border-gold/20 bg-gold/5 p-5">
+                    <div className="rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-5">
                       <p className="text-xs uppercase tracking-wider !text-[#FFFFFF]">
                         {formatMethod(method)}{" "}
                         payment information
                       </p>
 
-                      <p className="mt-3 whitespace-pre-wrap break-words text-sm leading-7 text-gold-light">
+                      <p className="mt-3 whitespace-pre-wrap break-words text-sm leading-7 text-emerald-400-light">
                         {
                           selectedPaymentConfig.paymentInformation
                         }
@@ -791,7 +791,7 @@ export default function DepositPage() {
                         }
                         required
                         placeholder="0.00"
-                        className="w-full rounded-xl border border-white/10 bg-black/30 py-3 pl-9 pr-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/50"
+                        className="w-full rounded-xl border border-white/10 bg-black/30 py-3 pl-9 pr-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
                       />
                     </div>
                   </div>
@@ -816,7 +816,7 @@ export default function DepositPage() {
                       }
                       placeholder="Optional transaction ID"
                       maxLength={200}
-                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/50"
+                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
                     />
                   </div>
 
@@ -840,7 +840,7 @@ export default function DepositPage() {
                       }
                       maxLength={2000}
                       placeholder="Add any information that may help us identify your deposit."
-                      className="w-full resize-none rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/50"
+                      className="w-full resize-none rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
                     />
                   </div>
 
@@ -892,7 +892,7 @@ export default function DepositPage() {
                     submitting ||
                     loadingConfig
                   }
-                  className="rounded-xl bg-gold px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold disabled:cursor-not-allowed disabled:opacity-50"
+                  className="rounded-xl bg-emerald-500 px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500 disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   {submitting
                     ? "Submitting..."

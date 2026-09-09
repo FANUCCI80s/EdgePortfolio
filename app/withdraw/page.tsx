@@ -231,7 +231,7 @@ export default function WithdrawPage() {
                 PAGE HEADER
             ================================================= */}
             <div className="mb-8">
-              <p className="mb-2 text-sm font-bold text-gold">
+              <p className="mb-2 text-sm font-bold text-emerald-400">
                 Withdraw funds
               </p>
 
@@ -249,14 +249,14 @@ export default function WithdrawPage() {
             {/* =================================================
                 IMPORTANT NOTICE
             ================================================= */}
-            <div className="mb-6 rounded-2xl border border-yellow-400/20 bg-yellow-400/5 p-5">
+            <div className="mb-6 rounded-2xl border border-blue-400/20 bg-blue-400/5 p-5">
               <div className="flex gap-3">
-                <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-yellow-400/10 text-yellow-400">
+                <div className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-400/10 text-blue-400">
                   !
                 </div>
 
                 <div>
-                  <p className="font-bold text-yellow-300">
+                  <p className="font-bold text-blue-300">
                     Administrator approval required
                   </p>
 
@@ -273,14 +273,14 @@ export default function WithdrawPage() {
                 SUCCESS MESSAGE
             ================================================= */}
             {message && (
-              <div className="mb-6 rounded-2xl border border-gold/20 bg-gold/5 p-5">
+              <div className="mb-6 rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-5">
                 <div className="flex items-start gap-3">
-                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gold/10 text-gold">
+                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-emerald-500/10 text-emerald-400">
                     ✓
                   </div>
 
                   <div>
-                    <p className="font-bold text-gold-light">
+                    <p className="font-bold text-emerald-400-light">
                       Withdrawal request submitted
                     </p>
 
@@ -290,7 +290,7 @@ export default function WithdrawPage() {
 
                     <Link
                       href="/transactions"
-                      className="mt-3 inline-block text-sm font-bold text-gold hover:text-gold-light"
+                      className="mt-3 inline-block text-sm font-bold text-emerald-400 hover:text-emerald-400-light"
                     >
                       View transactions →
                     </Link>
@@ -338,7 +338,7 @@ export default function WithdrawPage() {
                         }
                         className={`rounded-2xl border p-4 text-left transition ${
                           selected
-                            ? "border-gold/40 bg-gold/10"
+                            ? "border-emerald-500/40 bg-emerald-500/10"
                             : "border-white/10 bg-black/20 hover:border-white/20"
                         }`}
                       >
@@ -347,7 +347,7 @@ export default function WithdrawPage() {
                             <p
                               className={`font-medium ${
                                 selected
-                                  ? "text-gold-light"
+                                  ? "text-emerald-400-light"
                                   : "text-white"
                               }`}
                             >
@@ -362,7 +362,7 @@ export default function WithdrawPage() {
                           <div
                             className={`mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full border ${
                               selected
-                                ? "border-gold bg-gold text-white"
+                                ? "border-emerald-500 bg-emerald-500 text-white"
                                 : "border-white/20"
                             }`}
                           >
@@ -416,7 +416,7 @@ export default function WithdrawPage() {
                         }
                         required
                         placeholder="0.00"
-                        className="w-full rounded-xl border border-white/10 bg-black/30 py-3 pl-9 pr-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/50"
+                        className="w-full rounded-xl border border-white/10 bg-black/30 py-3 pl-9 pr-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
                       />
                     </div>
                   </div>
@@ -441,7 +441,7 @@ export default function WithdrawPage() {
                       required
                       placeholder="Name on receiving account"
                       maxLength={200}
-                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/50"
+                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
                     />
                   </div>
 
@@ -464,7 +464,7 @@ export default function WithdrawPage() {
                       }
                       placeholder="recipient@example.com"
                       maxLength={200}
-                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/50"
+                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
                     />
                   </div>
 
@@ -487,7 +487,7 @@ export default function WithdrawPage() {
                       }
                       placeholder="+1 555 000 0000"
                       maxLength={50}
-                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/50"
+                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
                     />
                   </div>
                 </div>
@@ -525,7 +525,7 @@ export default function WithdrawPage() {
                           }
                           required
                           placeholder="Account holder name"
-                          className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/50"
+                          className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
                         />
                       </div>
 
@@ -545,7 +545,7 @@ export default function WithdrawPage() {
                           }
                           required
                           placeholder="Your bank name"
-                          className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/50"
+                          className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
                         />
                       </div>
 
@@ -565,7 +565,7 @@ export default function WithdrawPage() {
                           }
                           required
                           placeholder="Bank account number"
-                          className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/50"
+                          className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
                         />
                       </div>
 
@@ -584,7 +584,7 @@ export default function WithdrawPage() {
                             setRoutingNumber(event.target.value)
                           }
                           placeholder="Optional"
-                          className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/50"
+                          className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
                         />
                       </div>
 
@@ -603,7 +603,7 @@ export default function WithdrawPage() {
                             setSwiftBic(event.target.value)
                           }
                           placeholder="Optional"
-                          className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/50"
+                          className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
                         />
                       </div>
 
@@ -622,7 +622,7 @@ export default function WithdrawPage() {
                             setBankAddress(event.target.value)
                           }
                           placeholder="Optional"
-                          className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/50"
+                          className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
                         />
                       </div>
                     </div>
@@ -649,7 +649,7 @@ export default function WithdrawPage() {
                       }
                       required
                       placeholder="$YourCashTag"
-                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/50"
+                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
                     />
                   </div>
                 )}
@@ -675,7 +675,7 @@ export default function WithdrawPage() {
                       }
                       required
                       placeholder="your@email.com"
-                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/50"
+                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
                     />
                   </div>
                 )}
@@ -701,7 +701,7 @@ export default function WithdrawPage() {
                           setEmail(event.target.value)
                         }
                         placeholder="your@email.com"
-                        className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/50"
+                        className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
                       />
                     </div>
 
@@ -721,7 +721,7 @@ export default function WithdrawPage() {
                           setPhone(event.target.value)
                         }
                         placeholder="+1 555 000 0000"
-                        className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/50"
+                        className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
                       />
                     </div>
                   </div>
@@ -747,7 +747,7 @@ export default function WithdrawPage() {
                       }
                       required
                       placeholder="@YourVenmoUsername"
-                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/50"
+                      className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
                     />
                   </div>
                 )}
@@ -791,7 +791,7 @@ export default function WithdrawPage() {
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="rounded-xl bg-gold px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold disabled:cursor-not-allowed disabled:opacity-50"
+                  className="rounded-xl bg-emerald-500 px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500 disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   {submitting
                     ? "Submitting..."

@@ -477,9 +477,9 @@ model AccountActivity {
 
 model PlatformSettings {
   id             String   @id @default(cuid())
-  platformName   String   @default("THÉSOROS")
+  platformName   String   @default("Edge Portfolio")
   logoUrl        String?
-  primaryColor   String   @default("#D4AF37")
+  primaryColor   String   @default("#22C55E")
   secondaryColor String   @default("#050505")
   accentColor    String   @default("#F4C542")
   createdAt      DateTime @default(now())

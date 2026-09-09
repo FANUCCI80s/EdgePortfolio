@@ -339,7 +339,7 @@ export default function WithdrawalSettingsPage() {
       <main className="min-h-screen bg-[#050505] !text-[#FFFFFF]">
         <div className="flex min-h-screen items-center justify-center">
           <div className="text-center">
-            <div className="mx-auto h-8 w-8 animate-spin rounded-full border-2 border-gold/20 border-t-gold" />
+            <div className="mx-auto h-8 w-8 animate-spin rounded-full border-2 border-emerald-500/20 border-t-gold" />
 
             <p className="mt-4 text-sm !text-[#FFFFFF]">
               Loading withdrawal settings...
@@ -358,7 +358,7 @@ export default function WithdrawalSettingsPage() {
           <div className="mx-auto max-w-7xl px-5 py-5 sm:px-8">
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <p className="text-xs font-bold uppercase tracking-[0.18em] text-gold">
+                <p className="text-xs font-bold uppercase tracking-[0.18em] text-emerald-400">
                   Administration
                 </p>
 
@@ -368,16 +368,16 @@ export default function WithdrawalSettingsPage() {
 
                 <p className="mt-1 max-w-2xl text-sm !text-[#FFFFFF]">
                   Configure the withdrawal methods available
-                  to Thesoros users.
+                  to EDGE PORTFOLIO users.
                 </p>
               </div>
 
-              <div className="rounded-xl border border-gold/20 bg-gold/5 px-4 py-3">
+              <div className="rounded-xl border border-emerald-500/20 bg-emerald-500/5 px-4 py-3">
                 <p className="text-xs !text-[#FFFFFF]">
                   Active methods
                 </p>
 
-                <p className="mt-1 text-lg font-bold text-gold">
+                <p className="mt-1 text-lg font-bold text-emerald-400">
                   {
                     configs.filter(
                       (config) => config.isEnabled
@@ -393,7 +393,7 @@ export default function WithdrawalSettingsPage() {
         <div className="mx-auto max-w-7xl px-5 py-8 sm:px-8">
           {/* MESSAGES */}
           {message && (
-            <div className="mb-6 rounded-2xl border border-gold/20 bg-gold/5 p-4 text-sm text-gold-light">
+            <div className="mb-6 rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-4 text-sm text-emerald-400-light">
               {message}
             </div>
           )}
@@ -408,7 +408,7 @@ export default function WithdrawalSettingsPage() {
             {/* METHODS */}
             <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-4">
               <div className="px-2 pb-4">
-                <p className="text-xs font-bold uppercase tracking-[0.16em] text-gold">
+                <p className="text-xs font-bold uppercase tracking-[0.16em] text-emerald-400">
                   Withdrawal channels
                 </p>
 
@@ -440,7 +440,7 @@ export default function WithdrawalSettingsPage() {
                       }
                       className={`w-full rounded-2xl border p-4 text-left transition ${
                         active
-                          ? "border-gold/30 bg-gold/10"
+                          ? "border-emerald-500/30 bg-emerald-500/10"
                           : "border-white/5 bg-white/[0.02] hover:border-white/10 hover:bg-white/[0.04]"
                       }`}
                     >
@@ -448,7 +448,7 @@ export default function WithdrawalSettingsPage() {
                         <div
                           className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl text-sm font-bold ${
                             active
-                              ? "bg-gold/15 text-gold"
+                              ? "bg-emerald-500/15 text-emerald-400"
                               : "bg-white/5 text-zinc-400"
                           }`}
                         >
@@ -477,7 +477,7 @@ export default function WithdrawalSettingsPage() {
                             <span
                               className={`h-2 w-2 rounded-full ${
                                 enabled
-                                  ? "bg-gold"
+                                  ? "bg-emerald-500"
                                   : "bg-zinc-700"
                               }`}
                             />
@@ -490,7 +490,7 @@ export default function WithdrawalSettingsPage() {
                           <p
                             className={`mt-2 text-[11px] ${
                               enabled
-                                ? "text-gold"
+                                ? "text-emerald-400"
                                 : "text-zinc-500"
                             }`}
                           >
@@ -512,7 +512,7 @@ export default function WithdrawalSettingsPage() {
             <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
               <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-[0.16em] text-gold">
+                  <p className="text-xs font-bold uppercase tracking-[0.16em] text-emerald-400">
                     Method configuration
                   </p>
 
@@ -536,7 +536,7 @@ export default function WithdrawalSettingsPage() {
                 <div
                   className={`rounded-xl border px-4 py-2 text-xs font-medium ${
                     isEnabled
-                      ? "border-gold/20 bg-gold/5 text-gold"
+                      ? "border-emerald-500/20 bg-emerald-500/5 text-emerald-400"
                       : "border-white/10 bg-white/[0.03] text-zinc-500"
                   }`}
                 >
@@ -630,7 +630,7 @@ export default function WithdrawalSettingsPage() {
                       }
                       className={`relative h-7 w-12 shrink-0 rounded-full transition ${
                         isEnabled
-                          ? "bg-gold"
+                          ? "bg-emerald-500"
                           : "bg-zinc-700"
                       }`}
                     >
@@ -669,7 +669,7 @@ export default function WithdrawalSettingsPage() {
                     type="button"
                     disabled={saving}
                     onClick={saveSettings}
-                    className="rounded-xl bg-gold px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold disabled:cursor-not-allowed disabled:opacity-50"
+                    className="rounded-xl bg-emerald-500 px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500 disabled:cursor-not-allowed disabled:opacity-50"
                   >
                     {saving
                       ? "Saving..."
@@ -684,7 +684,7 @@ export default function WithdrawalSettingsPage() {
           <section className="mt-6 rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
             <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
               <div>
-                <p className="text-xs font-bold uppercase tracking-[0.16em] text-gold">
+                <p className="text-xs font-bold uppercase tracking-[0.16em] text-emerald-400">
                   Overview
                 </p>
 
@@ -759,7 +759,7 @@ export default function WithdrawalSettingsPage() {
                           <span
                             className={`inline-flex rounded-full px-2.5 py-1 text-xs font-medium ${
                               enabled
-                                ? "bg-gold/10 text-gold"
+                                ? "bg-emerald-500/10 text-emerald-400"
                                 : "bg-white/5 text-zinc-500"
                             }`}
                           >
@@ -784,7 +784,7 @@ export default function WithdrawalSettingsPage() {
                             className={`inline-flex min-w-[82px] items-center justify-center rounded-lg border px-3 py-2 text-xs font-bold transition disabled:cursor-not-allowed disabled:opacity-50 ${
                               enabled
                                 ? "border-red-400/20 text-red-300 hover:bg-red-400/10"
-                                : "border-gold/20 text-gold hover:bg-gold/10"
+                                : "border-emerald-500/20 text-emerald-400 hover:bg-emerald-500/10"
                             }`}
                           >
                             {enabled
@@ -799,7 +799,7 @@ export default function WithdrawalSettingsPage() {
                                 method.value
                               )
                             }
-                            className="inline-flex min-w-[82px] items-center justify-center rounded-lg border border-gold/20 px-3 py-2 text-xs font-bold text-gold transition hover:bg-gold/10"
+                            className="inline-flex min-w-[82px] items-center justify-center rounded-lg border border-emerald-500/20 px-3 py-2 text-xs font-bold text-emerald-400 transition hover:bg-emerald-500/10"
                           >
                             Configure
                           </button>
@@ -813,14 +813,14 @@ export default function WithdrawalSettingsPage() {
           </section>
 
           {/* IMPORTANT NOTICE */}
-          <section className="mt-6 rounded-3xl border border-yellow-400/10 bg-yellow-400/[0.03] p-6">
+          <section className="mt-6 rounded-3xl border border-blue-400/10 bg-blue-400/[0.03] p-6">
             <div className="flex gap-4">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-yellow-400/10 font-bold text-yellow-400">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-400/10 font-bold text-blue-400">
                 !
               </div>
 
               <div>
-                <h3 className="font-bold text-yellow-300">
+                <h3 className="font-bold text-blue-300">
                   Withdrawal approval
                 </h3>
 
@@ -858,7 +858,7 @@ export default function WithdrawalSettingsPage() {
         }
 
         .admin-input:focus {
-          border-color: rgba(212, 175, 55, 0.5);
+          border-color: rgba(16, 185, 129, 0.5);
           background: rgba(0, 0, 0, 0.4);
         }
 

@@ -327,10 +327,10 @@ function getStatusClass(
 ): string {
   switch (status) {
     case "COMPLETED":
-      return "border-gold/20 bg-gold/10 text-gold";
+      return "border-emerald-500/20 bg-emerald-500/10 text-emerald-400";
 
     case "PENDING":
-      return "border-yellow-500/20 bg-yellow-500/10 text-yellow-400";
+      return "border-blue-500/20 bg-blue-500/10 text-blue-400";
 
     case "FAILED":
       return "border-red-500/20 bg-red-500/10 text-red-400";
@@ -348,7 +348,7 @@ function getTypeClass(
 ): string {
   switch (type) {
     case "DEPOSIT":
-      return "text-gold";
+      return "text-emerald-400";
 
     case "WITHDRAWAL":
       return "text-red-400";
@@ -360,7 +360,7 @@ function getTypeClass(
       return "text-purple-400";
 
     case "ADJUSTMENT":
-      return "text-yellow-400";
+      return "text-blue-400";
 
     default:
       return "text-gray-300";
@@ -386,16 +386,16 @@ function PendingDepositCard({
     "USD";
 
   return (
-    <div className="rounded-2xl border border-gold/20 bg-gold/[0.035] p-5 transition hover:border-gold/30">
+    <div className="rounded-2xl border border-emerald-500/20 bg-emerald-500/[0.035] p-5 transition hover:border-emerald-500/30">
       <div className="flex flex-col gap-5 xl:flex-row xl:items-center xl:justify-between">
         {/* Information */}
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="rounded-full border border-gold/20 bg-gold/10 px-3 py-1 text-xs font-bold text-gold">
+            <span className="rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs font-bold text-emerald-400">
               DEPOSIT REQUEST
             </span>
 
-            <span className="rounded-full border border-yellow-500/20 bg-yellow-500/10 px-3 py-1 text-xs font-bold text-yellow-400">
+            <span className="rounded-full border border-blue-500/20 bg-blue-500/10 px-3 py-1 text-xs font-bold text-blue-400">
               PENDING REVIEW
             </span>
           </div>
@@ -411,7 +411,7 @@ function PendingDepositCard({
                 <>
                   <Link
                     href={`/admin/users/${user.id}`}
-                    className="mt-1 block text-sm font-bold !text-[#FFFFFF] hover:text-gold"
+                    className="mt-1 block text-sm font-bold !text-[#FFFFFF] hover:text-emerald-400"
                   >
                     {user.firstName}{" "}
                     {user.lastName}
@@ -434,7 +434,7 @@ function PendingDepositCard({
                 Amount
               </p>
 
-              <p className="mt-1 text-lg font-bold text-gold">
+              <p className="mt-1 text-lg font-bold text-emerald-400">
                 {formatAmount(amount, currency)}
               </p>
             </div>
@@ -487,7 +487,7 @@ function PendingDepositCard({
         <div className="flex shrink-0 flex-col gap-2 sm:flex-row xl:flex-col">
           <Link
             href={`/admin/deposits/${deposit.id}`}
-            className="inline-flex min-w-[175px] items-center justify-center rounded-xl bg-gold px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold"
+            className="inline-flex min-w-[175px] items-center justify-center rounded-xl bg-emerald-500 px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500"
           >
             Review Deposit
           </Link>
@@ -522,7 +522,7 @@ function PendingWithdrawalCard({
               WITHDRAWAL REQUEST
             </span>
 
-            <span className="rounded-full border border-yellow-500/20 bg-yellow-500/10 px-3 py-1 text-xs font-bold text-yellow-400">
+            <span className="rounded-full border border-blue-500/20 bg-blue-500/10 px-3 py-1 text-xs font-bold text-blue-400">
               PENDING REVIEW
             </span>
           </div>
@@ -536,7 +536,7 @@ function PendingWithdrawalCard({
 
               <Link
                 href={`/admin/users/${transaction.user.id}`}
-                className="mt-1 block text-sm font-bold !text-[#FFFFFF] hover:text-gold"
+                className="mt-1 block text-sm font-bold !text-[#FFFFFF] hover:text-emerald-400"
               >
                 {transaction.user.firstName}{" "}
                 {transaction.user.lastName}
@@ -636,11 +636,11 @@ function PendingDepositSection({
   deposits: DepositRequest[];
 }) {
   return (
-    <section className="mb-6 overflow-hidden rounded-2xl border border-gold/20 bg-white/[0.02]">
-      <div className="border-b border-gold/10 bg-gold/[0.035] px-5 py-5">
+    <section className="mb-6 overflow-hidden rounded-2xl border border-emerald-500/20 bg-white/[0.02]">
+      <div className="border-b border-emerald-500/10 bg-emerald-500/[0.035] px-5 py-5">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex items-center gap-3">
-            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gold/10 text-xl text-gold">
+            <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/10 text-xl text-emerald-400">
               ↓
             </div>
 
@@ -656,7 +656,7 @@ function PendingDepositSection({
             </div>
           </div>
 
-          <div className="inline-flex w-fit rounded-full border border-gold/20 bg-gold/10 px-3 py-1.5 text-xs font-bold text-gold">
+          <div className="inline-flex w-fit rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1.5 text-xs font-bold text-emerald-400">
             {deposits.length}{" "}
             {deposits.length === 1
               ? "request"
@@ -1126,7 +1126,7 @@ export default function AdminTransactionsPage() {
 
         <div className="mb-8 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
           <div>
-            <p className="mb-2 text-sm font-bold uppercase tracking-[0.2em] text-gold">
+            <p className="mb-2 text-sm font-bold uppercase tracking-[0.2em] text-emerald-400">
               Admin Panel
             </p>
 
@@ -1178,7 +1178,7 @@ export default function AdminTransactionsPage() {
               Total Amount
             </p>
 
-            <p className="mt-2 text-2xl font-bold text-gold">
+            <p className="mt-2 text-2xl font-bold text-emerald-400">
               {formatAmount(
                 totalAmount,
                 "USD"
@@ -1186,23 +1186,23 @@ export default function AdminTransactionsPage() {
             </p>
           </div>
 
-          <div className="rounded-2xl border border-yellow-500/10 bg-yellow-500/[0.03] p-5">
+          <div className="rounded-2xl border border-blue-500/10 bg-blue-500/[0.03] p-5">
             <p className="text-sm !text-[#FFFFFF]">
               Pending Reviews
             </p>
 
-            <p className="mt-2 text-2xl font-bold text-yellow-400">
+            <p className="mt-2 text-2xl font-bold text-blue-400">
               {pendingTransactions.length +
                 pendingDeposits.length}
             </p>
           </div>
 
-          <div className="rounded-2xl border border-gold/10 bg-gold/[0.03] p-5">
+          <div className="rounded-2xl border border-emerald-500/10 bg-emerald-500/[0.03] p-5">
             <p className="text-sm !text-[#FFFFFF]">
               Pending Deposits
             </p>
 
-            <p className="mt-2 text-2xl font-bold text-gold">
+            <p className="mt-2 text-2xl font-bold text-emerald-400">
               {pendingDeposits.length}
             </p>
           </div>
@@ -1294,7 +1294,7 @@ export default function AdminTransactionsPage() {
                   )
                 }
                 placeholder="Search user, email, reference, ID..."
-                className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/50"
+                className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
               />
             </div>
 
@@ -1318,7 +1318,7 @@ export default function AdminTransactionsPage() {
                       | TransactionType
                   )
                 }
-                className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm !text-[#FFFFFF] outline-none focus:border-gold/50"
+                className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm !text-[#FFFFFF] outline-none focus:border-emerald-500/50"
               >
                 {TYPE_OPTIONS.map(
                   (option) => (
@@ -1360,7 +1360,7 @@ export default function AdminTransactionsPage() {
                       | TransactionStatus
                   )
                 }
-                className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm !text-[#FFFFFF] outline-none focus:border-gold/50"
+                className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm !text-[#FFFFFF] outline-none focus:border-emerald-500/50"
               >
                 {STATUS_OPTIONS.map(
                   (option) => (
@@ -1536,7 +1536,7 @@ export default function AdminTransactionsPage() {
                             <td className="px-5 py-5">
                               <Link
                                 href={`/admin/users/${transaction.user.id}`}
-                                className="block min-w-[180px] transition hover:text-gold"
+                                className="block min-w-[180px] transition hover:text-emerald-400"
                               >
                                 <p className="text-sm font-bold !text-[#FFFFFF]">
                                   {
@@ -1626,7 +1626,7 @@ export default function AdminTransactionsPage() {
                                   }
                                   className={`inline-flex rounded-lg border px-3 py-2 text-xs font-bold transition ${
                                     isDeposit
-                                      ? "border-gold/20 bg-gold/10 text-gold hover:bg-gold/20"
+                                      ? "border-emerald-500/20 bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20"
                                       : "border-red-500/20 bg-red-500/10 text-red-400 hover:bg-red-500/20"
                                   }`}
                                 >

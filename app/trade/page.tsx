@@ -1,4 +1,4 @@
-﻿
+
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
@@ -417,7 +417,7 @@ export default function TradePage() {
           <div className="mx-auto flex min-h-[70vh] max-w-6xl items-center justify-center">
             <div className="text-center">
               <Loader2
-                className="mx-auto h-8 w-8 animate-spin text-[#d4af37]"
+                className="mx-auto h-8 w-8 animate-spin text-[#22C55E]"
                 strokeWidth={1.8}
               />
 
@@ -526,7 +526,7 @@ export default function TradePage() {
                   </h2>
                 </div>
 
-                <div className="flex items-center gap-2 rounded-full border border-[#d4af37]/20 bg-[#d4af37]/5 px-3 py-1.5 text-xs text-[#d4af37]">
+                <div className="flex items-center gap-2 rounded-full border border-[#22C55E]/20 bg-[#22C55E]/5 px-3 py-1.5 text-xs text-[#22C55E]">
                   <ShieldCheck size={14} />
                   Secure
                 </div>
@@ -539,7 +539,7 @@ export default function TradePage() {
                   onClick={() => setSide("BUY")}
                   className={`flex items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-medium transition ${
                     side === "BUY"
-                      ? "bg-[#d4af37] text-black"
+                      ? "bg-[#22C55E] text-black"
                       : "text-white/50 hover:text-white"
                   }`}
                 >
@@ -552,7 +552,7 @@ export default function TradePage() {
                   onClick={() => setSide("SELL")}
                   className={`flex items-center justify-center gap-2 rounded-xl px-4 py-3 text-sm font-medium transition ${
                     side === "SELL"
-                      ? "bg-[#d4af37] text-black"
+                      ? "bg-[#22C55E] text-black"
                       : "text-white/50 hover:text-white"
                   }`}
                 >
@@ -596,7 +596,7 @@ export default function TradePage() {
                       }
                       inputMode="decimal"
                       placeholder="0.00"
-                      className="w-full rounded-2xl border border-white/10 bg-black/40 px-4 py-4 pr-20 text-lg text-white outline-none transition focus:border-[#d4af37]/50"
+                      className="w-full rounded-2xl border border-white/10 bg-black/40 px-4 py-4 pr-20 text-lg text-white outline-none transition focus:border-[#22C55E]/50"
                     />
 
                     {instrument && (
@@ -616,7 +616,7 @@ export default function TradePage() {
                     executing ||
                     !instrument
                   }
-                  className="flex w-full items-center justify-center gap-2 rounded-2xl border border-[#d4af37]/30 bg-[#d4af37]/10 px-4 py-4 text-sm font-medium text-[#d4af37] transition hover:bg-[#d4af37]/15 disabled:cursor-not-allowed disabled:opacity-50"
+                  className="flex w-full items-center justify-center gap-2 rounded-2xl border border-[#22C55E]/30 bg-[#22C55E]/10 px-4 py-4 text-sm font-medium text-[#22C55E] transition hover:bg-[#22C55E]/15 disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   {loadingQuote ? (
                     <>
@@ -642,7 +642,7 @@ export default function TradePage() {
               )}
 
               {success && (
-                <div className="mt-5 flex gap-3 rounded-2xl border border-[#d4af37]/20 bg-[#d4af37]/5 px-4 py-4 text-sm text-[#e4c65a]">
+                <div className="mt-5 flex gap-3 rounded-2xl border border-[#22C55E]/20 bg-[#22C55E]/5 px-4 py-4 text-sm text-[#e4c65a]">
                   <CheckCircle2
                     size={18}
                     className="mt-0.5 shrink-0"
@@ -663,7 +663,7 @@ export default function TradePage() {
                 </p>
 
                 <h2 className="mt-1 text-xl font-medium">
-                  {instrument?.symbol ?? "—"}
+                  {instrument?.symbol ?? "�"}
                 </h2>
               </div>
 
@@ -675,7 +675,7 @@ export default function TradePage() {
 
                 <SummaryRow
                   label="Asset"
-                  value={instrument?.name ?? "—"}
+                  value={instrument?.name ?? "�"}
                 />
 
                 <SummaryRow
@@ -683,7 +683,7 @@ export default function TradePage() {
                   value={
                     instrument
                       ? `${numericQuantity || 0} ${instrument.baseAsset}`
-                      : "—"
+                      : "�"
                   }
                 />
 
@@ -698,7 +698,7 @@ export default function TradePage() {
                             maximumFractionDigits: 8,
                           },
                         )}`
-                      : "—"
+                      : "�"
                   }
                 />
 
@@ -709,7 +709,7 @@ export default function TradePage() {
                     Estimated Value
                   </span>
 
-                  <span className="text-2xl font-semibold text-[#d4af37]">
+                  <span className="text-2xl font-semibold text-[#22C55E]">
                     {quote
                       ? `$${quote.notional.toLocaleString(
                           undefined,
@@ -718,7 +718,7 @@ export default function TradePage() {
                             maximumFractionDigits: 2,
                           },
                         )}`
-                      : "—"}
+                      : "�"}
                   </span>
                 </div>
               </div>
@@ -732,7 +732,7 @@ export default function TradePage() {
                   !quote ||
                   !instrument
                 }
-                className="mt-7 flex w-full items-center justify-center gap-2 rounded-2xl bg-[#d4af37] px-4 py-4 text-sm font-semibold text-black transition hover:bg-[#e0bf4d] disabled:cursor-not-allowed disabled:opacity-40"
+                className="mt-7 flex w-full items-center justify-center gap-2 rounded-2xl bg-[#22C55E] px-4 py-4 text-sm font-semibold text-black transition hover:bg-[#e0bf4d] disabled:cursor-not-allowed disabled:opacity-40"
               >
                 {executing ? (
                   <>
@@ -768,9 +768,9 @@ export default function TradePage() {
 function TradeHeader() {
   return (
     <div className="mb-8 pr-14 lg:pr-0">
-      <div className="mb-3 flex items-center gap-2 text-xs font-medium uppercase tracking-[0.25em] text-[#d4af37]">
+      <div className="mb-3 flex items-center gap-2 text-xs font-medium uppercase tracking-[0.25em] text-[#22C55E]">
         <TrendingUp size={15} />
-        THÉSOROS TRADE
+        Edge Portfolio TRADE
       </div>
 
       <h1 className="font-serif text-4xl tracking-tight sm:text-5xl">
@@ -801,7 +801,7 @@ function TradeMenuButton({
         type="button"
         onClick={onClick}
         aria-label="Open navigation"
-        className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-[#050505] text-white shadow-lg transition hover:border-[#d4af37]/30 hover:bg-[#d4af37]/10 hover:text-[#d4af37]"
+        className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-[#050505] text-white shadow-lg transition hover:border-[#22C55E]/30 hover:bg-[#22C55E]/10 hover:text-[#22C55E]"
       >
         <Menu
           className="h-5 w-5"
@@ -858,8 +858,8 @@ function MobileTradeNavbar({
             className="inline-flex items-center"
           >
             <img
-              src="/branding/thesoros-logo.png"
-              alt="THÉSOROS"
+              src="/branding/edge-portfolio-logo.png"
+              alt="Edge Portfolio"
               className="block h-10 w-auto max-w-[190px] object-contain"
             />
           </a>
@@ -890,7 +890,7 @@ function MobileTradeNavbar({
                 onClick={closeMenu}
                 className={`flex items-center gap-3 rounded-xl px-4 py-3 text-sm transition ${
                   active
-                    ? "bg-gold/10 font-bold text-gold"
+                    ? "bg-emerald-500/10 font-bold text-emerald-400"
                     : "text-zinc-400 hover:bg-white/[0.04] hover:text-white"
                 }`}
               >
@@ -917,7 +917,7 @@ function MobileTradeNavbar({
                 onClick={closeMenu}
                 className={`flex items-center gap-3 rounded-xl px-4 py-3 text-sm transition ${
                   active
-                    ? "bg-gold/10 font-bold text-gold"
+                    ? "bg-emerald-500/10 font-bold text-emerald-400"
                     : "text-zinc-400 hover:bg-white/[0.04] hover:text-white"
                 }`}
               >
@@ -1011,7 +1011,7 @@ function InstrumentSearch({
       <div
         className={`relative flex items-center rounded-2xl border bg-black/40 transition ${
           open
-            ? "border-[#d4af37]/50"
+            ? "border-[#22C55E]/50"
             : "border-white/10"
         }`}
       >
@@ -1027,7 +1027,7 @@ function InstrumentSearch({
             open
               ? search
               : selectedInstrument
-                ? `${selectedInstrument.symbol} — ${selectedInstrument.name}`
+                ? `${selectedInstrument.symbol} � ${selectedInstrument.name}`
                 : ""
           }
           onFocus={() => {
@@ -1113,7 +1113,7 @@ function InstrumentSearch({
 
                 <TrendingUp
                   size={16}
-                  className="text-[#d4af37]/50"
+                  className="text-[#22C55E]/50"
                 />
               </div>
             </div>
@@ -1148,21 +1148,21 @@ function InstrumentSearch({
                       onClick={() => handleSelect(item)}
                       className={`flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left transition ${
                         selected
-                          ? "bg-[#d4af37]/10"
+                          ? "bg-[#22C55E]/10"
                           : "hover:bg-white/[0.05]"
                       }`}
                     >
                       <div
                         className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border ${
                           selected
-                            ? "border-[#d4af37]/30 bg-[#d4af37]/10"
+                            ? "border-[#22C55E]/30 bg-[#22C55E]/10"
                             : "border-white/10 bg-white/[0.04]"
                         }`}
                       >
                         <span
                           className={`text-[10px] font-bold ${
                             selected
-                              ? "text-[#d4af37]"
+                              ? "text-[#22C55E]"
                               : "text-white/60"
                           }`}
                         >
@@ -1189,10 +1189,10 @@ function InstrumentSearch({
                       </div>
 
                       {selected && (
-                        <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#d4af37]/10">
+                        <div className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#22C55E]/10">
                           <CheckCircle2
                             size={15}
-                            className="text-[#d4af37]"
+                            className="text-[#22C55E]"
                           />
                         </div>
                       )}

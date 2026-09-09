@@ -11,10 +11,10 @@ return ( <header className="border-b border-white/[0.06] bg-[#050505]/90 backdro
 {/* Logo */} <Link
        href="/"
        className="flex items-center"
-       aria-label="Thesoros home"
+       aria-label="EDGE PORTFOLIO home"
      > <Image
-         src="/branding/thesoros-logo.png"
-         alt="Thesoros"
+         src="/branding/edge-portfolio-logo.png"
+         alt="EDGE PORTFOLIO"
          width={200}
          height={58}
          priority
@@ -35,7 +35,7 @@ return ( <header className="border-b border-white/[0.06] bg-[#050505]/90 backdro
         href="#why-thésoros"
         className="text-sm text-zinc-400 transition hover:!text-[#FFFFFF]"
       >
-        Why THÉSOROS
+        Why Edge Portfolio
       </a>
 
       <a
@@ -57,7 +57,7 @@ return ( <header className="border-b border-white/[0.06] bg-[#050505]/90 backdro
 
       <Link
         href="/signup"
-        className="rounded-xl bg-gold px-5 py-2.5 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold"
+        className="rounded-xl bg-emerald-500 px-5 py-2.5 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500"
       >
         Get Started
       </Link>
@@ -67,7 +67,7 @@ return ( <header className="border-b border-white/[0.06] bg-[#050505]/90 backdro
     <button
       type="button"
       onClick={() => setMobileOpen(!mobileOpen)}
-      className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 !text-[#FFFFFF] transition hover:border-gold/40 hover:bg-gold/[0.06] lg:hidden"
+      className="flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 !text-[#FFFFFF] transition hover:border-emerald-500/40 hover:bg-emerald-500/[0.06] lg:hidden"
       aria-label={mobileOpen ? "Close menu" : "Open menu"}
       aria-expanded={mobileOpen}
     >
@@ -122,7 +122,7 @@ return ( <header className="border-b border-white/[0.06] bg-[#050505]/90 backdro
           onClick={() => setMobileOpen(false)}
           className="rounded-xl px-4 py-3 text-sm text-zinc-400 transition hover:bg-white/[0.04] hover:!text-[#FFFFFF]"
         >
-          Why THÉSOROS
+          Why Edge Portfolio
         </a>
 
         <a
@@ -154,7 +154,7 @@ return ( <header className="border-b border-white/[0.06] bg-[#050505]/90 backdro
           <Link
             href="/signup"
             onClick={() => setMobileOpen(false)}
-            className="rounded-xl bg-gold px-4 py-3 text-center text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold"
+            className="rounded-xl bg-emerald-500 px-4 py-3 text-center text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500"
           >
             Get Started
           </Link>

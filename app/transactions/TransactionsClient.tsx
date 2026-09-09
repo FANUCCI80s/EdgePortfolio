@@ -106,9 +106,9 @@ function formatDate(date: string) {
 function getStatusClass(status: TransactionStatus) {
   switch (status) {
     case "COMPLETED":
-      return "border-gold/20 bg-gold/10 text-gold-light";
+      return "border-emerald-500/20 bg-emerald-500/10 text-emerald-400-light";
     case "PENDING":
-      return "border-yellow-400/20 bg-yellow-400/10 text-yellow-300";
+      return "border-blue-400/20 bg-blue-400/10 text-blue-300";
     case "FAILED":
       return "border-red-400/20 bg-red-400/10 text-red-300";
     case "REVERSED":
@@ -141,7 +141,7 @@ function getAmountClass(type: TransactionType) {
     type === "REFUND" ||
     type === "ADJUSTMENT"
   ) {
-    return "text-gold";
+    return "text-emerald-400";
   }
 
   if (type === "WITHDRAWAL") {
@@ -231,7 +231,7 @@ export default function TransactionsClient() {
                 PAGE HEADER
             ================================================= */}
             <div className="mb-8">
-              <p className="mb-2 text-sm font-bold text-gold">
+              <p className="mb-2 text-sm font-bold text-emerald-400">
                 Account activity
               </p>
 
@@ -287,7 +287,7 @@ export default function TransactionsClient() {
                       onClick={() => setFilter(item.value)}
                       className={`shrink-0 rounded-xl px-4 py-2.5 text-sm transition ${
                         selected
-                          ? "bg-gold/10 font-medium text-gold"
+                          ? "bg-emerald-500/10 font-medium text-emerald-400"
                           : "text-zinc-500 hover:bg-white/[0.04] hover:text-white"
                       }`}
                     >
@@ -364,7 +364,7 @@ export default function TransactionsClient() {
                   <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
                     <Link
                       href="/deposit"
-                      className="rounded-xl bg-gold px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold"
+                      className="rounded-xl bg-emerald-500 px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500"
                     >
                       Make a deposit
                     </Link>

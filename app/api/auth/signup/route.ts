@@ -174,9 +174,10 @@ export async function POST(request: Request) {
     const loginUrl = `${appUrl}/login`;
 
     const welcomeEmail = getWelcomeEmail({
-      firstName: newUser.firstName,
-      loginUrl,
-    });
+  firstName: newUser.firstName,
+  loginUrl,
+  logoUrl: `${appUrl}/branding/edge-portfolio-logo.png`,
+});
 
     try {
       console.log("[SIGNUP] Sending welcome email");

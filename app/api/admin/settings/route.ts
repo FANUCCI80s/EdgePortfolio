@@ -2,11 +2,11 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 
 const DEFAULT_SETTINGS = {
-platformName: "Thesoros",
+platformName: "EDGE PORTFOLIO",
 logoUrl: null,
 primaryColor: "#E8C766",
 secondaryColor: "#FAF7F0",
-accentColor: "#D4AF37",
+accentColor: "#22C55E",
 };
 
 function isValidHexColor(value: unknown): value is string {

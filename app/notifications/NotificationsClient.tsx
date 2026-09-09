@@ -95,10 +95,10 @@ function getNotificationIconClass(type: NotificationType) {
   switch (type) {
     case "SUCCESS":
     case "KYC":
-      return "border-gold/20 bg-gold/10 text-gold";
+      return "border-emerald-500/20 bg-emerald-500/10 text-emerald-400";
 
     case "WARNING":
-      return "border-yellow-400/20 bg-yellow-400/10 text-yellow-300";
+      return "border-blue-400/20 bg-blue-400/10 text-blue-300";
 
     case "ERROR":
       return "border-red-400/20 bg-red-400/10 text-red-300";
@@ -316,17 +316,17 @@ export default function NotificationsClient() {
               href="/dashboard"
               className="flex items-center gap-3"
             >
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-gold/30 bg-gold/10">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-emerald-500/30 bg-emerald-500/10">
                 <img
-                  src="/branding/thesoros-logo.png"
-                  alt="THÉSOROS"
+                  src="/branding/edge-portfolio-logo.png"
+                  alt="Edge Portfolio"
                   className="h-8 w-auto object-contain"
                 />
               </div>
 
               <div>
                 <p className="font-bold tracking-tight">
-                  Thesoros
+                  EDGE PORTFOLIO
                 </p>
 
                 <p className="text-xs !text-[#FFFFFF]">
@@ -381,7 +381,7 @@ export default function NotificationsClient() {
 
             <Link
               href="/notifications"
-              className="flex items-center justify-between rounded-xl bg-gold/10 px-4 py-3 text-sm font-bold text-gold"
+              className="flex items-center justify-between rounded-xl bg-emerald-500/10 px-4 py-3 text-sm font-bold text-emerald-400"
             >
               <span className="flex items-center gap-3">
                 <span>●</span>
@@ -389,7 +389,7 @@ export default function NotificationsClient() {
               </span>
 
               {unreadCount > 0 && (
-                <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-gold px-1.5 text-[10px] font-bold !text-[#FFFFFF]">
+                <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-emerald-500 px-1.5 text-[10px] font-bold !text-[#FFFFFF]">
                   {unreadCount > 99 ? "99+" : unreadCount}
                 </span>
               )}
@@ -426,7 +426,7 @@ export default function NotificationsClient() {
             <div className="mb-8">
               <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
                 <div>
-                  <p className="mb-2 text-sm font-bold text-gold">
+                  <p className="mb-2 text-sm font-bold text-emerald-400">
                     Account activity
                   </p>
 
@@ -442,12 +442,12 @@ export default function NotificationsClient() {
                 </div>
 
                 {unreadCount > 0 && (
-                  <div className="rounded-2xl border border-gold/20 bg-gold/5 px-4 py-3">
+                  <div className="rounded-2xl border border-emerald-500/20 bg-emerald-500/5 px-4 py-3">
                     <p className="text-xs !text-[#FFFFFF]">
                       Unread notifications
                     </p>
 
-                    <p className="mt-1 text-xl font-bold text-gold">
+                    <p className="mt-1 text-xl font-bold text-emerald-400">
                       {unreadCount}
                     </p>
                   </div>
@@ -505,7 +505,7 @@ export default function NotificationsClient() {
                         }
                         className={`flex shrink-0 items-center gap-2 rounded-xl px-4 py-2.5 text-sm transition ${
                           selected
-                            ? "bg-gold/10 font-medium text-gold"
+                            ? "bg-emerald-500/10 font-medium text-emerald-400"
                             : "text-zinc-500 hover:bg-white/[0.04] hover:text-white"
                         }`}
                       >
@@ -514,7 +514,7 @@ export default function NotificationsClient() {
                         <span
                           className={`rounded-full px-1.5 py-0.5 text-[10px] ${
                             selected
-                              ? "bg-gold/10 text-gold"
+                              ? "bg-emerald-500/10 text-emerald-400"
                               : "bg-white/[0.04] text-zinc-600"
                           }`}
                         >
@@ -540,7 +540,7 @@ export default function NotificationsClient() {
                       type="button"
                       onClick={markAllAsRead}
                       disabled={markingAll}
-                      className="rounded-xl bg-gold px-4 py-2.5 text-xs font-bold !text-[#FFFFFF] transition hover:bg-gold disabled:cursor-not-allowed disabled:opacity-50"
+                      className="rounded-xl bg-emerald-500 px-4 py-2.5 text-xs font-bold !text-[#FFFFFF] transition hover:bg-emerald-500 disabled:cursor-not-allowed disabled:opacity-50"
                     >
                       {markingAll
                         ? "Marking..."
@@ -594,7 +594,7 @@ export default function NotificationsClient() {
                   <p className="mx-auto mt-2 max-w-md text-sm leading-6 !text-[#FFFFFF]">
                     {filter === "UNREAD"
                       ? "You have no unread notifications at the moment."
-                      : "Notifications about your Thesoros account will appear here."}
+                      : "Notifications about your EDGE PORTFOLIO account will appear here."}
                   </p>
                 </div>
               ) : (
@@ -606,7 +606,7 @@ export default function NotificationsClient() {
                         className={`p-5 transition sm:px-8 sm:py-6 ${
                           notification.read
                             ? "bg-transparent"
-                            : "bg-gold/[0.02]"
+                            : "bg-emerald-500/[0.02]"
                         }`}
                       >
                         <div className="flex items-start gap-4">
@@ -632,7 +632,7 @@ export default function NotificationsClient() {
                                   </h3>
 
                                   {!notification.read && (
-                                    <span className="h-2 w-2 rounded-full bg-gold" />
+                                    <span className="h-2 w-2 rounded-full bg-emerald-500" />
                                   )}
                                 </div>
 
@@ -667,7 +667,7 @@ export default function NotificationsClient() {
                                     markingId ===
                                     notification.id
                                   }
-                                  className="shrink-0 rounded-lg border border-white/10 px-3 py-2 text-xs !text-[#FFFFFF] transition hover:border-gold/30 hover:text-gold disabled:cursor-not-allowed disabled:opacity-50"
+                                  className="shrink-0 rounded-lg border border-white/10 px-3 py-2 text-xs !text-[#FFFFFF] transition hover:border-emerald-500/30 hover:text-emerald-400 disabled:cursor-not-allowed disabled:opacity-50"
                                 >
                                   {markingId ===
                                   notification.id

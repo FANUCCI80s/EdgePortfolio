@@ -82,7 +82,7 @@ async function fetchJson<T>(
     headers: {
       Accept: "application/json",
       "User-Agent":
-        "Mozilla/5.0 (compatible; THESOROS-MarketWatchlist/1.0)",
+        "Mozilla/5.0 (compatible; EDGE PORTFOLIO-MarketWatchlist/1.0)",
       ...(options?.headers || {}),
     },
   });

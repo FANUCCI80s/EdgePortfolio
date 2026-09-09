@@ -10,19 +10,19 @@ export function getWelcomeEmail({
   loginUrl,
   logoUrl,
 }: WelcomeEmailOptions) {
-  const subject = "Welcome to THÉSOROS";
+  const subject = "Welcome to Edge Portfolio";
 
   const safeFirstName = escapeHtml(firstName);
   const safeLoginUrl = escapeHtml(loginUrl);
 
   /*
    * Email clients cannot reliably load local paths such as:
-   * /branding/thesoros-logo.png
+   * /branding/EDGE PORTFOLIO-edge-portfolio-edge-portfolio-logo.png
    *
    * Use a complete public URL when sending the email.
    *
    * Example:
-   * https://your-domain.com/branding/thesoros-logo.png
+   * https://your-domain.com/branding/EDGE PORTFOLIO-edge-portfolio-edge-portfolio-logo.png
    *
    * You can also pass logoUrl directly when calling this function.
    */
@@ -34,7 +34,7 @@ export function getWelcomeEmail({
     ? `
       <img
         src="${safeLogoUrl}"
-        alt="THÉSOROS"
+        alt="Edge Portfolio"
         width="190"
         style="
           display:block;
@@ -55,10 +55,10 @@ export function getWelcomeEmail({
           line-height:1;
           letter-spacing:8px;
           font-weight:700;
-          color:#d4af37;
+          color:#22C55E;
         "
       >
-        THÉSOROS
+        Edge Portfolio
       </div>
     `;
 
@@ -74,7 +74,7 @@ export function getWelcomeEmail({
   <meta name="color-scheme" content="dark" />
   <meta name="supported-color-schemes" content="dark" />
 
-  <title>Welcome to THÉSOROS</title>
+  <title>Welcome to Edge Portfolio</title>
 </head>
 
 <body
@@ -166,7 +166,7 @@ export function getWelcomeEmail({
             <td
               style="
                 height:2px;
-                background:#d4af37;
+                background:#22C55E;
                 font-size:0;
                 line-height:0;
               "
@@ -193,7 +193,7 @@ export function getWelcomeEmail({
                   line-height:1.5;
                   letter-spacing:3px;
                   font-weight:700;
-                  color:#d4af37;
+                  color:#22C55E;
                   text-transform:uppercase;
                 "
               >
@@ -212,8 +212,8 @@ export function getWelcomeEmail({
                 "
               >
                 Welcome to<br />
-                <span style="color:#d4af37;">
-                  THÉSOROS.
+                <span style="color:#22C55E;">
+                  Edge Portfolio.
                 </span>
               </h1>
 
@@ -236,7 +236,7 @@ export function getWelcomeEmail({
                   color:#a8a8a8;
                 "
               >
-                Welcome to THÉSOROS. Your account has been
+                Welcome to Edge Portfolio. Your account has been
                 successfully created, giving you access to a wealth
                 experience built around thoughtful investing,
                 long-term planning, and protecting what matters most.
@@ -251,7 +251,7 @@ export function getWelcomeEmail({
                 "
               >
                 Your next step is simple. Sign in to your account
-                and begin your THÉSOROS experience.
+                and begin your Edge Portfolio experience.
               </p>
 
             </td>
@@ -278,7 +278,7 @@ export function getWelcomeEmail({
                   <td
                     align="center"
                     style="
-                      background:#d4af37;
+                      background:#22C55E;
                       border-radius:4px;
                     "
                   >
@@ -296,7 +296,7 @@ export function getWelcomeEmail({
                         text-transform:uppercase;
                       "
                     >
-                      Enter THÉSOROS
+                      Enter Edge Portfolio
                     </a>
                   </td>
                 </tr>
@@ -364,7 +364,7 @@ export function getWelcomeEmail({
               >
                 Your wealth.<br />
                 Your strategy.<br />
-                <span style="color:#d4af37;">
+                <span style="color:#22C55E;">
                   Your legacy.
                 </span>
               </p>
@@ -421,7 +421,7 @@ export function getWelcomeEmail({
                         line-height:1.5;
                         letter-spacing:2px;
                         font-weight:700;
-                        color:#d4af37;
+                        color:#22C55E;
                         text-transform:uppercase;
                       "
                     >
@@ -484,7 +484,7 @@ export function getWelcomeEmail({
                   color:#444444;
                 "
               >
-                This is an automated message from THÉSOROS.
+                This is an automated message from Edge Portfolio.
                 Please do not reply to this email.
               </p>
 
@@ -518,7 +518,7 @@ export function getWelcomeEmail({
               "
             >
               © ${new Date().getFullYear()}
-              THÉSOROS. All rights reserved.
+              Edge Portfolio. All rights reserved.
             </td>
           </tr>
         </table>
@@ -531,18 +531,18 @@ export function getWelcomeEmail({
 `;
 
   const text = `
-WELCOME TO THÉSOROS
+WELCOME TO Edge Portfolio
 
 Hello ${firstName},
 
-Welcome to THÉSOROS.
+Welcome to Edge Portfolio.
 
 Your account has been successfully created, giving you access
 to a wealth experience built around thoughtful investing,
 long-term planning, and protecting what matters most.
 
 Your next step is simple. Sign in to your account and begin
-your THÉSOROS experience:
+your Edge Portfolio experience:
 
 ${loginUrl}
 
@@ -558,10 +558,10 @@ If you did not create this account, please contact our support
 team immediately. Never share your password or verification
 codes with anyone.
 
-This is an automated message from THÉSOROS.
+This is an automated message from Edge Portfolio.
 Please do not reply to this email.
 
-© ${new Date().getFullYear()} THÉSOROS. All rights reserved.
+© ${new Date().getFullYear()} Edge Portfolio. All rights reserved.
 `;
 
   return {

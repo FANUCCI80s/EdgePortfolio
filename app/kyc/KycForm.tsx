@@ -215,12 +215,12 @@ export default function KycPage() {
         <header className="mb-10 flex items-center justify-between">
           <div>
             <div className="mb-2 flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gold font-bold !text-[#FFFFFF]">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500 font-bold !text-[#FFFFFF]">
                 EP
               </div>
 
               <span className="text-xl font-bold tracking-tight">
-                Thesoros
+                EDGE PORTFOLIO
               </span>
             </div>
 
@@ -229,7 +229,7 @@ export default function KycPage() {
             </p>
           </div>
 
-          <div className="hidden rounded-full border border-gold/20 bg-gold/10 px-4 py-2 text-sm text-gold sm:block">
+          <div className="hidden rounded-full border border-emerald-500/20 bg-emerald-500/10 px-4 py-2 text-sm text-emerald-400 sm:block">
             Secure verification
           </div>
         </header>
@@ -237,7 +237,7 @@ export default function KycPage() {
         <section className="mx-auto max-w-4xl">
 
           <div className="mb-8">
-            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-gold">
+            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-emerald-400">
               Identity verification
             </p>
 
@@ -256,7 +256,7 @@ export default function KycPage() {
           <div className="mb-8 grid gap-3 sm:grid-cols-3">
 
             <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
-              <div className="mb-2 flex h-8 w-8 items-center justify-center rounded-full bg-gold/10 text-sm font-bold text-gold">
+              <div className="mb-2 flex h-8 w-8 items-center justify-center rounded-full bg-emerald-500/10 text-sm font-bold text-emerald-400">
                 1
               </div>
 
@@ -270,7 +270,7 @@ export default function KycPage() {
             </div>
 
             <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
-              <div className="mb-2 flex h-8 w-8 items-center justify-center rounded-full bg-gold/10 text-sm font-bold text-gold">
+              <div className="mb-2 flex h-8 w-8 items-center justify-center rounded-full bg-emerald-500/10 text-sm font-bold text-emerald-400">
                 2
               </div>
 
@@ -284,7 +284,7 @@ export default function KycPage() {
             </div>
 
             <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
-              <div className="mb-2 flex h-8 w-8 items-center justify-center rounded-full bg-gold/10 text-sm font-bold text-gold">
+              <div className="mb-2 flex h-8 w-8 items-center justify-center rounded-full bg-emerald-500/10 text-sm font-bold text-emerald-400">
                 3
               </div>
 
@@ -410,7 +410,7 @@ export default function KycPage() {
                     }
                     placeholder="Enter your full residential address"
                     rows={3}
-                    className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/60"
+                    className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/60"
                   />
                 </div>
 
@@ -447,7 +447,7 @@ export default function KycPage() {
                         event.target.value
                       )
                     }
-                    className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm !text-[#FFFFFF] outline-none focus:border-gold/60"
+                    className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm !text-[#FFFFFF] outline-none focus:border-emerald-500/60"
                   >
                     <option value="">
                       Select document type
@@ -521,12 +521,12 @@ export default function KycPage() {
             )}
 
             {message && (
-              <div className="rounded-2xl border border-gold/20 bg-gold/10 px-4 py-3 text-sm text-gold-light">
+              <div className="rounded-2xl border border-emerald-500/20 bg-emerald-500/10 px-4 py-3 text-sm text-emerald-400-light">
                 {message}
               </div>
             )}
 
-            <div className="rounded-3xl border border-gold/10 bg-gold/[0.04] p-5 sm:p-6">
+            <div className="rounded-3xl border border-emerald-500/10 bg-emerald-500/[0.04] p-5 sm:p-6">
 
               <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
 
@@ -544,7 +544,7 @@ export default function KycPage() {
                 <button
                   type="submit"
                   disabled={submitting}
-                  className="rounded-xl bg-gold px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold disabled:cursor-not-allowed disabled:opacity-50"
+                  className="rounded-xl bg-emerald-500 px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500 disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   {submitting
                     ? "Submitting..."
@@ -589,7 +589,7 @@ function Field({
         onChange={(event) =>
           onChange(event.target.value)
         }
-        className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/60"
+        className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/60"
       />
     </div>
   );
@@ -624,9 +624,9 @@ function DocumentUpload({
         </p>
       </div>
 
-      <label className="flex min-h-36 cursor-pointer flex-col items-center justify-center rounded-xl border border-white/10 bg-white/[0.02] px-4 text-center transition hover:border-gold/40 hover:bg-gold/[0.03]">
+      <label className="flex min-h-36 cursor-pointer flex-col items-center justify-center rounded-xl border border-white/10 bg-white/[0.02] px-4 text-center transition hover:border-emerald-500/40 hover:bg-emerald-500/[0.03]">
 
-        <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-full bg-gold/10 text-gold">
+        <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-full bg-emerald-500/10 text-emerald-400">
           <Upload
             size={20}
             strokeWidth={1.8}
@@ -634,12 +634,12 @@ function DocumentUpload({
         </div>
 
         {state.uploading ? (
-          <p className="text-sm text-gold">
+          <p className="text-sm text-emerald-400">
             Uploading...
           </p>
         ) : state.uploaded ? (
           <>
-            <p className="text-sm font-bold text-gold">
+            <p className="text-sm font-bold text-emerald-400">
               Upload complete
             </p>
 

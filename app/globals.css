@@ -2,15 +2,15 @@
 
 :root {
   /* =========================================================
-     THÉSOROS — CLASSIC GOLD / DARK LUXURY
+     Edge Portfolio — CLASSIC GOLD / DARK LUXURY
      ========================================================= */
 
   /* ===== Brand Gold ===== */
-  --gold:        #D4AF37;
-  --gold-warm:   #C9A227;
+  --gold:        #22C55E;
+  --gold-warm:   #16A34A;
   --gold-light:  #E8C766;
   --gold-deep:   #A6862B;
-  --gold-glow:   rgba(212, 175, 55, 0.25);
+  --gold-glow:   rgba(16, 185, 129, 0.25);
 
   /* ===== Global Dark Backgrounds ===== */
   --black:       #050505;
@@ -36,8 +36,8 @@
   /* ===== Borders ===== */
   --border:        rgba(255, 255, 255, 0.09);
   --border-soft:   rgba(255, 255, 255, 0.06);
-  --border-gold:   rgba(212, 175, 55, 0.30);
-  --border-gold-strong: rgba(212, 175, 55, 0.50);
+  --border-emerald-500:   rgba(16, 185, 129, 0.30);
+  --border-emerald-500-strong: rgba(16, 185, 129, 0.50);
 
   /* ===== Semantic ===== */
   --bg:           var(--black);
@@ -63,9 +63,9 @@
     linear-gradient(
       135deg,
       #A6862B 0%,
-      #D4AF37 45%,
+      #22C55E 45%,
       #E8C766 72%,
-      #C9A227 100%
+      #16A34A 100%
     );
 
   --gradient-dark:
@@ -86,7 +86,7 @@
   --gradient-hero:
     radial-gradient(
       circle at 50% -15%,
-      rgba(212, 175, 55, 0.055),
+      rgba(16, 185, 129, 0.055),
       transparent 42%
     );
 
@@ -131,7 +131,7 @@
 
   /* ===== Borders ===== */
   --color-border:      var(--border);
-  --color-border-gold: var(--border-gold);
+  --color-border-emerald-500: var(--border-emerald-500);
 
   /* ===== Semantic / shadcn ===== */
   --color-primary:              var(--gold);
@@ -161,7 +161,7 @@
 
 /*
  * Deliberately no prefers-color-scheme override here.
- * THÉSOROS is always dark.
+ * Edge Portfolio is always dark.
  */
 
 html {
@@ -311,10 +311,10 @@ button {
 }
 
 /* =========================================================
-   THÉSOROS CARD UTILITIES
+   Edge Portfolio CARD UTILITIES
    ========================================================= */
 
-.thesoros-card {
+.EDGE PORTFOLIO-card {
   background:
     linear-gradient(
       145deg,
@@ -330,35 +330,35 @@ button {
     inset 0 1px 0 rgba(255, 255, 255, 0.025);
 }
 
-.thesoros-card:hover {
-  border-color: var(--border-gold);
+.EDGE PORTFOLIO-card:hover {
+  border-color: var(--border-emerald-500);
 }
 
-.thesoros-card-gold {
+.EDGE PORTFOLIO-card-gold {
   background:
     linear-gradient(
       145deg,
-      rgba(212, 175, 55, 0.045),
+      rgba(16, 185, 129, 0.045),
       rgba(255, 255, 255, 0.008)
     ),
     var(--card);
 
-  border: 1px solid var(--border-gold);
+  border: 1px solid var(--border-emerald-500);
 
   box-shadow:
     0 18px 50px rgba(0, 0, 0, 0.30),
-    inset 0 1px 0 rgba(212, 175, 55, 0.035);
+    inset 0 1px 0 rgba(16, 185, 129, 0.035);
 }
 
 /* =========================================================
    GOLD TYPOGRAPHY
    ========================================================= */
 
-.thesoros-gold {
+.EDGE PORTFOLIO-gold {
   color: var(--gold);
 }
 
-.thesoros-gold-gradient {
+.EDGE PORTFOLIO-gold-gradient {
   background: var(--gradient-gold);
   background-clip: text;
   -webkit-background-clip: text;
@@ -369,7 +369,7 @@ button {
    GOLD BUTTON
    ========================================================= */
 
-.thesoros-button {
+.EDGE PORTFOLIO-button {
   background: var(--gold);
   color: #050505;
 
@@ -381,14 +381,14 @@ button {
     box-shadow 0.15s ease;
 }
 
-.thesoros-button:hover {
+.EDGE PORTFOLIO-button:hover {
   background: var(--gold-light);
 
   box-shadow:
-    0 8px 30px rgba(212, 175, 55, 0.18);
+    0 8px 30px rgba(16, 185, 129, 0.18);
 }
 
-.thesoros-button:active {
+.EDGE PORTFOLIO-button:active {
   transform: translateY(1px);
 }
 
@@ -396,12 +396,12 @@ button {
    GOLD OUTLINE BUTTON
    ========================================================= */
 
-.thesoros-button-outline {
+.EDGE PORTFOLIO-button-outline {
   background: var(--charcoal);
 
   color: var(--white);
 
-  border: 1px solid var(--border-gold);
+  border: 1px solid var(--border-emerald-500);
 
   transition:
     background-color 0.15s ease,
@@ -409,8 +409,8 @@ button {
     color 0.15s ease;
 }
 
-.thesoros-button-outline:hover {
-  background: rgba(212, 175, 55, 0.06);
+.EDGE PORTFOLIO-button-outline:hover {
+  background: rgba(16, 185, 129, 0.06);
   border-color: var(--gold);
   color: var(--gold-light);
 }
@@ -419,14 +419,14 @@ button {
    GOLD DIVIDER
    ========================================================= */
 
-.thesoros-divider {
+.EDGE PORTFOLIO-divider {
   height: 1px;
 
   background:
     linear-gradient(
       90deg,
       transparent,
-      rgba(212, 175, 55, 0.50),
+      rgba(16, 185, 129, 0.50),
       transparent
     );
 }
@@ -435,7 +435,7 @@ button {
    DARK PAGE UTILITY
    ========================================================= */
 
-.thesoros-page {
+.EDGE PORTFOLIO-page {
   min-height: 100vh;
 
   background:
@@ -449,7 +449,7 @@ button {
    DARK SECTION UTILITY
    ========================================================= */
 
-.thesoros-section {
+.EDGE PORTFOLIO-section {
   background: var(--black-soft);
   color: var(--white);
 }

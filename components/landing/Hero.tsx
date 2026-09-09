@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from "next/link";
@@ -25,12 +24,12 @@ type Capability = {
    CAPABILITY ICONS
    ============================================================ */
 
-function WealthManagerIcon() {
+function MarketIcon() {
   return (
     <svg
       viewBox="0 0 48 48"
       fill="none"
-      className="h-10 w-10 text-gold"
+      className="h-10 w-10 text-emerald-400"
       aria-hidden="true"
     >
       <circle
@@ -41,44 +40,53 @@ function WealthManagerIcon() {
         strokeWidth="1.4"
       />
       <path
-        d="M24 9v30M9 24h30M14 14l20 20M34 14 14 34"
-        stroke="currentColor"
-        strokeWidth="1"
-        opacity=".75"
-      />
-      <circle
-        cx="24"
-        cy="24"
-        r="4"
+        d="M10 29 17 22l5 4 10-12 6 5"
         stroke="currentColor"
         strokeWidth="1.4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <circle
+        cx="17"
+        cy="22"
+        r="1.8"
+        fill="currentColor"
+      />
+      <circle
+        cx="22"
+        cy="26"
+        r="1.8"
+        fill="currentColor"
+      />
+      <circle
+        cx="32"
+        cy="14"
+        r="1.8"
+        fill="currentColor"
       />
     </svg>
   );
 }
 
-function HeritageIcon() {
+function TradingToolsIcon() {
   return (
     <svg
       viewBox="0 0 48 48"
       fill="none"
-      className="h-10 w-10 text-gold"
+      className="h-10 w-10 text-emerald-400"
       aria-hidden="true"
     >
-      <path
-        d="M24 5 39 11v11c0 9-6 16-15 21C15 38 9 31 9 22V11l15-6Z"
-        stroke="currentColor"
-        strokeWidth="1.4"
-      />
-      <circle
-        cx="24"
-        cy="20"
-        r="4"
+      <rect
+        x="8"
+        y="9"
+        width="32"
+        height="30"
+        rx="3"
         stroke="currentColor"
         strokeWidth="1.4"
       />
       <path
-        d="M24 24v9M19 29h10"
+        d="M14 30h4V18h-4v12ZM22 30h4V14h-4v16ZM30 30h4V21h-4v9Z"
         stroke="currentColor"
         strokeWidth="1.2"
       />
@@ -86,12 +94,12 @@ function HeritageIcon() {
   );
 }
 
-function CulturalIcon() {
+function GlobalMarketsIcon() {
   return (
     <svg
       viewBox="0 0 48 48"
       fill="none"
-      className="h-10 w-10 text-gold"
+      className="h-10 w-10 text-emerald-400"
       aria-hidden="true"
     >
       <circle
@@ -122,7 +130,7 @@ function SecurityIcon() {
     <svg
       viewBox="0 0 48 48"
       fill="none"
-      className="h-10 w-10 text-gold"
+      className="h-10 w-10 text-emerald-400"
       aria-hidden="true"
     >
       <rect
@@ -155,12 +163,12 @@ function SecurityIcon() {
   );
 }
 
-function GlobalIcon() {
+function ExecutionIcon() {
   return (
     <svg
       viewBox="0 0 48 48"
       fill="none"
-      className="h-10 w-10 text-gold"
+      className="h-10 w-10 text-emerald-400"
       aria-hidden="true"
     >
       <circle
@@ -171,10 +179,18 @@ function GlobalIcon() {
         strokeWidth="1.3"
       />
       <path
-        d="M6 24h36M24 6c5 5 7 11 7 18s-2 13-7 18M24 6c-5 5-7 11-7 18s2 13 7 18"
+        d="M14 29 20 23l5 4 9-11"
         stroke="currentColor"
-        strokeWidth="1"
-        opacity=".75"
+        strokeWidth="1.4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M29 16h5v5"
+        stroke="currentColor"
+        strokeWidth="1.3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );
@@ -186,37 +202,39 @@ function GlobalIcon() {
 
 const capabilities: Capability[] = [
   {
-    title: "AI WEALTH",
-    title2: "MANAGER",
-    description: "Hyper-personalized portfolio automation.",
-    icon: <WealthManagerIcon />,
-  },
-  {
-    title: "SMART HERITAGE",
-    title2: "PLANNING",
-    description: "Plan legacy transfers with confidence.",
-    icon: <HeritageIcon />,
-  },
-  {
-    title: "CULTURAL INVESTMENT",
-    title2: "ROUTES",
+    title: "GLOBAL",
+    title2: "MARKETS",
     description:
-      "Invest in sustainable projects aligned with your values.",
-    icon: <CulturalIcon />,
+      "Access crypto, forex, and stock markets from one modern platform.",
+    icon: <GlobalMarketsIcon />,
   },
   {
-    title: "TREASURY-GRADE",
-    title2: "SECURITY",
+    title: "SMART TRADING",
+    title2: "TOOLS",
     description:
-      "Blockchain vaulting, biometrics, and real-time risk AI.",
+      "Powerful tools designed to help you analyze markets and trade with confidence.",
+    icon: <TradingToolsIcon />,
+  },
+  {
+    title: "MARKET",
+    title2: "INSIGHTS",
+    description:
+      "Stay informed with the market data and insights you need to spot opportunities.",
+    icon: <MarketIcon />,
+  },
+  {
+    title: "SECURE",
+    title2: "TRADING",
+    description:
+      "Built with security and reliability at the core of your trading experience.",
     icon: <SecurityIcon />,
   },
   {
-    title: "GLOBAL",
-    title2: "ACCESS",
+    title: "FAST",
+    title2: "EXECUTION",
     description:
-      "Multi-currency, multi-lingual, multi-platform.",
-    icon: <GlobalIcon />,
+      "Move from market analysis to action with a streamlined trading experience.",
+    icon: <ExecutionIcon />,
   },
 ];
 
@@ -234,13 +252,13 @@ function CapabilityCard({
       {/* Card atmospheric glow */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -right-16 -top-16 h-32 w-32 rounded-full bg-gold/[0.07] blur-3xl transition-all duration-700 group-hover:bg-gold/[0.14]"
+        className="pointer-events-none absolute -right-16 -top-16 h-32 w-32 rounded-full bg-emerald-500/[0.07] blur-3xl transition-all duration-700 group-hover:bg-emerald-500/[0.14]"
       />
 
-      {/* Gold accent line */}
+      {/* Emerald accent line */}
       <div
         aria-hidden="true"
-        className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-gold/0 to-transparent transition-all duration-700 group-hover:via-gold/70"
+        className="absolute left-0 right-0 top-0 h-px bg-gradient-to-r from-transparent via-emerald-500/0 to-transparent transition-all duration-700 group-hover:via-emerald-500/70"
       />
 
       {/* Inner glass highlight */}
@@ -251,7 +269,7 @@ function CapabilityCard({
 
       <div className="relative flex min-h-[205px] flex-col">
         {/* Icon frame */}
-        <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl border border-gold/20 bg-gradient-to-br from-gold/[0.12] via-black/20 to-transparent shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_8px_30px_rgba(0,0,0,0.25)] transition-all duration-500 group-hover:border-gold/45 group-hover:bg-gold/[0.10] group-hover:shadow-[0_0_30px_rgba(212,175,55,0.10)]">
+        <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-xl border border-emerald-500/20 bg-gradient-to-br from-emerald-500/[0.12] via-black/20 to-transparent shadow-[inset_0_1px_0_rgba(255,255,255,0.06),0_8px_30px_rgba(0,0,0,0.25)] transition-all duration-500 group-hover:border-emerald-500/45 group-hover:bg-emerald-500/[0.10] group-hover:shadow-[0_0_30px_rgba(16,185,129,0.10)]">
           {item.icon}
         </div>
 
@@ -259,7 +277,7 @@ function CapabilityCard({
         <h3 className="text-[11px] font-bold leading-4 tracking-[0.12em] text-zinc-200 transition-colors duration-300 group-hover:!text-[#FFFFFF]">
           {item.title}
           <br />
-          <span className="text-gold/80">{item.title2}</span>
+          <span className="text-emerald-400/80">{item.title2}</span>
         </h3>
 
         {/* Description */}
@@ -269,9 +287,9 @@ function CapabilityCard({
 
         {/* Bottom detail */}
         <div className="mt-auto flex items-center gap-2 pt-6">
-          <span className="h-px w-6 bg-gold/40 transition-all duration-500 group-hover:w-10 group-hover:bg-gold/70" />
-          <span className="text-[8px] uppercase tracking-[0.2em] !text-[#FFFFFF] transition-colors duration-300 group-hover:text-gold/50">
-            THÉSOROS
+          <span className="h-px w-6 bg-emerald-500/40 transition-all duration-500 group-hover:w-10 group-hover:bg-emerald-500/70" />
+          <span className="text-[8px] uppercase tracking-[0.2em] !text-[#FFFFFF] transition-colors duration-300 group-hover:text-emerald-400/50">
+            EDGE PORTFOLIO
           </span>
         </div>
       </div>
@@ -450,10 +468,10 @@ function MobileCapabilitiesCarousel() {
   /*
    * Two identical sets create the infinite loop:
    *
-   * AI → HERITAGE → CULTURAL → SECURITY → GLOBAL
-   * AI → HERITAGE → CULTURAL → SECURITY → GLOBAL
+   * GLOBAL → TOOLS → INSIGHTS → SECURITY → EXECUTION
+   * GLOBAL → TOOLS → INSIGHTS → SECURITY → EXECUTION
    *
-   * When the first set finishes, the second AI card is
+   * When the first set finishes, the second set is
    * already entering from the right.
    */
   const loopedCapabilities = [
@@ -511,7 +529,7 @@ function MobileCapabilitiesCarousel() {
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-[#050505] pt-20">
+    <section className="relative min-h-screen overflow-hidden bg-[#020604] pt-20">
       {/* =====================================================
           RESPONSIVE BACKGROUND
           ===================================================== */}
@@ -535,9 +553,6 @@ export default function Hero() {
 
         {/* ---------------------------------------------------
             MOBILE BACKGROUND
-
-            Moved further upward so the architecture/city
-            composition sits higher on the screen.
             --------------------------------------------------- */}
 
         <div
@@ -549,20 +564,34 @@ export default function Hero() {
           }}
         />
 
-        {/* Dark readability overlay */}
-        <div className="absolute inset-0 bg-black/65" />
+        {/* Deep black readability overlay */}
+        <div className="absolute inset-0 bg-black/70" />
 
-        {/* Warm gold atmosphere */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(212,175,55,0.10),transparent_32%),radial-gradient(circle_at_80%_75%,rgba(212,175,55,0.07),transparent_30%)]" />
+        {/* =================================================
+            REFINED BLACK + EMERALD ATMOSPHERE
+            ================================================= */}
 
-        {/* Center gold glow */}
-        <div className="absolute left-1/2 top-1/3 h-[500px] w-[500px] -translate-x-1/2 rounded-full bg-gold/[0.06] blur-3xl" />
+        <div
+          className="absolute inset-0 bg-[radial-gradient(ellipse_at_18%_22%,rgba(16,185,129,0.20)_0%,rgba(16,185,129,0.10)_22%,transparent_48%),radial-gradient(ellipse_at_78%_48%,rgba(5,150,105,0.14)_0%,rgba(5,150,105,0.06)_24%,transparent_52%),radial-gradient(ellipse_at_50%_105%,rgba(16,185,129,0.12)_0%,transparent_48%),linear-gradient(135deg,#010403_0%,#03100b_30%,#06150f_52%,#010504_78%,#000000_100%)]"
+        />
+
+        {/* Soft emerald light behind the hero content */}
+        <div className="absolute left-[20%] top-[25%] h-[420px] w-[620px] -translate-x-1/2 rounded-full bg-emerald-500/[0.06] blur-[140px]" />
+
+        {/* Secondary emerald atmospheric glow */}
+        <div className="absolute right-[8%] top-[42%] h-[360px] w-[420px] rounded-full bg-emerald-600/[0.055] blur-[130px]" />
+
+        {/* Emerald lower horizon glow */}
+        <div className="absolute -bottom-48 left-1/2 h-[560px] w-[900px] -translate-x-1/2 rounded-full bg-emerald-500/[0.045] blur-[150px]" />
 
         {/* Subtle grid */}
         <div className="absolute inset-0 opacity-[0.035] [background-image:linear-gradient(rgba(255,255,255,0.5)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.5)_1px,transparent_1px)] [background-size:60px_60px]" />
 
-        {/* Vignette */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle,transparent_25%,rgba(0,0,0,0.48)_100%)]" />
+        {/* Refined vignette */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_18%,rgba(0,0,0,0.22)_58%,rgba(0,0,0,0.72)_100%)]" />
+
+        {/* Bottom fade for smoother transition into the page */}
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#020604] via-[#020604]/55 to-transparent" />
       </div>
 
       {/* =====================================================
@@ -572,20 +601,26 @@ export default function Hero() {
       <div className="relative z-10 mx-auto w-full max-w-7xl px-5 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
         <div className="max-w-2xl pt-5 sm:pt-8 lg:pt-14">
           {/* -------------------------------------------------
+              EYEBROW
+              ------------------------------------------------- */}
+
+          <div className="flex items-center gap-3">
+            <div className="h-px w-10 bg-emerald-500/70" />
+
+            <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-emerald-400 sm:text-xs">
+              Trade smarter. Move with the markets.
+            </p>
+          </div>
+
+          {/* -------------------------------------------------
               HEADING
               ------------------------------------------------- */}
 
-          <h1 className="font-serif text-[3.25rem] font-bold leading-[0.98] tracking-[-0.045em] !text-[#FFFFFF] sm:text-6xl lg:text-[5.5rem]">
-            Your{" "}
-            <span className="bg-gradient-to-r from-[#f4df9b] via-[#d4af37] to-[#b88920] bg-clip-text text-transparent">
-              Treasure.
-            </span>
-
-            <br />
-
-            Your{" "}
-            <span className="bg-gradient-to-r from-[#f4df9b] via-[#d4af37] to-[#b88920] bg-clip-text text-transparent">
-              Terms.
+          <h1 className="mt-5 font-serif text-[3.25rem] font-bold leading-[0.98] tracking-[-0.045em] sm:mt-6 sm:text-6xl lg:text-[5.5rem]">
+            <span className="bg-gradient-to-r from-emerald-200 via-emerald-400 to-green-500 bg-clip-text text-transparent">
+              Your edge
+              <br />
+              in global markets.
             </span>
           </h1>
 
@@ -594,14 +629,14 @@ export default function Hero() {
               ------------------------------------------------- */}
 
           <div className="mt-7 flex items-center gap-3 sm:mt-8">
-            <div className="h-px w-20 bg-gradient-to-r from-gold/80 to-gold/30 sm:w-32" />
+            <div className="h-px w-20 bg-gradient-to-r from-emerald-500/80 to-emerald-500/30 sm:w-32" />
 
             <span className="relative flex h-3 w-3 shrink-0 items-center justify-center">
-              <span className="absolute h-2 w-2 rotate-45 border border-gold/70" />
-              <span className="h-1 w-1 rotate-45 bg-gold" />
+              <span className="absolute h-2 w-2 rotate-45 border border-emerald-500/70" />
+              <span className="h-1 w-1 rotate-45 bg-emerald-500" />
             </span>
 
-            <div className="h-px w-20 bg-gradient-to-r from-gold/30 to-transparent sm:w-32" />
+            <div className="h-px w-20 bg-gradient-to-r from-emerald-500/30 to-transparent sm:w-32" />
           </div>
 
           {/* -------------------------------------------------
@@ -609,9 +644,9 @@ export default function Hero() {
               ------------------------------------------------- */}
 
           <p className="mt-5 max-w-xl text-sm leading-6 !text-[#FFFFFF] sm:mt-6 sm:text-lg sm:leading-8">
-            Thésoros is where ancient wealth principles meet
-            modern investing. Founded in Athens, grown globally,
-            we help protect and grow what matters most—your legacy.
+            Edge Portfolio gives you a modern environment to
+            access crypto, forex, and stock markets with powerful
+            tools built around your trading journey.
           </p>
 
           {/* -------------------------------------------------
@@ -619,18 +654,18 @@ export default function Hero() {
               ------------------------------------------------- */}
 
           <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row">
-          <Link
-  href="/signup"
-  className="inline-flex min-h-[52px] items-center justify-center rounded-md bg-[#d4af37] px-7 py-3.5 text-base font-bold !text-[#FFFFFF] shadow-[0_0_35px_rgba(212,175,55,0.20)] transition hover:bg-[#d4af37] hover:shadow-[0_0_40px_rgba(212,175,55,0.30)]"
->
-  Open Your Account
-</Link>
+            <Link
+              href="/signup"
+              className="inline-flex min-h-[52px] items-center justify-center rounded-md bg-emerald-500 px-7 py-3.5 text-base font-bold !text-black shadow-[0_0_35px_rgba(16,185,129,0.20)] transition hover:bg-emerald-400 hover:shadow-[0_0_40px_rgba(16,185,129,0.30)]"
+            >
+              Start Trading
+            </Link>
 
             <Link
-              href="/invest"
-              className="inline-flex min-h-[52px] items-center justify-center rounded-md border border-gold/35 bg-black/20 px-7 py-3.5 text-sm font-bold !text-[#FFFFFF] backdrop-blur-md transition hover:border-gold/60 hover:bg-gold/[0.06]"
+              href="/markets"
+              className="inline-flex min-h-[52px] items-center justify-center rounded-md border border-emerald-500/35 bg-black/20 px-7 py-3.5 text-sm font-bold !text-[#FFFFFF] backdrop-blur-md transition hover:border-emerald-500/60 hover:bg-emerald-500/[0.06]"
             >
-              Explore Portfolios
+              Explore Markets
             </Link>
           </div>
 
@@ -642,7 +677,7 @@ export default function Hero() {
             <svg
               viewBox="0 0 24 24"
               fill="none"
-              className="mt-0.5 h-4 w-4 shrink-0 text-gold sm:mt-0"
+              className="mt-0.5 h-4 w-4 shrink-0 text-emerald-400 sm:mt-0"
               aria-hidden="true"
             >
               <path
@@ -660,7 +695,7 @@ export default function Hero() {
             </svg>
 
             <span>
-              Bank-Grade Security. Global Compliance. Total Transparency.
+              Secure Trading. Global Markets. Built for Your Edge.
             </span>
           </div>
         </div>
@@ -670,8 +705,8 @@ export default function Hero() {
             =================================================== */}
 
         <div className="mx-auto mt-16 max-w-6xl sm:mt-20 lg:mt-28">
-          <div className="relative overflow-hidden rounded-2xl border border-gold/[0.16] bg-black/45 shadow-[0_25px_80px_rgba(0,0,0,0.55)] backdrop-blur-2xl">
-            {/* Outer gold glow */}
+          <div className="relative overflow-hidden rounded-2xl border border-emerald-500/[0.16] bg-black/45 shadow-[0_25px_80px_rgba(0,0,0,0.55)] backdrop-blur-2xl">
+            {/* Outer emerald glow */}
             <div
               aria-hidden="true"
               className="pointer-events-none absolute inset-0 rounded-2xl ring-1 ring-inset ring-white/[0.035]"
@@ -711,18 +746,16 @@ export default function Hero() {
               ------------------------------------------------ */}
 
           <div className="mt-4 flex items-center justify-center gap-2 md:hidden">
-            <span className="h-px w-8 bg-gold/30" />
+            <span className="h-px w-8 bg-emerald-500/30" />
 
             <span className="text-[9px] uppercase tracking-[0.18em] !text-[#FFFFFF]">
               Swipe to explore
             </span>
 
-            <span className="h-px w-8 bg-gold/30" />
+            <span className="h-px w-8 bg-emerald-500/30" />
           </div>
         </div>
       </div>
     </section>
   );
 }
-
-

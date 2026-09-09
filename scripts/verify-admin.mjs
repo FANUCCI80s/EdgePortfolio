@@ -1,88 +1,166 @@
+
 import "dotenv/config";
+
 import { PrismaClient } from "@prisma/client";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { Pool } from "pg";
+
 import bcrypt from "bcryptjs";
 
-const databaseUrl = process.env.DATABASE_URL;
+const databaseUrl =
+  process.env.DATABASE_URL;
 
 if (!databaseUrl) {
-  throw new Error("DATABASE_URL is missing.");
+  throw new Error(
+    "DATABASE_URL is missing."
+  );
 }
 
-const password = process.env.ADMIN_PASSWORD;
+const email =
+  process.env.ADMIN_EMAIL?.trim().toLowerCase() ||
+  "admin@edgeportfoliomarket.com";
+
+const password =
+  process.env.ADMIN_PASSWORD;
 
 if (!password) {
-  throw new Error("ADMIN_PASSWORD is missing.");
+  throw new Error(
+    "ADMIN_PASSWORD is missing."
+  );
 }
 
 const pool = new Pool({
   connectionString: databaseUrl,
 });
 
-const adapter = new PrismaPg(pool);
+const adapter =
+  new PrismaPg(pool);
 
-const prisma = new PrismaClient({
-  adapter,
-});
+const prisma =
+  new PrismaClient({
+    adapter,
+  });
 
 async function main() {
-  const email = "adminthesoros@gmail.com";
-
-  const user = await prisma.user.findUnique({
-    where: {
-      email,
-    },
-    select: {
-      id: true,
-      firstName: true,
-      lastName: true,
-      email: true,
-      passwordHash: true,
-      role: true,
-      status: true,
-      emailVerified: true,
-    },
-  });
+  const user =
+    await prisma.user.findUnique({
+      where: {
+        email,
+      },
+      select: {
+        id: true,
+        firstName: true,
+        lastName: true,
+        email: true,
+        passwordHash: true,
+        role: true,
+        status: true,
+        emailVerified: true,
+      },
+    });
 
   if (!user) {
     console.log("");
-    console.log("❌ Admin user was not found.");
+    console.log(
+      "❌ Admin user was not found."
+    );
+    console.log("");
+    console.log(
+      `Checked email: ${email}`
+    );
     console.log("");
     return;
   }
 
-  const passwordValid = await bcrypt.compare(
-    password,
-    user.passwordHash
-  );
+  const passwordValid =
+    await bcrypt.compare(
+      password,
+      user.passwordHash
+    );
 
   console.log("");
-  console.log("======================================");
-  console.log("       THÉSOROS ADMIN CHECK");
-  console.log("======================================");
+  console.log(
+    "======================================"
+  );
+  console.log(
+    "       Edge Portfolio ADMIN CHECK"
+  );
+  console.log(
+    "======================================"
+  );
   console.log("");
 
   console.log(
     `Name:       ${user.firstName} ${user.lastName}`
   );
-  console.log(`Email:      ${user.email}`);
-  console.log(`Role:       ${user.role}`);
-  console.log(`Status:     ${user.status}`);
+
   console.log(
-    `Verified:   ${user.emailVerified ? "YES" : "NO"}`
+    `Email:      ${user.email}`
   );
+
   console.log(
-    `Password:   ${passwordValid ? "MATCH" : "DOES NOT MATCH"}`
+    `Role:       ${user.role}`
+  );
+
+  console.log(
+    `Status:     ${user.status}`
+  );
+
+  console.log(
+    `Verified:   ${
+      user.emailVerified
+        ? "YES"
+        : "NO"
+    }`
+  );
+
+  console.log(
+    `Password:   ${
+      passwordValid
+        ? "MATCH"
+        : "DOES NOT MATCH"
+    }`
   );
 
   console.log("");
 
-  if (passwordValid) {
+  if (
+    user.role !== "ADMIN"
+  ) {
     console.log(
-      "✅ Password verification is working."
+      "❌ Account role is not ADMIN."
     );
-  } else {
+  }
+
+  if (
+    user.status !== "ACTIVE"
+  ) {
+    console.log(
+      "❌ Account status is not ACTIVE."
+    );
+  }
+
+  if (
+    !user.emailVerified
+  ) {
+    console.log(
+      "❌ Admin email is not verified."
+    );
+  }
+
+  if (
+    passwordValid &&
+    user.role === "ADMIN" &&
+    user.status === "ACTIVE" &&
+    user.emailVerified
+  ) {
+    console.log(
+      "✅ Admin account verification passed."
+    );
+    console.log(
+      "✅ Email, password, role, status, and verification are correct."
+    );
+  } else if (!passwordValid) {
     console.log(
       "❌ Password does not match the stored hash."
     );
@@ -94,12 +172,16 @@ async function main() {
 main()
   .catch((error) => {
     console.error("");
-    console.error("❌ Admin check failed:");
+    console.error(
+      "❌ Admin check failed:"
+    );
     console.error(error);
     console.error("");
+
     process.exitCode = 1;
   })
   .finally(async () => {
     await prisma.$disconnect();
     await pool.end();
   });
+

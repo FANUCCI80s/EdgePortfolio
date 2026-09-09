@@ -319,7 +319,7 @@ export default function AdminDepositSettingsPage() {
       <main className="min-h-screen bg-[#050505] !text-[#FFFFFF]">
         <div className="flex min-h-screen items-center justify-center">
           <div className="text-center">
-            <div className="mx-auto h-10 w-10 animate-spin rounded-full border-2 border-gold/20 border-t-gold" />
+            <div className="mx-auto h-10 w-10 animate-spin rounded-full border-2 border-emerald-500/20 border-t-gold" />
 
             <p className="mt-4 text-sm !text-[#FFFFFF]">
               Loading deposit settings...
@@ -341,14 +341,14 @@ export default function AdminDepositSettingsPage() {
               className="flex items-center gap-3"
             >
               <img
-                src="/branding/thesoros-logo.png"
-                alt="THÉSOROS"
+                src="/branding/edge-portfolio-logo.png"
+                alt="Edge Portfolio"
                 className="h-9 w-auto object-contain"
               />
 
               <div>
                 <p className="font-bold">
-                  Thesoros
+                  EDGE PORTFOLIO
                 </p>
 
                 <p className="text-xs !text-[#FFFFFF]">
@@ -382,7 +382,7 @@ export default function AdminDepositSettingsPage() {
 
             <Link
               href="/admin/deposit-settings"
-              className="flex items-center rounded-xl bg-gold/10 px-4 py-3 text-sm font-bold text-gold"
+              className="flex items-center rounded-xl bg-emerald-500/10 px-4 py-3 text-sm font-bold text-emerald-400"
             >
               Deposit settings
             </Link>
@@ -407,7 +407,7 @@ export default function AdminDepositSettingsPage() {
         <section className="min-w-0 flex-1">
           <header className="border-b border-white/10 bg-[#050505] px-5 py-7 sm:px-8">
             <div className="mx-auto max-w-6xl">
-              <p className="text-xs uppercase tracking-wider text-gold">
+              <p className="text-xs uppercase tracking-wider text-emerald-400">
                 Administration
               </p>
 
@@ -433,7 +433,7 @@ export default function AdminDepositSettingsPage() {
             </div>
 
             {message && (
-              <div className="mb-6 rounded-2xl border border-gold/20 bg-gold/5 p-4 text-sm text-gold-light">
+              <div className="mb-6 rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-4 text-sm text-emerald-400-light">
                 {message}
               </div>
             )}
@@ -448,7 +448,7 @@ export default function AdminDepositSettingsPage() {
             <section className="mb-6 rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
               <div className="flex flex-col justify-between gap-4 sm:flex-row">
                 <div>
-                  <p className="text-xs uppercase tracking-wider text-gold">
+                  <p className="text-xs uppercase tracking-wider text-emerald-400">
                     Deposit method 01
                   </p>
 
@@ -625,7 +625,7 @@ export default function AdminDepositSettingsPage() {
                       ...bank,
                     })
                   }
-                  className="rounded-xl bg-gold px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold disabled:opacity-50"
+                  className="rounded-xl bg-emerald-500 px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500 disabled:opacity-50"
                 >
                   {saving
                     ? "Saving..."
@@ -654,7 +654,7 @@ export default function AdminDepositSettingsPage() {
             <section className="mb-6 rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
               <div className="flex flex-col justify-between gap-4 sm:flex-row">
                 <div>
-                  <p className="text-xs uppercase tracking-wider text-gold">
+                  <p className="text-xs uppercase tracking-wider text-emerald-400">
                     Deposit method 02
                   </p>
 
@@ -736,7 +736,7 @@ export default function AdminDepositSettingsPage() {
                       ...card,
                     })
                   }
-                  className="rounded-xl bg-gold px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold disabled:opacity-50"
+                  className="rounded-xl bg-emerald-500 px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500 disabled:opacity-50"
                 >
                   {saving
                     ? "Saving..."
@@ -764,7 +764,7 @@ export default function AdminDepositSettingsPage() {
             {/* CRYPTO */}
             <section className="mb-6 rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
               <div>
-                <p className="text-xs uppercase tracking-wider text-gold">
+                <p className="text-xs uppercase tracking-wider text-emerald-400">
                   Deposit method 03
                 </p>
 
@@ -904,7 +904,7 @@ export default function AdminDepositSettingsPage() {
                       ...crypto,
                     })
                   }
-                  className="rounded-xl bg-gold px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold disabled:opacity-50"
+                  className="rounded-xl bg-emerald-500 px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500 disabled:opacity-50"
                 >
                   {saving
                     ? "Saving..."
@@ -932,7 +932,7 @@ export default function AdminDepositSettingsPage() {
             {/* PAYMENT METHODS */}
             <section className="mb-8 rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
               <div>
-                <p className="text-xs uppercase tracking-wider text-gold">
+                <p className="text-xs uppercase tracking-wider text-emerald-400">
                   Deposit methods 04–07
                 </p>
 
@@ -1069,7 +1069,7 @@ export default function AdminDepositSettingsPage() {
                                   current.isEnabled,
                               })
                             }
-                            className="rounded-xl bg-gold px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold disabled:opacity-50"
+                            className="rounded-xl bg-emerald-500 px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500 disabled:opacity-50"
                           >
                             {saving
                               ? "Saving..."
@@ -1102,9 +1102,9 @@ export default function AdminDepositSettingsPage() {
             </section>
 
             {/* STATUS */}
-            <section className="rounded-3xl border border-gold/10 bg-gold/5 p-6">
+            <section className="rounded-3xl border border-emerald-500/10 bg-emerald-500/5 p-6">
               <div>
-                <h3 className="font-bold text-gold-light">
+                <h3 className="font-bold text-emerald-400-light">
                   Deposit configuration
                 </h3>
 
@@ -1138,7 +1138,7 @@ export default function AdminDepositSettingsPage() {
         }
 
         .admin-input:focus {
-          border-color: rgba(212, 175, 55, 0.5);
+          border-color: rgba(16, 185, 129, 0.5);
         }
       `}</style>
     </main>

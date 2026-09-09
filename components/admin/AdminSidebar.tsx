@@ -118,10 +118,10 @@ export default function AdminSidebar() {
             href="/admin"
             className="flex items-center gap-3"
           >
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-gold/30 bg-gold/10">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-emerald-500/30 bg-emerald-500/10">
               <Image
-                src="/branding/thesoros-logo.png"
-                alt="THÉSOROS"
+                src="/branding/edge-portfolio-logo.png"
+                alt="Edge Portfolio"
                 width={40}
                 height={40}
                 className="h-8 w-auto object-contain"
@@ -130,7 +130,7 @@ export default function AdminSidebar() {
 
             <div>
               <p className="font-bold tracking-tight !text-[#FFFFFF]">
-                Thesoros
+                EDGE PORTFOLIO
               </p>
 
               <p className="mt-0.5 text-xs !text-[#FFFFFF]">
@@ -157,14 +157,14 @@ export default function AdminSidebar() {
                   href={item.href}
                   className={`group flex items-center gap-3 rounded-xl px-4 py-3 text-sm transition-all ${
                     active
-                      ? "bg-gold/10 font-medium text-gold"
+                      ? "bg-emerald-500/10 font-medium text-emerald-400"
                       : "text-zinc-400 hover:bg-white/[0.04] hover:text-white"
                   }`}
                 >
                   <span
                     className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-lg transition ${
                       active
-                        ? "bg-gold/10 text-gold"
+                        ? "bg-emerald-500/10 text-emerald-400"
                         : "text-zinc-500 group-hover:text-zinc-300"
                     }`}
                   >
@@ -174,7 +174,7 @@ export default function AdminSidebar() {
                   <span>{item.label}</span>
 
                   {active && (
-                    <span className="ml-auto h-1.5 w-1.5 rounded-full bg-gold" />
+                    <span className="ml-auto h-1.5 w-1.5 rounded-full bg-emerald-500" />
                   )}
                 </Link>
               );
@@ -205,7 +205,7 @@ export default function AdminSidebar() {
         <div className="border-t border-white/10 p-4">
           <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4">
             <div className="flex items-center gap-3">
-              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gold/10 text-sm font-bold text-gold">
+              <div className="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-500/10 text-sm font-bold text-emerald-400">
                 A
               </div>
 
@@ -238,8 +238,8 @@ export default function AdminSidebar() {
             className="flex items-center gap-3"
           >
             <Image
-              src="/branding/thesoros-logo.png"
-              alt="THÉSOROS"
+              src="/branding/edge-portfolio-logo.png"
+              alt="Edge Portfolio"
               width={40}
               height={40}
               className="h-9 w-auto object-contain"
@@ -247,7 +247,7 @@ export default function AdminSidebar() {
 
             <div>
               <p className="text-sm font-bold !text-[#FFFFFF]">
-                Thesoros
+                EDGE PORTFOLIO
               </p>
 
               <p className="text-[10px] !text-[#FFFFFF]">
@@ -256,7 +256,7 @@ export default function AdminSidebar() {
             </div>
           </Link>
 
-          <span className="rounded-full border border-gold/20 bg-gold/10 px-3 py-1 text-[10px] font-bold text-gold">
+          <span className="rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-[10px] font-bold text-emerald-400">
             ADMIN
           </span>
         </div>
@@ -274,7 +274,7 @@ export default function AdminSidebar() {
                   href={item.href}
                   className={`flex shrink-0 items-center gap-2 rounded-lg px-3 py-2 text-xs transition ${
                     active
-                      ? "bg-gold/10 font-medium text-gold"
+                      ? "bg-emerald-500/10 font-medium text-emerald-400"
                       : "text-zinc-500 hover:bg-white/[0.04] hover:text-white"
                   }`}
                 >

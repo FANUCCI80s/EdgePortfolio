@@ -1,4 +1,4 @@
-﻿
+
 import "dotenv/config";
 
 import { domainToASCII } from "node:url";
@@ -11,7 +11,7 @@ import bcrypt from "bcryptjs";
 
 const ADMIN_EMAIL =
   process.env.ADMIN_EMAIL?.trim() ||
-  "adminthesoros@gmail.com";
+  "admin@edgeportfoliomarket.com";
 
 const databaseUrl =
   process.env.DATABASE_URL;
@@ -19,7 +19,7 @@ const databaseUrl =
 if (!databaseUrl) {
   console.error("");
   console.error(
-    "❌ DATABASE_URL is missing from your .env file."
+    "? DATABASE_URL is missing from your .env file."
   );
   console.error("");
 
@@ -101,7 +101,7 @@ async function main() {
     "======================================"
   );
   console.log(
-    "       THÉSOROS ADMIN SETUP"
+    "       Edge Portfolio ADMIN SETUP"
   );
   console.log(
     "======================================"
@@ -192,7 +192,7 @@ async function main() {
       "======================================"
     );
     console.log(
-      "       THÉSOROS ADMIN READY"
+      "       Edge Portfolio ADMIN READY"
     );
     console.log(
       "======================================"
@@ -248,7 +248,7 @@ async function main() {
   const newUser =
     await prisma.user.create({
       data: {
-        firstName: "Thesoros",
+        firstName: "EDGE PORTFOLIO",
         lastName: "Admin",
         email: canonicalEmail,
         passwordHash,
@@ -286,7 +286,7 @@ async function main() {
     "======================================"
   );
   console.log(
-    "       THÉSOROS ADMIN CREATED"
+    "       Edge Portfolio ADMIN CREATED"
   );
   console.log(
     "======================================"
@@ -328,7 +328,7 @@ main()
   .catch((error) => {
     console.error("");
     console.error(
-      "❌ Failed to create/update THÉSOROS admin account:"
+      "? Failed to create/update Edge Portfolio admin account:"
     );
     console.error("");
     console.error(error);

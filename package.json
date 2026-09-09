@@ -1,5 +1,5 @@
 {
-    "name": "thesoros",
+    "name": "EDGE PORTFOLIO",
     "version": "0.1.0",
     "private": true,
     "scripts": {
@@ -41,5 +41,5 @@
         "tailwindcss": "^4",
         "typescript": "^5"
     },
-    "description": "Thesoros trading and investment platform"
+    "description": "EDGE PORTFOLIO trading and investment platform"
 }

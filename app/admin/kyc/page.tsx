@@ -19,13 +19,13 @@ function formatDate(date: Date | null) {
 function getStatusClass(status: string) {
   switch (status) {
     case "APPROVED":
-      return "bg-gold/10 text-gold";
+      return "bg-emerald-500/10 text-emerald-400";
 
     case "DECLINED":
       return "bg-red-400/10 text-red-400";
 
     case "PENDING":
-      return "bg-yellow-400/10 text-yellow-400";
+      return "bg-blue-400/10 text-blue-400";
 
     case "NOT_STARTED":
       return "bg-white/10 text-zinc-500";
@@ -68,13 +68,13 @@ export default async function AdminKycPage() {
         <div className="mb-8">
           <Link
             href="/admin"
-            className="inline-flex items-center gap-2 text-sm !text-[#FFFFFF] transition hover:text-gold"
+            className="inline-flex items-center gap-2 text-sm !text-[#FFFFFF] transition hover:text-emerald-400"
           >
             <span aria-hidden="true">&larr;</span>
             Admin Dashboard
           </Link>
 
-          <p className="mt-6 text-sm font-bold text-gold">
+          <p className="mt-6 text-sm font-bold text-emerald-400">
             Identity verification
           </p>
 
@@ -104,12 +104,12 @@ export default async function AdminKycPage() {
             </p>
           </div>
 
-          <div className="rounded-3xl border border-yellow-400/10 bg-yellow-400/[0.03] p-6">
+          <div className="rounded-3xl border border-blue-400/10 bg-blue-400/[0.03] p-6">
             <p className="text-sm !text-[#FFFFFF]">
               Pending review
             </p>
 
-            <p className="mt-3 text-3xl font-bold text-yellow-400">
+            <p className="mt-3 text-3xl font-bold text-blue-400">
               {pendingKyc}
             </p>
 
@@ -118,12 +118,12 @@ export default async function AdminKycPage() {
             </p>
           </div>
 
-          <div className="rounded-3xl border border-gold/20 bg-gold/[0.05] p-6">
+          <div className="rounded-3xl border border-emerald-500/20 bg-emerald-500/[0.05] p-6">
             <p className="text-sm !text-[#FFFFFF]">
               Approved
             </p>
 
-            <p className="mt-3 text-3xl font-bold text-gold">
+            <p className="mt-3 text-3xl font-bold text-emerald-400">
               {approvedKyc}
             </p>
 
@@ -224,7 +224,7 @@ export default async function AdminKycPage() {
                         {/* User */}
                         <td className="px-6 py-5">
                           <div className="flex items-center gap-3">
-                            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-gold/20 bg-gold/10 font-bold text-gold">
+                            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-emerald-500/20 bg-emerald-500/10 font-bold text-emerald-400">
                               {(
                                 kyc.user.firstName ||
                                 kyc.user.email ||
@@ -277,7 +277,7 @@ export default async function AdminKycPage() {
                         <td className="px-6 py-5 text-right">
                           <Link
                             href={`/admin/kyc/${kyc.id}`}
-                            className="inline-flex rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2 text-sm !text-[#FFFFFF] transition hover:border-gold/30 hover:bg-gold/10 hover:text-gold"
+                            className="inline-flex rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2 text-sm !text-[#FFFFFF] transition hover:border-emerald-500/30 hover:bg-emerald-500/10 hover:text-emerald-400"
                           >
                             Review
                           </Link>
@@ -297,7 +297,7 @@ export default async function AdminKycPage() {
                   >
                     <div className="flex items-start justify-between gap-4">
                       <div className="flex min-w-0 items-center gap-3">
-                        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-gold/20 bg-gold/10 font-bold text-gold">
+                        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-emerald-500/20 bg-emerald-500/10 font-bold text-emerald-400">
                           {(
                             kyc.user.firstName ||
                             kyc.user.email ||
@@ -377,7 +377,7 @@ export default async function AdminKycPage() {
                     <div className="mt-4 flex justify-end">
                       <Link
                         href={`/admin/kyc/${kyc.id}`}
-                        className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2 text-sm !text-[#FFFFFF] transition hover:border-gold/30 hover:text-gold"
+                        className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2 text-sm !text-[#FFFFFF] transition hover:border-emerald-500/30 hover:text-emerald-400"
                       >
                         Review KYC
                       </Link>
@@ -390,17 +390,17 @@ export default async function AdminKycPage() {
         </section>
 
         {/* Important notice */}
-        <section className="mt-8 rounded-3xl border border-yellow-400/10 bg-yellow-400/[0.03] p-6">
+        <section className="mt-8 rounded-3xl border border-blue-400/10 bg-blue-400/[0.03] p-6">
           <div className="flex gap-4">
             <div
-              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-yellow-400/20 bg-yellow-400/10 text-sm font-bold text-yellow-400"
+              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-blue-400/20 bg-blue-400/10 text-sm font-bold text-blue-400"
               aria-hidden="true"
             >
               !
             </div>
 
             <div>
-              <h3 className="font-bold text-yellow-300">
+              <h3 className="font-bold text-blue-300">
                 KYC review
               </h3>
 
@@ -414,7 +414,7 @@ export default async function AdminKycPage() {
         </section>
 
         <p className="mt-8 text-center text-xs !text-[#FFFFFF]">
-          Thesoros <span aria-hidden="true">•</span> Admin{" "}
+          EDGE PORTFOLIO <span aria-hidden="true">•</span> Admin{" "}
           <span aria-hidden="true">•</span> KYC Management
         </p>
       </div>

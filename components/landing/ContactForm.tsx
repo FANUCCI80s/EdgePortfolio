@@ -101,15 +101,15 @@ export default function ContactForm() {
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#050505]/90 via-transparent to-[#050505]/95" />
 
       {/* Gold ambient glows */}
-      <div className="pointer-events-none absolute -left-32 top-20 h-80 w-80 rounded-full bg-gold/10 blur-[120px]" />
+      <div className="pointer-events-none absolute -left-32 top-20 h-80 w-80 rounded-full bg-emerald-500/10 blur-[120px]" />
 
-      <div className="pointer-events-none absolute -right-32 bottom-0 h-80 w-80 rounded-full bg-gold/5 blur-[120px]" />
+      <div className="pointer-events-none absolute -right-32 bottom-0 h-80 w-80 rounded-full bg-emerald-500/5 blur-[120px]" />
 
       <div className="relative mx-auto max-w-6xl px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
           {/* Contact Information */}
           <div>
-            <span className="inline-flex rounded-full border border-gold/20 bg-gold/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-gold">
+            <span className="inline-flex rounded-full border border-emerald-500/20 bg-emerald-500/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-emerald-400">
               Contact
             </span>
 
@@ -118,7 +118,7 @@ export default function ContactForm() {
             </h2>
 
             <p className="mt-5 max-w-xl text-base leading-7 !text-[#FFFFFF]">
-              Send a message to the THÉSOROS team. Tell us what you
+              Send a message to the Edge Portfolio team. Tell us what you
               need help with and our team will review your request.
             </p>
 
@@ -127,10 +127,10 @@ export default function ContactForm() {
               <button
                 type="button"
                 onClick={() => scrollToSection("faq")}
-                className="group w-full rounded-2xl border border-white/10 bg-black/30 p-5 text-left backdrop-blur-sm transition duration-300 hover:border-gold/40 hover:bg-gold/[0.04]"
+                className="group w-full rounded-2xl border border-white/10 bg-black/30 p-5 text-left backdrop-blur-sm transition duration-300 hover:border-emerald-500/40 hover:bg-emerald-500/[0.04]"
               >
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-gold/20 bg-gold/10 text-gold transition duration-300 group-hover:scale-105 group-hover:bg-gold/15">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-emerald-500/20 bg-emerald-500/10 text-emerald-400 transition duration-300 group-hover:scale-105 group-hover:bg-emerald-500/15">
                     <MessageCircle
                       className="h-5 w-5"
                       strokeWidth={1.8}
@@ -144,7 +144,7 @@ export default function ContactForm() {
                       </h3>
 
                       <ArrowUpRight
-                        className="h-5 w-5 shrink-0 text-zinc-500 transition duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-gold"
+                        className="h-5 w-5 shrink-0 text-zinc-500 transition duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-emerald-400"
                         strokeWidth={1.8}
                       />
                     </div>
@@ -161,10 +161,10 @@ export default function ContactForm() {
               <button
                 type="button"
                 onClick={() => scrollToSection("send-message")}
-                className="group w-full rounded-2xl border border-white/10 bg-black/30 p-5 text-left backdrop-blur-sm transition duration-300 hover:border-gold/40 hover:bg-gold/[0.04]"
+                className="group w-full rounded-2xl border border-white/10 bg-black/30 p-5 text-left backdrop-blur-sm transition duration-300 hover:border-emerald-500/40 hover:bg-emerald-500/[0.04]"
               >
                 <div className="flex items-start gap-4">
-                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-gold/20 bg-gold/10 text-gold transition duration-300 group-hover:scale-105 group-hover:bg-gold/15">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-emerald-500/20 bg-emerald-500/10 text-emerald-400 transition duration-300 group-hover:scale-105 group-hover:bg-emerald-500/15">
                     <ShieldCheck
                       className="h-5 w-5"
                       strokeWidth={1.8}
@@ -178,7 +178,7 @@ export default function ContactForm() {
                       </h3>
 
                       <ArrowUpRight
-                        className="h-5 w-5 shrink-0 text-zinc-500 transition duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-gold"
+                        className="h-5 w-5 shrink-0 text-zinc-500 transition duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-emerald-400"
                         strokeWidth={1.8}
                       />
                     </div>
@@ -210,13 +210,13 @@ export default function ContactForm() {
             </div>
 
             {status === "success" && (
-              <div className="mb-6 rounded-2xl border border-gold/20 bg-gold/10 p-4">
-                <p className="text-sm font-bold text-gold">
+              <div className="mb-6 rounded-2xl border border-emerald-500/20 bg-emerald-500/10 p-4">
+                <p className="text-sm font-bold text-emerald-400">
                   Message submitted successfully.
                 </p>
 
-                <p className="mt-1 text-sm text-gold/80">
-                  Thank you for contacting THÉSOROS.
+                <p className="mt-1 text-sm text-emerald-400/80">
+                  Thank you for contacting Edge Portfolio.
                 </p>
               </div>
             )}
@@ -251,7 +251,7 @@ export default function ContactForm() {
                     }
                     placeholder="Your name"
                     required
-                    className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3.5 text-sm !text-[#FFFFFF] outline-none transition placeholder:!text-[#FFFFFF]/50 focus:border-gold/50 focus:ring-1 focus:ring-gold/20"
+                    className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3.5 text-sm !text-[#FFFFFF] outline-none transition placeholder:!text-[#FFFFFF]/50 focus:border-emerald-500/50 focus:ring-1 focus:ring-gold/20"
                   />
                 </div>
 
@@ -272,7 +272,7 @@ export default function ContactForm() {
                     }
                     placeholder="you@example.com"
                     required
-                    className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3.5 text-sm !text-[#FFFFFF] outline-none transition placeholder:!text-[#FFFFFF]/50 focus:border-gold/50 focus:ring-1 focus:ring-gold/20"
+                    className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3.5 text-sm !text-[#FFFFFF] outline-none transition placeholder:!text-[#FFFFFF]/50 focus:border-emerald-500/50 focus:ring-1 focus:ring-gold/20"
                   />
                 </div>
               </div>
@@ -294,7 +294,7 @@ export default function ContactForm() {
                   }
                   placeholder="How can we help?"
                   required
-                  className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3.5 text-sm !text-[#FFFFFF] outline-none transition placeholder:!text-[#FFFFFF]/50 focus:border-gold/50 focus:ring-1 focus:ring-gold/20"
+                  className="w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3.5 text-sm !text-[#FFFFFF] outline-none transition placeholder:!text-[#FFFFFF]/50 focus:border-emerald-500/50 focus:ring-1 focus:ring-gold/20"
                 />
               </div>
 
@@ -315,14 +315,14 @@ export default function ContactForm() {
                   placeholder="Tell us how we can help..."
                   required
                   rows={6}
-                  className="w-full resize-none rounded-xl border border-white/10 bg-black/40 px-4 py-3.5 text-sm !text-[#FFFFFF] outline-none transition placeholder:!text-[#FFFFFF]/50 focus:border-gold/50 focus:ring-1 focus:ring-gold/20"
+                  className="w-full resize-none rounded-xl border border-white/10 bg-black/40 px-4 py-3.5 text-sm !text-[#FFFFFF] outline-none transition placeholder:!text-[#FFFFFF]/50 focus:border-emerald-500/50 focus:ring-1 focus:ring-gold/20"
                 />
               </div>
 
               <button
                 type="submit"
                 disabled={loading}
-                className="inline-flex w-full items-center justify-center rounded-xl bg-gold px-5 py-3.5 text-sm font-bold !text-[#FFFFFF] transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60"
+                className="inline-flex w-full items-center justify-center rounded-xl bg-emerald-500 px-5 py-3.5 text-sm font-bold !text-[#FFFFFF] transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60"
               >
                 {loading ? "Sending..." : "Send message"}
               </button>

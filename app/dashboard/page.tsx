@@ -177,7 +177,7 @@ export default async function DashboardPage() {
           <div className="mx-auto max-w-7xl px-5 py-8 sm:px-8 lg:px-10">
             {/* Welcome */}
             <div className="mb-8">
-              <p className="text-sm font-bold text-gold">
+              <p className="text-sm font-bold text-emerald-400">
                 Account overview
               </p>
 
@@ -194,7 +194,7 @@ export default async function DashboardPage() {
             {/* Balance cards */}
             <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
               {/* Available Balance */}
-              <div className="rounded-3xl border border-gold/20 bg-gold/[0.06] p-6">
+              <div className="rounded-3xl border border-emerald-500/20 bg-emerald-500/[0.06] p-6">
                 <p className="text-sm !text-[#FFFFFF]">
                   Available balance
                 </p>
@@ -290,9 +290,9 @@ export default async function DashboardPage() {
               <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
                 <Link
                   href="/deposit"
-                  className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition hover:border-gold/30 hover:bg-gold/[0.05]"
+                  className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition hover:border-emerald-500/30 hover:bg-emerald-500/[0.05]"
                 >
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gold/10 text-gold">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400">
                     ↓
                   </div>
 
@@ -304,14 +304,14 @@ export default async function DashboardPage() {
                     Add funds to your trading account.
                   </p>
 
-                  <span className="mt-4 inline-block text-sm text-gold">
+                  <span className="mt-4 inline-block text-sm text-emerald-400">
                     Make a deposit →
                   </span>
                 </Link>
 
                 <Link
                   href="/withdraw"
-                  className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition hover:border-gold/30 hover:bg-gold/[0.05]"
+                  className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition hover:border-emerald-500/30 hover:bg-emerald-500/[0.05]"
                 >
                   <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/[0.05] !text-[#FFFFFF]">
                     ↑
@@ -325,7 +325,7 @@ export default async function DashboardPage() {
                     Request a withdrawal from your account.
                   </p>
 
-                  <span className="mt-4 inline-block text-sm text-gold">
+                  <span className="mt-4 inline-block text-sm text-emerald-400">
                     Request withdrawal →
                   </span>
                 </Link>
@@ -333,7 +333,7 @@ export default async function DashboardPage() {
                 {/* Market Watchlist */}
                 <Link
                   href="/market-watchlist"
-                  className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition hover:border-gold/30 hover:bg-gold/[0.05]"
+                  className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition hover:border-emerald-500/30 hover:bg-emerald-500/[0.05]"
                 >
                   <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/[0.05] !text-[#FFFFFF]">
                     ↗
@@ -348,14 +348,14 @@ export default async function DashboardPage() {
                     markets.
                   </p>
 
-                  <span className="mt-4 inline-block text-sm text-gold">
+                  <span className="mt-4 inline-block text-sm text-emerald-400">
                     View markets →
                   </span>
                 </Link>
 
                 <Link
                   href="/transactions"
-                  className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition hover:border-gold/30 hover:bg-gold/[0.05]"
+                  className="group rounded-2xl border border-white/10 bg-white/[0.03] p-5 transition hover:border-emerald-500/30 hover:bg-emerald-500/[0.05]"
                 >
                   <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/[0.05] !text-[#FFFFFF]">
                     ↔
@@ -370,7 +370,7 @@ export default async function DashboardPage() {
                     and trades.
                   </p>
 
-                  <span className="mt-4 inline-block text-sm text-gold">
+                  <span className="mt-4 inline-block text-sm text-emerald-400">
                     View transactions →
                   </span>
                 </Link>
@@ -393,7 +393,7 @@ export default async function DashboardPage() {
 
                   <Link
                     href="/market-watchlist"
-                    className="text-sm text-gold hover:text-gold-light"
+                    className="text-sm text-emerald-400 hover:text-emerald-400-light"
                   >
                     Markets →
                   </Link>
@@ -417,7 +417,7 @@ export default async function DashboardPage() {
 
                     <Link
                       href="/market-watchlist"
-                      className="mt-5 inline-block rounded-xl bg-gold px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold"
+                      className="mt-5 inline-block rounded-xl bg-emerald-500 px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500"
                     >
                       Explore markets
                     </Link>
@@ -535,8 +535,8 @@ export default async function DashboardPage() {
                     <span
                       className={`rounded-full px-3 py-1 text-xs font-bold ${
                         user.status === "ACTIVE"
-                          ? "bg-gold/10 text-gold"
-                          : "bg-yellow-400/10 text-yellow-400"
+                          ? "bg-emerald-500/10 text-emerald-400"
+                          : "bg-blue-400/10 text-blue-400"
                       }`}
                     >
                       {user.status === "ACTIVE"
@@ -559,10 +559,10 @@ export default async function DashboardPage() {
                     <span
                       className={`rounded-full px-3 py-1 text-xs font-medium ${
                         user.kyc?.status === "APPROVED"
-                          ? "bg-gold/10 text-gold"
+                          ? "bg-emerald-500/10 text-emerald-400"
                           : user.kyc?.status === "DECLINED"
                           ? "bg-red-400/10 text-red-400"
-                          : "bg-yellow-400/10 text-yellow-400"
+                          : "bg-blue-400/10 text-blue-400"
                       }`}
                     >
                       {user.kyc?.status === "APPROVED"
@@ -587,7 +587,7 @@ export default async function DashboardPage() {
 
                     <Link
                       href="/trade"
-                      className="mt-4 inline-block text-sm text-gold hover:text-gold-light"
+                      className="mt-4 inline-block text-sm text-emerald-400 hover:text-emerald-400-light"
                     >
                       View market watchlist →
                     </Link>
@@ -611,7 +611,7 @@ export default async function DashboardPage() {
 
                 <Link
                   href="/transactions"
-                  className="text-sm text-gold hover:text-gold-light"
+                  className="text-sm text-emerald-400 hover:text-emerald-400-light"
                 >
                   View all →
                 </Link>

@@ -88,7 +88,7 @@ processKyc("DECLINE");
 return (
 <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-6">
 <div className="mb-6">
-<p className="text-xs font-bold uppercase tracking-[0.2em] text-gold">
+<p className="text-xs font-bold uppercase tracking-[0.2em] text-emerald-400">
 Review decision
 </p>
 
@@ -113,7 +113,7 @@ Review decision
     type="button"
     disabled={processing}
     onClick={() => processKyc("APPROVE")}
-    className="w-full rounded-xl bg-gold px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold disabled:cursor-not-allowed disabled:opacity-50"
+    className="w-full rounded-xl bg-emerald-500 px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500 disabled:cursor-not-allowed disabled:opacity-50"
   >
     {processing
       ? "Processing..."

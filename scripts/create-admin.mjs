@@ -39,7 +39,7 @@ function question(prompt) {
 async function main() {
   console.log("");
   console.log("======================================");
-  console.log("       THÉSOROS ADMIN SETUP");
+  console.log("       Edge Portfolio ADMIN SETUP");
   console.log("======================================");
   console.log("");
 
@@ -146,7 +146,7 @@ async function main() {
 
     console.log("");
     console.log("======================================");
-    console.log("       THÉSOROS ADMIN READY");
+    console.log("       Edge Portfolio ADMIN READY");
     console.log("======================================");
     console.log("");
     console.log(
@@ -187,7 +187,7 @@ async function main() {
 
   console.log("");
   console.log("======================================");
-  console.log("       THÉSOROS ADMIN CREATED");
+  console.log("       Edge Portfolio ADMIN CREATED");
   console.log("======================================");
   console.log("");
   console.log(

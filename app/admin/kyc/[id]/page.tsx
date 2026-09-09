@@ -236,13 +236,13 @@ export default function AdminKycReviewPage() {
   function statusClass(status: string) {
     switch (status) {
       case "APPROVED":
-        return "bg-gold/10 text-gold border-gold/20";
+        return "bg-emerald-500/10 text-emerald-400 border-emerald-500/20";
 
       case "DECLINED":
         return "bg-red-400/10 text-red-400 border-red-400/20";
 
       case "PENDING":
-        return "bg-yellow-400/10 text-yellow-400 border-yellow-400/20";
+        return "bg-blue-400/10 text-blue-400 border-blue-400/20";
 
       default:
         return "bg-white/5 text-zinc-400 border-white/10";
@@ -273,7 +273,7 @@ export default function AdminKycReviewPage() {
         <div className="mx-auto max-w-4xl">
           <Link
             href="/admin/kyc"
-            className="text-sm !text-[#FFFFFF] transition hover:text-gold"
+            className="text-sm !text-[#FFFFFF] transition hover:text-emerald-400"
           >
             ← Back to KYC
           </Link>
@@ -294,7 +294,7 @@ export default function AdminKycReviewPage() {
             <button
               type="button"
               onClick={loadKyc}
-              className="mt-6 rounded-xl bg-gold px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold"
+              className="mt-6 rounded-xl bg-emerald-500 px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500"
             >
               Try again
             </button>
@@ -316,7 +316,7 @@ export default function AdminKycReviewPage() {
         {/* Back */}
         <Link
           href="/admin/kyc"
-          className="inline-flex items-center text-sm !text-[#FFFFFF] transition hover:text-gold"
+          className="inline-flex items-center text-sm !text-[#FFFFFF] transition hover:text-emerald-400"
         >
           ← Back to KYC applications
         </Link>
@@ -324,7 +324,7 @@ export default function AdminKycReviewPage() {
         {/* Header */}
         <div className="mt-8 flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
           <div>
-            <p className="text-sm font-bold text-gold">
+            <p className="text-sm font-bold text-emerald-400">
               KYC Review
             </p>
 
@@ -350,7 +350,7 @@ export default function AdminKycReviewPage() {
         </div>
 
         {/* IMPORTANT: ACTION BAR */}
-        <section className="mt-8 rounded-3xl border border-gold/20 bg-gold/[0.04] p-5 sm:p-6">
+        <section className="mt-8 rounded-3xl border border-emerald-500/20 bg-emerald-500/[0.04] p-5 sm:p-6">
           <div className="flex flex-col gap-5 lg:flex-row lg:items-center lg:justify-between">
             <div>
               <p className="text-xs font-bold uppercase tracking-wider !text-[#FFFFFF]">
@@ -377,7 +377,7 @@ export default function AdminKycReviewPage() {
                   type="button"
                   disabled={processing}
                   onClick={approveKyc}
-                  className="rounded-xl bg-gold px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold disabled:cursor-not-allowed disabled:opacity-50"
+                  className="rounded-xl bg-emerald-500 px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500 disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   {processing
                     ? "Processing..."
@@ -668,7 +668,7 @@ export default function AdminKycReviewPage() {
         )}
 
         <p className="mt-10 pb-8 text-center text-xs !text-[#FFFFFF]">
-          Thesoros • Admin • KYC Review
+          EDGE PORTFOLIO • Admin • KYC Review
         </p>
       </div>
     </main>

@@ -88,10 +88,10 @@ export default async function AdminDashboardPage() {
               href="/admin"
               className="flex items-center"
             >
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-gold/30 bg-gold/10">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-emerald-500/30 bg-emerald-500/10">
                 <img
-                  src="/branding/thesoros-logo.png"
-                  alt="THÉSOROS"
+                  src="/branding/edge-portfolio-logo.png"
+                  alt="Edge Portfolio"
                   className="h-8 w-auto object-contain"
                 />
               </div>
@@ -101,7 +101,7 @@ export default async function AdminDashboardPage() {
           <nav className="flex-1 space-y-1 p-4">
             <Link
               href="/admin"
-              className="flex items-center rounded-xl bg-gold/10 px-4 py-3 text-sm font-bold text-gold"
+              className="flex items-center rounded-xl bg-emerald-500/10 px-4 py-3 text-sm font-bold text-emerald-400"
             >
               Dashboard
             </Link>
@@ -113,7 +113,7 @@ export default async function AdminDashboardPage() {
               <span>KYC verification</span>
 
               {pendingKyc > 0 && (
-                <span className="rounded-full bg-amber-500/10 px-2 py-0.5 text-xs text-amber-400">
+                <span className="rounded-full bg-blue-500/10 px-2 py-0.5 text-xs text-blue-400">
                   {pendingKyc}
                 </span>
               )}
@@ -133,7 +133,7 @@ export default async function AdminDashboardPage() {
               <span>Deposits</span>
 
               {pendingDeposits > 0 && (
-                <span className="rounded-full bg-amber-500/10 px-2 py-0.5 text-xs text-amber-400">
+                <span className="rounded-full bg-blue-500/10 px-2 py-0.5 text-xs text-blue-400">
                   {pendingDeposits}
                 </span>
               )}
@@ -146,7 +146,7 @@ export default async function AdminDashboardPage() {
               <span>Withdrawals</span>
 
               {pendingWithdrawals > 0 && (
-                <span className="rounded-full bg-amber-500/10 px-2 py-0.5 text-xs text-amber-400">
+                <span className="rounded-full bg-blue-500/10 px-2 py-0.5 text-xs text-blue-400">
                   {pendingWithdrawals}
                 </span>
               )}
@@ -187,13 +187,13 @@ export default async function AdminDashboardPage() {
                 </h1>
 
                 <p className="mt-1 text-sm !text-[#FFFFFF]">
-                  Manage Thesoros accounts and verification requests.
+                  Manage EDGE PORTFOLIO accounts and verification requests.
                 </p>
               </div>
 
               <Link
                 href="/admin/kyc"
-                className="hidden rounded-xl bg-gold px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold sm:inline-flex"
+                className="hidden rounded-xl bg-emerald-500 px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500 sm:inline-flex"
               >
                 Review KYC
               </Link>
@@ -205,7 +205,7 @@ export default async function AdminDashboardPage() {
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-4 lg:hidden">
               <Link
                 href="/admin"
-                className="rounded-xl border border-gold/20 bg-gold/10 p-3 text-center text-xs font-bold text-gold"
+                className="rounded-xl border border-emerald-500/20 bg-emerald-500/10 p-3 text-center text-xs font-bold text-emerald-400"
               >
                 Dashboard
               </Link>
@@ -290,7 +290,7 @@ export default async function AdminDashboardPage() {
             <section className="overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03]">
               <div className="flex flex-col gap-4 border-b border-white/10 p-5 sm:flex-row sm:items-center sm:justify-between sm:p-6">
                 <div>
-                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold">
+                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-emerald-400">
                     Verification queue
                   </p>
 
@@ -313,9 +313,9 @@ export default async function AdminDashboardPage() {
 
               {recentKyc.length === 0 ? (
                 <div className="p-10 text-center">
-                  <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-gold/10">
+                  <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-500/10">
                     <Check
-                      className="h-6 w-6 text-gold"
+                      className="h-6 w-6 text-emerald-400"
                       strokeWidth={2}
                     />
                   </div>
@@ -342,7 +342,7 @@ export default async function AdminDashboardPage() {
                             {kyc.user.lastName}
                           </h3>
 
-                          <span className="rounded-full border border-amber-500/20 bg-amber-500/10 px-2.5 py-1 text-xs text-amber-400">
+                          <span className="rounded-full border border-blue-500/20 bg-blue-500/10 px-2.5 py-1 text-xs text-blue-400">
                             Pending review
                           </span>
                         </div>
@@ -376,7 +376,7 @@ export default async function AdminDashboardPage() {
 
                       <Link
                         href={`/admin/kyc/${kyc.id}`}
-                        className="inline-flex shrink-0 items-center justify-center rounded-xl bg-gold px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold"
+                        className="inline-flex shrink-0 items-center justify-center rounded-xl bg-emerald-500 px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500"
                       >
                         Review application
                       </Link>
@@ -407,7 +407,7 @@ function StatCard({
     <div
       className={`rounded-2xl border p-5 ${
         urgent
-          ? "border-amber-500/20 bg-amber-500/[0.04]"
+          ? "border-blue-500/20 bg-blue-500/[0.04]"
           : "border-white/10 bg-white/[0.03]"
       }`}
     >
@@ -417,14 +417,14 @@ function StatCard({
         </p>
 
         {urgent && (
-          <span className="h-2 w-2 rounded-full bg-amber-400" />
+          <span className="h-2 w-2 rounded-full bg-blue-400" />
         )}
       </div>
 
       <p
         className={`mt-3 text-3xl font-semibold ${
           urgent
-            ? "text-amber-400"
+            ? "text-blue-400"
             : "text-white"
         }`}
       >

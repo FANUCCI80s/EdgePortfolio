@@ -23,10 +23,10 @@ export default function DownloadPage() {
         <div className="absolute inset-0 bg-black/20" />
       </div>
 
-      {/* Large Background THÉSOROS Logo */}
+      {/* Large Background Edge Portfolio Logo */}
       <div className="pointer-events-none absolute inset-0 z-[1] flex items-center justify-center">
         <Image
-          src="/branding/thesoros-logo.png"
+          src="/branding/edge-portfolio-logo.png"
           alt=""
           width={900}
           height={300}
@@ -46,11 +46,11 @@ export default function DownloadPage() {
           <Link
             href="/"
             className="inline-flex items-center"
-            aria-label="THÉSOROS Home"
+            aria-label="Edge Portfolio Home"
           >
             <Image
-              src="/branding/thesoros-logo.png"
-              alt="THÉSOROS"
+              src="/branding/edge-portfolio-logo.png"
+              alt="Edge Portfolio"
               width={180}
               height={60}
               priority
@@ -62,8 +62,8 @@ export default function DownloadPage() {
         {/* Main */}
         <section className="flex flex-1 items-center justify-center px-6 pb-16 pt-10 sm:px-10">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="mb-5 text-xs font-bold uppercase tracking-[0.35em] text-gold sm:text-sm">
-              THÉSOROS Mobile
+            <p className="mb-5 text-xs font-bold uppercase tracking-[0.35em] text-emerald-400 sm:text-sm">
+              Edge Portfolio Mobile
             </p>
 
             <h1 className="text-4xl font-bold leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
@@ -73,13 +73,13 @@ export default function DownloadPage() {
             </h1>
 
             <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/80 sm:text-lg sm:leading-8">
-              The THÉSOROS Android experience is coming soon.
+              The Edge Portfolio Android experience is coming soon.
               We are carefully crafting a seamless mobile
               experience for managing and growing your wealth
               wherever you are.
             </p>
 
-            <div className="mx-auto mt-10 h-px w-20 bg-gold/60" />
+            <div className="mx-auto mt-10 h-px w-20 bg-emerald-500/60" />
 
             <p className="mt-6 text-sm text-white/60">
               Android app coming soon
@@ -89,7 +89,7 @@ export default function DownloadPage() {
             <div className="mt-8">
               <Link
                 href="/"
-                className="inline-flex items-center justify-center rounded-full border border-gold/70 bg-transparent px-7 py-3 text-sm font-semibold text-gold transition-all duration-300 hover:border-gold hover:bg-transparent hover:text-gold"
+                className="inline-flex items-center justify-center rounded-full border border-emerald-500/70 bg-transparent px-7 py-3 text-sm font-semibold text-emerald-400 transition-all duration-300 hover:border-emerald-500 hover:bg-transparent hover:text-emerald-400"
               >
                 Back to Open Page
               </Link>
@@ -100,7 +100,7 @@ export default function DownloadPage() {
         {/* Footer */}
         <footer className="px-6 pb-7 text-center sm:px-10">
           <p className="text-xs text-white/50">
-            © {new Date().getFullYear()} THÉSOROS. All rights reserved.
+            © {new Date().getFullYear()} Edge Portfolio. All rights reserved.
           </p>
         </footer>
       </div>

@@ -42,13 +42,13 @@ export default async function AdminDepositReviewPage({
         <aside className="hidden w-72 shrink-0 border-r border-white/10 bg-[#050505] lg:flex lg:flex-col">
           <div className="border-b border-white/10 p-6">
             <Link href="/admin" className="flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-gold/30 bg-gold/10">
-                <img src="/branding/thesoros-logo.png" alt="THÉSOROS" className="h-8 w-auto object-contain" />
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-emerald-500/30 bg-emerald-500/10">
+                <img src="/branding/edge-portfolio-logo.png" alt="Edge Portfolio" className="h-8 w-auto object-contain" />
               </div>
 
               <div>
                 <p className="font-bold tracking-tight">
-                  Thesoros
+                  EDGE PORTFOLIO
                 </p>
 
                 <p className="text-xs !text-[#FFFFFF]">
@@ -82,7 +82,7 @@ export default async function AdminDepositReviewPage({
 
             <Link
               href="/admin/deposits"
-              className="flex items-center rounded-xl bg-gold/10 px-4 py-3 text-sm font-bold text-gold"
+              className="flex items-center rounded-xl bg-emerald-500/10 px-4 py-3 text-sm font-bold text-emerald-400"
             >
               Deposits
             </Link>
@@ -128,12 +128,12 @@ export default async function AdminDepositReviewPage({
                 href="/admin"
                 className="flex items-center gap-3"
               >
-                <div className="flex h-9 w-9 items-center justify-center rounded-lg border border-gold/30 bg-gold/10">
-                  <img src="/branding/thesoros-logo.png" alt="THÉSOROS" className="h-8 w-auto object-contain" />
+                <div className="flex h-9 w-9 items-center justify-center rounded-lg border border-emerald-500/30 bg-emerald-500/10">
+                  <img src="/branding/edge-portfolio-logo.png" alt="Edge Portfolio" className="h-8 w-auto object-contain" />
                 </div>
 
                 <span className="font-bold">
-                  Thesoros
+                  EDGE PORTFOLIO
                 </span>
               </Link>
 
@@ -160,7 +160,7 @@ export default async function AdminDepositReviewPage({
             <div className="mb-8">
               <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
                 <div>
-                  <p className="text-sm font-bold text-gold">
+                  <p className="text-sm font-bold text-emerald-400">
                     Deposit review
                   </p>
 
@@ -179,12 +179,12 @@ export default async function AdminDepositReviewPage({
             </div>
 
             {/* Amount */}
-            <section className="mb-6 rounded-3xl border border-gold/20 bg-gold/[0.04] p-6 sm:p-8">
+            <section className="mb-6 rounded-3xl border border-emerald-500/20 bg-emerald-500/[0.04] p-6 sm:p-8">
               <p className="text-sm !text-[#FFFFFF]">
                 Requested deposit amount
               </p>
 
-              <p className="mt-2 text-4xl font-bold tracking-tight text-gold">
+              <p className="mt-2 text-4xl font-bold tracking-tight text-emerald-400">
                 ${deposit.amount.toString()}
               </p>
 
@@ -196,7 +196,7 @@ export default async function AdminDepositReviewPage({
             <div className="grid gap-6 lg:grid-cols-2">
               {/* User information */}
               <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
-                <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold">
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-emerald-400">
                   Account
                 </p>
 
@@ -234,7 +234,7 @@ export default async function AdminDepositReviewPage({
 
               {/* Deposit information */}
               <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
-                <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold">
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-emerald-400">
                   Request
                 </p>
 
@@ -268,7 +268,7 @@ export default async function AdminDepositReviewPage({
                 deposit.selectedSwiftBic ||
                 deposit.selectedBankAddress) && (
                 <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
-                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold">
+                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-emerald-400">
                     Bank transfer
                   </p>
 
@@ -328,7 +328,7 @@ export default async function AdminDepositReviewPage({
                 deposit.cryptoNetwork ||
                 deposit.cryptoWalletAddress) && (
                 <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
-                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold">
+                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-emerald-400">
                     Cryptocurrency
                   </p>
 
@@ -371,7 +371,7 @@ export default async function AdminDepositReviewPage({
               {/* Payment configuration */}
               {deposit.paymentConfig && (
                 <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8 lg:col-span-2">
-                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold">
+                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-emerald-400">
                     Payment channel
                   </p>
 
@@ -401,7 +401,7 @@ export default async function AdminDepositReviewPage({
 
               {/* Uploaded documents */}
               <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8 lg:col-span-2">
-                <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold">
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-emerald-400">
                   Evidence
                 </p>
 
@@ -432,7 +432,7 @@ export default async function AdminDepositReviewPage({
 
             {/* Action area */}
             <section className="mt-6 rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-emerald-400">
                 Admin action
               </p>
 
@@ -448,8 +448,8 @@ export default async function AdminDepositReviewPage({
                   </p>
 
                   <div className="mt-6 grid gap-3 sm:grid-cols-2">
-                    <div className="rounded-2xl border border-gold/20 bg-gold/[0.04] p-5">
-                      <p className="font-bold text-gold">
+                    <div className="rounded-2xl border border-emerald-500/20 bg-emerald-500/[0.04] p-5">
+                      <p className="font-bold text-emerald-400">
                         Approve deposit
                       </p>
 
@@ -461,7 +461,7 @@ export default async function AdminDepositReviewPage({
                       <button
                         type="button"
                         disabled
-                        className="mt-4 w-full cursor-not-allowed rounded-xl bg-gold/30 px-5 py-3 text-sm font-bold text-gold-light/50"
+                        className="mt-4 w-full cursor-not-allowed rounded-xl bg-emerald-500/30 px-5 py-3 text-sm font-bold text-emerald-400-light/50"
                       >
                         Approve
                       </button>
@@ -546,7 +546,7 @@ function DocumentCard({
         <span
           className={`rounded-full px-2.5 py-1 text-xs ${
             available
-              ? "border border-gold/20 bg-gold/10 text-gold"
+              ? "border border-emerald-500/20 bg-emerald-500/10 text-emerald-400"
               : "border border-white/10 bg-white/[0.03] text-zinc-600"
           }`}
         >
@@ -564,7 +564,7 @@ function StatusBadge({
 }) {
   if (status === "APPROVED") {
     return (
-      <span className="rounded-full border border-gold/20 bg-gold/10 px-3 py-1.5 text-xs font-bold text-gold">
+      <span className="rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1.5 text-xs font-bold text-emerald-400">
         Approved
       </span>
     );
@@ -579,7 +579,7 @@ function StatusBadge({
   }
 
   return (
-    <span className="rounded-full border border-amber-500/20 bg-amber-500/10 px-3 py-1.5 text-xs font-bold text-amber-400">
+    <span className="rounded-full border border-blue-500/20 bg-blue-500/10 px-3 py-1.5 text-xs font-bold text-blue-400">
       Pending
     </span>
   );

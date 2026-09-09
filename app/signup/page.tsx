@@ -99,7 +99,7 @@ export default function SignupPage() {
       );
 
       setError(
-        "Unable to connect to THÉSOROS. Please check your connection and try again."
+        "Unable to connect to Edge Portfolio. Please check your connection and try again."
       );
     } finally {
       setLoading(false);
@@ -144,7 +144,7 @@ export default function SignupPage() {
         <div className="absolute inset-0 bg-black/75" />
 
         {/* Gold atmosphere */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(212,175,55,0.10),transparent_32%),radial-gradient(circle_at_85%_80%,rgba(212,175,55,0.07),transparent_30%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_20%,rgba(16,185,129,0.10),transparent_32%),radial-gradient(circle_at_85%_80%,rgba(16,185,129,0.07),transparent_30%)]" />
 
         {/* Vignette */}
         <div className="absolute inset-0 bg-[radial-gradient(circle,transparent_25%,rgba(0,0,0,0.45)_100%)]" />
@@ -164,8 +164,8 @@ export default function SignupPage() {
             {/* Logo */}
             <div className="flex justify-center xl:justify-start">
               <Image
-                src="/branding/thesoros-logo.png"
-                alt="THÉSOROS"
+                src="/branding/edge-portfolio-logo.png"
+                alt="Edge Portfolio"
                 width={220}
                 height={64}
                 priority
@@ -175,7 +175,7 @@ export default function SignupPage() {
 
             {/* Main message */}
             <div className="mx-auto w-full max-w-xl xl:mx-0">
-              <p className="mb-5 text-sm font-bold uppercase tracking-[0.3em] text-gold">
+              <p className="mb-5 text-sm font-bold uppercase tracking-[0.3em] text-emerald-400">
                 Start investing smarter
               </p>
 
@@ -186,7 +186,7 @@ export default function SignupPage() {
               </h1>
 
               <p className="mt-7 max-w-lg text-base leading-7 !text-[#FFFFFF]">
-                Create your THÉSOROS account and get access
+                Create your Edge Portfolio account and get access
                 to a modern platform designed for managing
                 your investments across global markets.
               </p>
@@ -201,7 +201,7 @@ export default function SignupPage() {
                     key={item}
                     className="flex items-center gap-3 text-sm !text-[#FFFFFF]"
                   >
-                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-gold/30 bg-gold/10 text-xs font-bold text-gold">
+                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-emerald-500/30 bg-emerald-500/10 text-xs font-bold text-emerald-400">
                       ✓
                     </span>
 
@@ -212,7 +212,7 @@ export default function SignupPage() {
             </div>
 
             <p className="text-sm !text-[#FFFFFF]">
-              © {new Date().getFullYear()} THÉSOROS
+              © {new Date().getFullYear()} Edge Portfolio
             </p>
           </div>
         </section>
@@ -226,8 +226,8 @@ export default function SignupPage() {
             {/* Mobile centered logo */}
             <div className="mb-10 flex justify-center lg:hidden">
               <Image
-                src="/branding/thesoros-logo.png"
-                alt="THÉSOROS"
+                src="/branding/edge-portfolio-logo.png"
+                alt="Edge Portfolio"
                 width={210}
                 height={62}
                 priority
@@ -236,9 +236,9 @@ export default function SignupPage() {
             </div>
 
             {/* Signup card */}
-            <div className="rounded-3xl border border-gold/20 bg-[#0B0B0B]/90 p-6 shadow-2xl shadow-black/50 backdrop-blur-xl sm:p-8">
+            <div className="rounded-3xl border border-emerald-500/20 bg-[#0B0B0B]/90 p-6 shadow-2xl shadow-black/50 backdrop-blur-xl sm:p-8">
               <div className="mb-8 text-center">
-                <p className="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-gold">
+                <p className="mb-3 text-sm font-bold uppercase tracking-[0.25em] text-emerald-400">
                   Create your account
                 </p>
 
@@ -248,7 +248,7 @@ export default function SignupPage() {
 
                 <p className="mt-3 text-sm leading-6 !text-[#FFFFFF]">
                   Create your account to start using
-                  THÉSOROS.
+                  Edge Portfolio.
                 </p>
               </div>
 
@@ -276,7 +276,7 @@ export default function SignupPage() {
                       placeholder="John"
                       maxLength={100}
                       disabled={loading}
-                      className="h-13 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10 disabled:cursor-not-allowed disabled:opacity-60"
+                      className="h-13 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10 disabled:cursor-not-allowed disabled:opacity-60"
                     />
                   </div>
 
@@ -301,7 +301,7 @@ export default function SignupPage() {
                       placeholder="Doe"
                       maxLength={100}
                       disabled={loading}
-                      className="h-13 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10 disabled:cursor-not-allowed disabled:opacity-60"
+                      className="h-13 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10 disabled:cursor-not-allowed disabled:opacity-60"
                     />
                   </div>
                 </div>
@@ -327,7 +327,7 @@ export default function SignupPage() {
                     }}
                     placeholder="you@example.com"
                     disabled={loading}
-                    className="h-13 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10 disabled:cursor-not-allowed disabled:opacity-60"
+                    className="h-13 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10 disabled:cursor-not-allowed disabled:opacity-60"
                   />
                 </div>
 
@@ -353,7 +353,7 @@ export default function SignupPage() {
                     placeholder="At least 8 characters"
                     minLength={8}
                     disabled={loading}
-                    className="h-13 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10 disabled:cursor-not-allowed disabled:opacity-60"
+                    className="h-13 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10 disabled:cursor-not-allowed disabled:opacity-60"
                   />
                 </div>
 
@@ -379,7 +379,7 @@ export default function SignupPage() {
                     placeholder="Repeat your password"
                     minLength={8}
                     disabled={loading}
-                    className="h-13 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10 disabled:cursor-not-allowed disabled:opacity-60"
+                    className="h-13 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10 disabled:cursor-not-allowed disabled:opacity-60"
                   />
                 </div>
 
@@ -398,7 +398,7 @@ export default function SignupPage() {
                   type="button"
                   disabled={loading}
                   onClick={handleSignup}
-                  className="flex h-13 w-full items-center justify-center rounded-xl bg-gold px-5 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold-light disabled:cursor-not-allowed disabled:opacity-50"
+                  className="flex h-13 w-full items-center justify-center rounded-xl bg-emerald-500 px-5 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500-light disabled:cursor-not-allowed disabled:opacity-50"
                 >
                   {loading
                     ? "Creating account..."
@@ -410,14 +410,14 @@ export default function SignupPage() {
                 Already have an account?{" "}
                 <Link
                   href="/login"
-                  className="font-bold text-gold transition hover:text-gold-light"
+                  className="font-bold text-emerald-400 transition hover:text-emerald-400-light"
                 >
                   Sign in
                 </Link>
               </p>
 
               <div className="mt-10 flex items-center justify-center gap-2 text-xs !text-[#FFFFFF]">
-                <span className="h-1.5 w-1.5 rounded-full bg-gold" />
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
                 Secure account creation
               </div>
             </div>

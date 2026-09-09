@@ -127,10 +127,10 @@ function statusClass(
 ) {
   switch (status) {
     case "PENDING":
-      return "border-yellow-500/20 bg-yellow-500/10 text-yellow-400";
+      return "border-blue-500/20 bg-blue-500/10 text-blue-400";
 
     case "APPROVED":
-      return "border-gold/20 bg-gold/10 text-gold";
+      return "border-emerald-500/20 bg-emerald-500/10 text-emerald-400";
 
     case "DECLINED":
       return "border-red-500/20 bg-red-500/10 text-red-400";
@@ -201,7 +201,7 @@ export default function AdminDepositsPage() {
     <main className="min-h-screen bg-[#050505] !text-[#FFFFFF]">
       <div className="mx-auto max-w-7xl px-6 py-10">
         <div className="mb-8">
-          <p className="text-sm font-bold text-gold">
+          <p className="text-sm font-bold text-emerald-400">
             Admin
           </p>
 
@@ -231,24 +231,24 @@ export default function AdminDepositsPage() {
         </div>
 
         <div className="mb-6 grid gap-4 sm:grid-cols-4">
-          <div className="rounded-2xl border border-yellow-500/20 bg-yellow-500/5 p-5">
+          <div className="rounded-2xl border border-blue-500/20 bg-blue-500/5 p-5">
             <p className="text-xs uppercase tracking-wider !text-[#FFFFFF]">
               Pending
             </p>
 
-            <p className="mt-2 text-3xl font-bold text-yellow-400">
+            <p className="mt-2 text-3xl font-bold text-blue-400">
               {status === "PENDING"
                 ? deposits.length
                 : "—"}
             </p>
           </div>
 
-          <div className="rounded-2xl border border-gold/20 bg-gold/5 p-5">
+          <div className="rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-5">
             <p className="text-xs uppercase tracking-wider !text-[#FFFFFF]">
               Approved
             </p>
 
-            <p className="mt-2 text-3xl font-bold text-gold">
+            <p className="mt-2 text-3xl font-bold text-emerald-400">
               {status === "APPROVED"
                 ? deposits.length
                 : "—"}
@@ -295,7 +295,7 @@ export default function AdminDepositsPage() {
               }
               className={`rounded-xl px-4 py-2 text-sm font-semibold transition ${
                 status === value
-                  ? "bg-gold text-white"
+                  ? "bg-emerald-500 text-white"
                   : "border border-white/10 bg-white/5 text-gray-400 hover:bg-white/10 hover:text-white"
               }`}
             >
@@ -424,7 +424,7 @@ export default function AdminDepositsPage() {
                       <td className="px-5 py-5 text-right">
                         <Link
                           href={`/admin/deposits/${deposit.id}`}
-                          className="inline-flex rounded-xl bg-gold px-4 py-2 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold"
+                          className="inline-flex rounded-xl bg-emerald-500 px-4 py-2 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500"
                         >
                           Review
                         </Link>

@@ -219,11 +219,11 @@ function statusClass(
 ) {
   switch (status) {
     case "PENDING":
-      return "border-yellow-500/20 bg-yellow-500/10 text-yellow-400";
+      return "border-blue-500/20 bg-blue-500/10 text-blue-400";
 
     case "APPROVED":
     case "COMPLETED":
-      return "border-gold/20 bg-gold/10 text-gold";
+      return "border-emerald-500/20 bg-emerald-500/10 text-emerald-400";
 
     case "DECLINED":
     case "FAILED":
@@ -411,7 +411,7 @@ export default function AdminDepositReviewPage() {
         <div className="mx-auto max-w-4xl px-6 py-10">
           <Link
             href="/admin/deposits"
-            className="text-sm text-gold hover:text-gold-light"
+            className="text-sm text-emerald-400 hover:text-emerald-400-light"
           >
             ← Back to deposits
           </Link>
@@ -448,14 +448,14 @@ export default function AdminDepositReviewPage() {
         <div className="mb-8">
           <Link
             href="/admin/deposits"
-            className="text-sm text-gold transition hover:text-gold-light"
+            className="text-sm text-emerald-400 transition hover:text-emerald-400-light"
           >
             ← Back to deposit requests
           </Link>
 
           <div className="mt-5 flex flex-col justify-between gap-5 lg:flex-row lg:items-end">
             <div>
-              <p className="text-sm font-bold text-gold">
+              <p className="text-sm font-bold text-emerald-400">
                 Deposit Review
               </p>
 
@@ -583,7 +583,7 @@ export default function AdminDepositReviewPage() {
 
                   <Link
                     href={`/admin/users/${deposit.user.id}`}
-                    className="mt-1 inline-block text-sm text-gold hover:text-gold-light"
+                    className="mt-1 inline-block text-sm text-emerald-400 hover:text-emerald-400-light"
                   >
                     View user profile →
                   </Link>
@@ -796,7 +796,7 @@ export default function AdminDepositReviewPage() {
                         </p>
                       </div>
 
-                      <span className="rounded-lg border border-gold/20 bg-gold/10 px-3 py-2 text-xs font-bold text-gold">
+                      <span className="rounded-lg border border-emerald-500/20 bg-emerald-500/10 px-3 py-2 text-xs font-bold text-emerald-400">
                         Uploaded
                       </span>
                     </div>
@@ -947,8 +947,8 @@ export default function AdminDepositReviewPage() {
 
               {isPending ? (
                 <>
-                  <div className="mt-6 rounded-xl border border-yellow-500/20 bg-yellow-500/5 p-4">
-                    <p className="text-sm font-bold text-yellow-400">
+                  <div className="mt-6 rounded-xl border border-blue-500/20 bg-blue-500/5 p-4">
+                    <p className="text-sm font-bold text-blue-400">
                       Pending Admin Review
                     </p>
 
@@ -968,7 +968,7 @@ export default function AdminDepositReviewPage() {
                           "APPROVE"
                         )
                       }
-                      className="w-full rounded-xl bg-gold px-4 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold disabled:cursor-not-allowed disabled:opacity-50"
+                      className="w-full rounded-xl bg-emerald-500 px-4 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500 disabled:cursor-not-allowed disabled:opacity-50"
                     >
                       {submitting
                         ? "Processing..."

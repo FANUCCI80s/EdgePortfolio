@@ -216,10 +216,10 @@ export async function POST(request: NextRequest) {
               type: "MESSAGE",
               title:
                 subject ||
-                "New message from THÉSOROS",
+                "New message from Edge Portfolio",
               message:
                 subject ||
-                "You have received a new message from THÉSOROS.",
+                "You have received a new message from Edge Portfolio.",
             },
           });
 
@@ -279,7 +279,7 @@ export async function POST(request: NextRequest) {
         );
 
       const logoUrl = appUrl
-        ? `${appUrl}/branding/thesoros-logo.png`
+        ? `${appUrl}/branding/EDGE PORTFOLIO-edge-portfolio-edge-portfolio-logo.png`
         : undefined;
 
       const email = getAdminMessageEmail({
@@ -287,7 +287,7 @@ export async function POST(request: NextRequest) {
           recipient.firstName || "there",
         subject:
           subject ||
-          "New message from THÉSOROS",
+          "New message from Edge Portfolio",
         message,
         logoUrl,
       });

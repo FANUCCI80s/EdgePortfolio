@@ -138,17 +138,17 @@ export default function SettingsClient() {
               href="/dashboard"
               className="flex items-center gap-3"
             >
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-gold/30 bg-gold/10">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-emerald-500/30 bg-emerald-500/10">
                 <img
-                  src="/branding/thesoros-logo.png"
-                  alt="THÉSOROS"
+                  src="/branding/edge-portfolio-logo.png"
+                  alt="Edge Portfolio"
                   className="h-8 w-auto object-contain"
                 />
               </div>
 
               <div>
                 <p className="font-bold tracking-tight">
-                  Thesoros
+                  EDGE PORTFOLIO
                 </p>
 
                 <p className="text-xs !text-[#FFFFFF]">
@@ -211,7 +211,7 @@ export default function SettingsClient() {
 
             <Link
               href="/settings"
-              className="flex items-center gap-3 rounded-xl bg-gold/10 px-4 py-3 text-sm font-bold text-gold"
+              className="flex items-center gap-3 rounded-xl bg-emerald-500/10 px-4 py-3 text-sm font-bold text-emerald-400"
             >
               <span>⚙</span>
               Settings
@@ -236,7 +236,7 @@ export default function SettingsClient() {
           <div className="mx-auto max-w-5xl px-5 py-8 sm:px-8 lg:px-10">
             {/* Header */}
             <div className="mb-8">
-              <p className="mb-2 text-sm font-bold text-gold">
+              <p className="mb-2 text-sm font-bold text-emerald-400">
                 Account
               </p>
 
@@ -273,8 +273,8 @@ export default function SettingsClient() {
 
             {/* Success */}
             {message && (
-              <div className="mb-6 rounded-2xl border border-gold/20 bg-gold/5 p-5">
-                <p className="text-sm font-bold text-gold-light">
+              <div className="mb-6 rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-5">
+                <p className="text-sm font-bold text-emerald-400-light">
                   Settings updated
                 </p>
 
@@ -369,7 +369,7 @@ export default function SettingsClient() {
                         }
                         required
                         autoComplete="email"
-                        className="w-full rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/40 focus:ring-1 focus:ring-gold/20"
+                        className="w-full rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/40 focus:ring-1 focus:ring-gold/20"
                       />
                     </div>
 
@@ -390,7 +390,7 @@ export default function SettingsClient() {
                         }
                         autoComplete="tel"
                         placeholder="+1 555 000 0000"
-                        className="w-full rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/40 focus:ring-1 focus:ring-gold/20"
+                        className="w-full rounded-xl border border-white/10 bg-black/20 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/40 focus:ring-1 focus:ring-gold/20"
                       />
                     </div>
                   </div>
@@ -399,7 +399,7 @@ export default function SettingsClient() {
                     <button
                       type="submit"
                       disabled={saving}
-                      className="rounded-xl bg-gold px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold disabled:cursor-not-allowed disabled:opacity-50"
+                      className="rounded-xl bg-emerald-500 px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500 disabled:cursor-not-allowed disabled:opacity-50"
                     >
                       {saving ? "Saving..." : "Save changes"}
                     </button>
@@ -454,9 +454,9 @@ export default function SettingsClient() {
                     </div>
 
                     <div className="flex items-center gap-2">
-                      <span className="h-2 w-2 rounded-full bg-gold" />
+                      <span className="h-2 w-2 rounded-full bg-emerald-500" />
 
-                      <span className="text-xs text-gold-light">
+                      <span className="text-xs text-emerald-400-light">
                         Email verification enabled
                       </span>
                     </div>

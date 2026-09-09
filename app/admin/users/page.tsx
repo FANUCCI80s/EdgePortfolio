@@ -149,14 +149,14 @@ export default function AdminUsersPage() {
   function getStatusClass(status: string) {
     switch (status) {
       case "ACTIVE":
-        return "bg-gold/10 text-gold";
+        return "bg-emerald-500/10 text-emerald-400";
 
       case "BLOCKED":
       case "SUSPENDED":
         return "bg-red-400/10 text-red-400";
 
       case "PENDING":
-        return "bg-yellow-400/10 text-yellow-400";
+        return "bg-blue-400/10 text-blue-400";
 
       default:
         return "bg-white/10 text-zinc-400";
@@ -166,13 +166,13 @@ export default function AdminUsersPage() {
   function getKycClass(status?: string) {
     switch (status) {
       case "APPROVED":
-        return "bg-gold/10 text-gold";
+        return "bg-emerald-500/10 text-emerald-400";
 
       case "REJECTED":
         return "bg-red-400/10 text-red-400";
 
       case "PENDING":
-        return "bg-yellow-400/10 text-yellow-400";
+        return "bg-blue-400/10 text-blue-400";
 
       default:
         return "bg-white/10 text-zinc-500";
@@ -188,16 +188,16 @@ export default function AdminUsersPage() {
           <div>
             <Link
               href="/admin"
-              className="inline-flex items-center gap-2 text-sm text-gold transition hover:text-gold-light"
+              className="inline-flex items-center gap-2 text-sm text-emerald-400 transition hover:text-emerald-400-light"
             >
               <span
                 aria-hidden="true"
-                className="inline-block h-2 w-2 rotate-45 border-b border-l border-gold"
+                className="inline-block h-2 w-2 rotate-45 border-b border-l border-emerald-500"
               />
               Admin Dashboard
             </Link>
 
-            <p className="mt-5 text-sm font-bold text-gold">
+            <p className="mt-5 text-sm font-bold text-emerald-400">
               User management
             </p>
 
@@ -206,7 +206,7 @@ export default function AdminUsersPage() {
             </h1>
 
             <p className="mt-2 max-w-2xl text-sm leading-6 !text-[#FFFFFF]">
-              Manage registered Thesoros users,
+              Manage registered EDGE PORTFOLIO users,
               account status, KYC status, and balances.
             </p>
           </div>
@@ -228,12 +228,12 @@ export default function AdminUsersPage() {
             </p>
           </div>
 
-          <div className="rounded-3xl border border-gold/20 bg-gold/[0.05] p-6">
+          <div className="rounded-3xl border border-emerald-500/20 bg-emerald-500/[0.05] p-6">
             <p className="text-sm !text-[#FFFFFF]">
               Active users
             </p>
 
-            <p className="mt-3 text-3xl font-bold text-gold">
+            <p className="mt-3 text-3xl font-bold text-emerald-400">
               {activeUsers}
             </p>
 
@@ -242,12 +242,12 @@ export default function AdminUsersPage() {
             </p>
           </div>
 
-          <div className="rounded-3xl border border-yellow-400/10 bg-yellow-400/[0.03] p-6">
+          <div className="rounded-3xl border border-blue-400/10 bg-blue-400/[0.03] p-6">
             <p className="text-sm !text-[#FFFFFF]">
               Pending
             </p>
 
-            <p className="mt-3 text-3xl font-bold text-yellow-400">
+            <p className="mt-3 text-3xl font-bold text-blue-400">
               {pendingUsers}
             </p>
 
@@ -289,7 +289,7 @@ export default function AdminUsersPage() {
                   setSearch(event.target.value)
                 }
                 placeholder="Search by name, email, or user ID..."
-                className="w-full rounded-2xl border border-white/10 bg-black/20 py-3.5 pl-11 pr-4 text-sm text-white outline-none placeholder:!text-[#FFFFFF] transition focus:border-gold/40"
+                className="w-full rounded-2xl border border-white/10 bg-black/20 py-3.5 pl-11 pr-4 text-sm text-white outline-none placeholder:!text-[#FFFFFF] transition focus:border-emerald-500/40"
               />
             </div>
 
@@ -309,8 +309,8 @@ export default function AdminUsersPage() {
                   onClick={() => setFilter(value)}
                   className={`rounded-xl px-4 py-2.5 text-sm font-medium transition ${
                     filter === value
-                      ? "bg-gold text-white"
-                      : "border border-white/10 bg-white/[0.03] text-zinc-400 hover:border-gold/30 hover:text-white"
+                      ? "bg-emerald-500 text-white"
+                      : "border border-white/10 bg-white/[0.03] text-zinc-400 hover:border-emerald-500/30 hover:text-white"
                   }`}
                 >
                   {label}
@@ -420,7 +420,7 @@ export default function AdminUsersPage() {
                       >
                         <td className="px-6 py-5">
                           <div className="flex items-center gap-3">
-                            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-gold/20 bg-gold/10 font-bold text-gold">
+                            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-emerald-500/20 bg-emerald-500/10 font-bold text-emerald-400">
                               {(
                                 user.firstName ||
                                 user.email ||
@@ -482,7 +482,7 @@ export default function AdminUsersPage() {
                         <td className="px-6 py-5 text-right">
                           <Link
                             href={`/admin/users/${user.id}`}
-                            className="inline-flex rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2 text-sm !text-[#FFFFFF] transition hover:border-gold/30 hover:bg-gold/10 hover:text-gold"
+                            className="inline-flex rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2 text-sm !text-[#FFFFFF] transition hover:border-emerald-500/30 hover:bg-emerald-500/10 hover:text-emerald-400"
                           >
                             View
                           </Link>
@@ -502,7 +502,7 @@ export default function AdminUsersPage() {
                   >
                     <div className="flex items-start justify-between gap-4">
                       <div className="flex min-w-0 items-center gap-3">
-                        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-gold/20 bg-gold/10 font-bold text-gold">
+                        <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-emerald-500/20 bg-emerald-500/10 font-bold text-emerald-400">
                           {(
                             user.firstName ||
                             user.email ||
@@ -565,7 +565,7 @@ export default function AdminUsersPage() {
 
                       <Link
                         href={`/admin/users/${user.id}`}
-                        className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2 text-sm !text-[#FFFFFF] transition hover:border-gold/30 hover:text-gold"
+                        className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2 text-sm !text-[#FFFFFF] transition hover:border-emerald-500/30 hover:text-emerald-400"
                       >
                         View user
                       </Link>
@@ -578,7 +578,7 @@ export default function AdminUsersPage() {
         </section>
 
         <p className="mt-8 text-center text-xs !text-[#FFFFFF]">
-          Thesoros · Admin · Users
+          EDGE PORTFOLIO · Admin · Users
         </p>
       </div>
     </main>

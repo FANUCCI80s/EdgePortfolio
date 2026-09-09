@@ -243,7 +243,7 @@ export async function POST(
       "======================================"
     );
     console.error(
-      "THÉSOROS LOGIN ERROR"
+      "Edge Portfolio LOGIN ERROR"
     );
     console.error(
       "======================================"

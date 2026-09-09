@@ -5,8 +5,8 @@ CREATE TYPE "TradeSide" AS ENUM ('BUY', 'SELL');
 CREATE TYPE "TradeStatus" AS ENUM ('COMPLETED', 'FAILED');
 
 -- AlterTable
-ALTER TABLE "PlatformSettings" ALTER COLUMN "platformName" SET DEFAULT 'THÉSOROS',
-ALTER COLUMN "primaryColor" SET DEFAULT '#D4AF37',
+ALTER TABLE "PlatformSettings" ALTER COLUMN "platformName" SET DEFAULT 'Edge Portfolio',
+ALTER COLUMN "primaryColor" SET DEFAULT '#22C55E',
 ALTER COLUMN "secondaryColor" SET DEFAULT '#050505',
 ALTER COLUMN "accentColor" SET DEFAULT '#F4C542';
 

@@ -192,17 +192,17 @@ function getTransactionStatusClass(
 ): string {
   switch (status) {
     case "PENDING":
-      return "border-yellow-500/20 bg-yellow-500/10 text-yellow-400";
+      return "border-blue-500/20 bg-blue-500/10 text-blue-400";
 
     case "COMPLETED":
-      return "border-gold/20 bg-gold/10 text-gold";
+      return "border-emerald-500/20 bg-emerald-500/10 text-emerald-400";
 
     case "FAILED":
     case "DECLINED":
       return "border-red-500/20 bg-red-500/10 text-red-400";
 
     case "APPROVED":
-      return "border-gold/20 bg-gold/10 text-gold";
+      return "border-emerald-500/20 bg-emerald-500/10 text-emerald-400";
 
     case "CANCELLED":
     case "REVERSED":
@@ -265,7 +265,7 @@ function SectionHeader({
   return (
     <div className="mb-5">
       {eyebrow && (
-        <p className="text-xs font-bold uppercase tracking-[0.18em] text-gold">
+        <p className="text-xs font-bold uppercase tracking-[0.18em] text-emerald-400">
           {eyebrow}
         </p>
       )}
@@ -429,7 +429,7 @@ export default function AdminTransactionReviewPage() {
         <div className="mx-auto max-w-4xl px-6 py-10">
           <Link
             href="/admin/transactions"
-            className="text-sm text-gold hover:text-gold-light"
+            className="text-sm text-emerald-400 hover:text-emerald-400-light"
           >
             ← Back to transactions
           </Link>
@@ -484,14 +484,14 @@ export default function AdminTransactionReviewPage() {
         <div className="mb-8">
           <Link
             href="/admin/transactions"
-            className="text-sm text-gold transition hover:text-gold-light"
+            className="text-sm text-emerald-400 transition hover:text-emerald-400-light"
           >
             ← Back to transactions
           </Link>
 
           <div className="mt-5 flex flex-col justify-between gap-5 lg:flex-row lg:items-end">
             <div>
-              <p className="text-sm font-bold text-gold">
+              <p className="text-sm font-bold text-emerald-400">
                 Admin Transaction Management
               </p>
 
@@ -545,10 +545,10 @@ export default function AdminTransactionReviewPage() {
             {/* REQUEST REVIEW BANNER */}
 
             {isDeposit && deposit && (
-              <section className="rounded-2xl border border-gold/20 bg-gold/[0.04] p-6">
+              <section className="rounded-2xl border border-emerald-500/20 bg-emerald-500/[0.04] p-6">
                 <div className="flex flex-col justify-between gap-4 md:flex-row md:items-center">
                   <div>
-                    <p className="text-xs font-bold uppercase tracking-[0.18em] text-gold">
+                    <p className="text-xs font-bold uppercase tracking-[0.18em] text-emerald-400">
                       Deposit Request
                     </p>
 
@@ -758,7 +758,7 @@ export default function AdminTransactionReviewPage() {
 
                   <Link
                     href={`/admin/users/${transaction.user.id}`}
-                    className="mt-1 inline-block text-sm text-gold hover:text-gold-light"
+                    className="mt-1 inline-block text-sm text-emerald-400 hover:text-emerald-400-light"
                   >
                     View user profile →
                   </Link>
@@ -770,7 +770,7 @@ export default function AdminTransactionReviewPage() {
 
             {deposit && (
               <>
-                <section className="rounded-2xl border border-gold/20 bg-gold/[0.025] p-6">
+                <section className="rounded-2xl border border-emerald-500/20 bg-emerald-500/[0.025] p-6">
                   <SectionHeader
                     eyebrow="Deposit Request Review"
                     title="Deposit Request Information"
@@ -1024,8 +1024,8 @@ export default function AdminTransactionReviewPage() {
 
                     {!deposit.proofFileId &&
                       !deposit.invoiceFileId && (
-                        <div className="rounded-xl border border-yellow-500/10 bg-yellow-500/5 p-5">
-                          <p className="text-sm font-bold text-yellow-400">
+                        <div className="rounded-xl border border-blue-500/10 bg-blue-500/5 p-5">
+                          <p className="text-sm font-bold text-blue-400">
                             No payment files uploaded
                           </p>
 
@@ -1276,8 +1276,8 @@ export default function AdminTransactionReviewPage() {
 
               {isPending ? (
                 <>
-                  <div className="mt-6 rounded-xl border border-yellow-500/20 bg-yellow-500/5 p-4">
-                    <p className="text-sm font-bold text-yellow-400">
+                  <div className="mt-6 rounded-xl border border-blue-500/20 bg-blue-500/5 p-4">
+                    <p className="text-sm font-bold text-blue-400">
                       Action required
                     </p>
 
@@ -1293,7 +1293,7 @@ export default function AdminTransactionReviewPage() {
                       onClick={() =>
                         reviewTransaction("APPROVE")
                       }
-                      className="w-full rounded-xl bg-gold px-4 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold disabled:cursor-not-allowed disabled:opacity-50"
+                      className="w-full rounded-xl bg-emerald-500 px-4 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500 disabled:cursor-not-allowed disabled:opacity-50"
                     >
                       {submitting
                         ? "Processing..."

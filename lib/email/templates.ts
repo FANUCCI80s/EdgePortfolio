@@ -15,7 +15,7 @@ export function loginOtpEmail(
    *
    * The logo will then load from:
    *
-   * https://your-domain.com/branding/thesoros-logo.png
+   * https://your-domain.com/branding/EDGE PORTFOLIO-edge-portfolio-edge-portfolio-logo.png
    *
    * During local development you can also use:
    *
@@ -28,14 +28,14 @@ export function loginOtpEmail(
     process.env.NEXT_PUBLIC_APP_URL?.replace(/\/$/, "");
 
   const logoUrl = appUrl
-    ? `${appUrl}/branding/thesoros-logo.png`
+    ? `${appUrl}/branding/EDGE PORTFOLIO-edge-portfolio-edge-portfolio-logo.png`
     : "";
 
   const logoMarkup = logoUrl
     ? `
       <img
         src="${escapeHtml(logoUrl)}"
-        alt="THÉSOROS"
+        alt="Edge Portfolio"
         width="190"
         style="
           display:block;
@@ -57,29 +57,29 @@ export function loginOtpEmail(
           line-height:1;
           letter-spacing:7px;
           font-weight:700;
-          color:#d4af37;
+          color:#22C55E;
         "
       >
-        THÉSOROS
+        Edge Portfolio
       </div>
     `;
 
   return {
-    subject: "Your THÉSOROS verification code",
+    subject: "Your Edge Portfolio verification code",
 
     text: `Hello ${firstName},
 
-Your THÉSOROS verification code is:
+Your Edge Portfolio verification code is:
 
 ${code}
 
 This code expires in 10 minutes.
 
-For your security, never share this code with anyone. THÉSOROS will never ask you to provide your verification code by phone, email, or message.
+For your security, never share this code with anyone. Edge Portfolio will never ask you to provide your verification code by phone, email, or message.
 
 If you did not attempt to sign in, please secure your account immediately.
 
-THÉSOROS
+Edge Portfolio
 Wealth • Legacy • Security`,
 
     html: `
@@ -103,7 +103,7 @@ Wealth • Legacy • Security`,
     content="dark"
   />
 
-  <title>THÉSOROS Verification</title>
+  <title>Edge Portfolio Verification</title>
 </head>
 
 <body
@@ -194,7 +194,7 @@ Wealth • Legacy • Security`,
             <td
               style="
                 height:2px;
-                background:#d4af37;
+                background:#22C55E;
                 font-size:0;
                 line-height:0;
               "
@@ -222,7 +222,7 @@ Wealth • Legacy • Security`,
                   line-height:1.5;
                   letter-spacing:3px;
                   font-weight:700;
-                  color:#d4af37;
+                  color:#22C55E;
                   text-transform:uppercase;
                 "
               >
@@ -263,7 +263,7 @@ Wealth • Legacy • Security`,
                 "
               >
                 Use the verification code below to
-                securely complete your THÉSOROS sign-in.
+                securely complete your Edge Portfolio sign-in.
               </p>
 
             </td>
@@ -339,7 +339,7 @@ Wealth • Legacy • Security`,
                         width:80px;
                         height:2px;
                         margin:16px auto 18px;
-                        background:#d4af37;
+                        background:#22C55E;
                       "
                     ></div>
 
@@ -381,7 +381,7 @@ Wealth • Legacy • Security`,
                 style="
                   width:100%;
                   background:#0d0d0d;
-                  border-left:2px solid #d4af37;
+                  border-left:2px solid #22C55E;
                 "
               >
                 <tr>
@@ -398,7 +398,7 @@ Wealth • Legacy • Security`,
                         line-height:1.5;
                         font-weight:700;
                         letter-spacing:1.5px;
-                        color:#d4af37;
+                        color:#22C55E;
                         text-transform:uppercase;
                       "
                     >
@@ -462,7 +462,7 @@ Wealth • Legacy • Security`,
                         line-height:1.5;
                         letter-spacing:2px;
                         font-weight:700;
-                        color:#d4af37;
+                        color:#22C55E;
                         text-transform:uppercase;
                       "
                     >
@@ -478,7 +478,7 @@ Wealth • Legacy • Security`,
                       "
                     >
                       If you did not attempt to sign in to
-                      your THÉSOROS account, please secure
+                      your Edge Portfolio account, please secure
                       your account immediately.
                     </p>
 
@@ -491,7 +491,7 @@ Wealth • Legacy • Security`,
                       "
                     >
                       Never share this verification code with
-                      anyone. THÉSOROS will never ask you to
+                      anyone. Edge Portfolio will never ask you to
                       provide your verification code by phone,
                       email, or message.
                     </p>
@@ -539,7 +539,7 @@ Wealth • Legacy • Security`,
                 "
               >
                 This is an automated security message from
-                THÉSOROS. Please do not reply to this email.
+                Edge Portfolio. Please do not reply to this email.
               </p>
 
             </td>
@@ -572,7 +572,7 @@ Wealth • Legacy • Security`,
               "
             >
               © ${new Date().getFullYear()}
-              THÉSOROS. All rights reserved.
+              Edge Portfolio. All rights reserved.
             </td>
           </tr>
         </table>

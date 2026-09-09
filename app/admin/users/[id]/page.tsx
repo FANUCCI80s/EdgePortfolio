@@ -30,14 +30,14 @@ function formatDate(value: Date | string) {
 function statusClass(status: string) {
   switch (status) {
     case "ACTIVE":
-      return "bg-gold/10 text-gold";
+      return "bg-emerald-500/10 text-emerald-400";
 
     case "BLOCKED":
     case "SUSPENDED":
       return "bg-red-400/10 text-red-400";
 
     case "PENDING":
-      return "bg-yellow-400/10 text-yellow-400";
+      return "bg-blue-400/10 text-blue-400";
 
     default:
       return "bg-white/10 text-zinc-400";
@@ -47,13 +47,13 @@ function statusClass(status: string) {
 function kycClass(status?: string | null) {
   switch (status) {
     case "APPROVED":
-      return "bg-gold/10 text-gold";
+      return "bg-emerald-500/10 text-emerald-400";
 
     case "REJECTED":
       return "bg-red-400/10 text-red-400";
 
     case "PENDING":
-      return "bg-yellow-400/10 text-yellow-400";
+      return "bg-blue-400/10 text-blue-400";
 
     default:
       return "bg-white/10 text-zinc-500";
@@ -132,7 +132,7 @@ export default async function AdminUserDetailsPage({
         <section className="mt-8 rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
             <div className="flex items-center gap-4">
-              <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-gold/20 bg-gold/10 text-xl font-bold text-gold">
+              <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-emerald-500/20 bg-emerald-500/10 text-xl font-bold text-emerald-400">
                 {initials}
               </div>
 
@@ -164,7 +164,7 @@ export default async function AdminUserDetailsPage({
             <div className="flex flex-wrap gap-3">
               <Link
                 href="/admin/users"
-                className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2.5 text-sm text-zinc-300 transition hover:border-gold/30 hover:!text-[#FFFFFF]"
+                className="rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2.5 text-sm text-zinc-300 transition hover:border-emerald-500/30 hover:!text-[#FFFFFF]"
               >
                 All Users
               </Link>
@@ -179,7 +179,7 @@ export default async function AdminUserDetailsPage({
               Available balance
             </p>
 
-            <p className="mt-3 text-3xl font-bold text-gold">
+            <p className="mt-3 text-3xl font-bold text-emerald-400">
               {formatCurrency(availableBalance)}
             </p>
 
@@ -357,7 +357,7 @@ export default async function AdminUserDetailsPage({
                   Available balance
                 </p>
 
-                <p className="mt-2 text-2xl font-bold text-gold">
+                <p className="mt-2 text-2xl font-bold text-emerald-400">
                   {formatCurrency(availableBalance)}
                 </p>
               </div>
@@ -366,14 +366,14 @@ export default async function AdminUserDetailsPage({
         </section>
 
         {/* Admin Actions */}
-        <section className="mt-6 rounded-3xl border border-yellow-400/10 bg-yellow-400/[0.03] p-6 sm:p-8">
+        <section className="mt-6 rounded-3xl border border-blue-400/10 bg-blue-400/[0.03] p-6 sm:p-8">
           <div className="flex gap-4">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-yellow-400/10 text-yellow-400">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-400/10 text-blue-400">
               !
             </div>
 
             <div>
-              <h2 className="font-bold text-yellow-300">
+              <h2 className="font-bold text-blue-300">
                 Admin controls
               </h2>
 
@@ -390,7 +390,7 @@ export default async function AdminUserDetailsPage({
         </section>
 
         <p className="mt-8 text-center text-xs !text-[#FFFFFF]">
-          Thesoros • Admin • User Details
+          EDGE PORTFOLIO • Admin • User Details
         </p>
       </div>
     </main>

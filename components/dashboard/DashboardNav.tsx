@@ -124,8 +124,8 @@ export default function DashboardNav() {
             className="inline-flex items-center"
           >
             <img
-              src="/branding/thesoros-logo.png"
-              alt="THÉSOROS"
+              src="/branding/edge-portfolio-logo.png"
+              alt="Edge Portfolio"
               className="block h-10 w-auto max-w-[190px] object-contain"
             />
           </Link>
@@ -143,7 +143,7 @@ export default function DashboardNav() {
                 href={item.href}
                 className={`flex items-center gap-3 rounded-xl px-4 py-3 text-sm transition ${
                   active
-                    ? "bg-gold/10 font-bold text-gold"
+                    ? "bg-emerald-500/10 font-bold text-emerald-400"
                     : "text-zinc-400 hover:bg-white/[0.04] hover:!text-[#FFFFFF]"
                 }`}
               >
@@ -169,7 +169,7 @@ export default function DashboardNav() {
                 href={item.href}
                 className={`flex items-center gap-3 rounded-xl px-4 py-3 text-sm transition ${
                   active
-                    ? "bg-gold/10 font-bold text-gold"
+                    ? "bg-emerald-500/10 font-bold text-emerald-400"
                     : "text-zinc-400 hover:bg-white/[0.04] hover:!text-[#FFFFFF]"
                 }`}
               >
@@ -224,7 +224,7 @@ export default function DashboardNav() {
           onClick={() => setOpen(true)}
           aria-label="Open navigation"
           aria-expanded={open}
-          className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-[#050505] !text-[#FFFFFF] shadow-lg transition hover:border-gold/30 hover:bg-gold/10 hover:text-gold"
+          className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-[#050505] !text-[#FFFFFF] shadow-lg transition hover:border-emerald-500/30 hover:bg-emerald-500/10 hover:text-emerald-400"
         >
           <Menu
             className="h-5 w-5"
@@ -261,8 +261,8 @@ export default function DashboardNav() {
             className="inline-flex items-center"
           >
             <img
-              src="/branding/thesoros-logo.png"
-              alt="THÉSOROS"
+              src="/branding/edge-portfolio-logo.png"
+              alt="Edge Portfolio"
               className="block h-10 w-auto max-w-[190px] object-contain"
             />
           </Link>
@@ -293,7 +293,7 @@ export default function DashboardNav() {
                 onClick={closeMenu}
                 className={`flex items-center gap-3 rounded-xl px-4 py-3 text-sm transition ${
                   active
-                    ? "bg-gold/10 font-bold text-gold"
+                    ? "bg-emerald-500/10 font-bold text-emerald-400"
                     : "text-zinc-400 hover:bg-white/[0.04] hover:!text-[#FFFFFF]"
                 }`}
               >
@@ -320,7 +320,7 @@ export default function DashboardNav() {
                 onClick={closeMenu}
                 className={`flex items-center gap-3 rounded-xl px-4 py-3 text-sm transition ${
                   active
-                    ? "bg-gold/10 font-bold text-gold"
+                    ? "bg-emerald-500/10 font-bold text-emerald-400"
                     : "text-zinc-400 hover:bg-white/[0.04] hover:!text-[#FFFFFF]"
                 }`}
               >

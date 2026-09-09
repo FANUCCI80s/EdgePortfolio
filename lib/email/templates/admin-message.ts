@@ -13,7 +13,7 @@ export function getAdminMessageEmail({
   logoUrl,
 }: AdminMessageEmailOptions) {
   const emailSubject =
-    subject || "You have a new message from THÉSOROS";
+    subject || "You have a new message from Edge Portfolio";
 
   const safeFirstName = escapeHtml(firstName);
   const safeSubject = escapeHtml(emailSubject);
@@ -37,7 +37,7 @@ export function getAdminMessageEmail({
     ? `
       <img
         src="${safeLogoUrl}"
-        alt="THÉSOROS"
+        alt="Edge Portfolio"
         width="190"
         style="
           display:block;
@@ -58,10 +58,10 @@ export function getAdminMessageEmail({
           line-height:1;
           letter-spacing:8px;
           font-weight:700;
-          color:#d4af37;
+          color:#22C55E;
         "
       >
-        THÉSOROS
+        Edge Portfolio
       </div>
     `;
 
@@ -172,7 +172,7 @@ export function getAdminMessageEmail({
             <td
               style="
                 height:2px;
-                background:#d4af37;
+                background:#22C55E;
                 font-size:0;
                 line-height:0;
               "
@@ -197,7 +197,7 @@ export function getAdminMessageEmail({
                   line-height:1.5;
                   letter-spacing:3px;
                   font-weight:700;
-                  color:#d4af37;
+                  color:#22C55E;
                   text-transform:uppercase;
                 "
               >
@@ -216,7 +216,7 @@ export function getAdminMessageEmail({
                 "
               >
                 You have a new<br />
-                <span style="color:#d4af37;">
+                <span style="color:#22C55E;">
                   message.
                 </span>
               </h1>
@@ -269,7 +269,7 @@ export function getAdminMessageEmail({
                         line-height:1.5;
                         letter-spacing:2px;
                         font-weight:700;
-                        color:#d4af37;
+                        color:#22C55E;
                         text-transform:uppercase;
                       "
                     >
@@ -333,7 +333,7 @@ export function getAdminMessageEmail({
                 "
               >
                 This message was also delivered to your
-                THÉSOROS notification center. You can sign in
+                Edge Portfolio notification center. You can sign in
                 to your account to view your messages and
                 account activity.
               </p>
@@ -396,7 +396,7 @@ export function getAdminMessageEmail({
               >
                 Your wealth.<br />
                 Your strategy.<br />
-                <span style="color:#d4af37;">
+                <span style="color:#22C55E;">
                   Your legacy.
                 </span>
               </p>
@@ -451,7 +451,7 @@ export function getAdminMessageEmail({
                         line-height:1.5;
                         letter-spacing:2px;
                         font-weight:700;
-                        color:#d4af37;
+                        color:#22C55E;
                         text-transform:uppercase;
                       "
                     >
@@ -466,7 +466,7 @@ export function getAdminMessageEmail({
                         color:#777777;
                       "
                     >
-                      THÉSOROS will never ask you to provide
+                      Edge Portfolio will never ask you to provide
                       your password, verification codes, or
                       private wallet credentials by email.
                       If you did not expect this message,
@@ -514,7 +514,7 @@ export function getAdminMessageEmail({
                   color:#444444;
                 "
               >
-                This is an automated message from THÉSOROS.
+                This is an automated message from Edge Portfolio.
                 Please do not reply to this email.
               </p>
 
@@ -546,7 +546,7 @@ export function getAdminMessageEmail({
               "
             >
               © ${new Date().getFullYear()}
-              THÉSOROS. All rights reserved.
+              Edge Portfolio. All rights reserved.
             </td>
           </tr>
         </table>
@@ -559,11 +559,11 @@ export function getAdminMessageEmail({
 `;
 
   const text = `
-THÉSOROS — NEW ACCOUNT MESSAGE
+Edge Portfolio — NEW ACCOUNT MESSAGE
 
 Hello ${firstName},
 
-You have received a new message from THÉSOROS.
+You have received a new message from Edge Portfolio.
 
 ${emailSubject}
 
@@ -573,7 +573,7 @@ ${message}
 
 --------------------------------------------------
 
-This message was also delivered to your THÉSOROS
+This message was also delivered to your Edge Portfolio
 notification center.
 
 You can sign in to your account to view your messages
@@ -588,16 +588,16 @@ you leave tomorrow.
 
 SECURITY NOTICE
 
-THÉSOROS will never ask you to provide your password,
+Edge Portfolio will never ask you to provide your password,
 verification codes, or private wallet credentials by email.
 
 If you did not expect this message, please contact support
 through your account.
 
-This is an automated message from THÉSOROS.
+This is an automated message from Edge Portfolio.
 Please do not reply to this email.
 
-© ${new Date().getFullYear()} THÉSOROS. All rights reserved.
+© ${new Date().getFullYear()} Edge Portfolio. All rights reserved.
 `;
 
   return {

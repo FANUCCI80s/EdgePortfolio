@@ -423,13 +423,13 @@ export default function MarketWatchlistClient() {
           ===================================================== */}
 
       <header className="relative border-b border-white/10 pb-10">
-        <div className="absolute -right-24 -top-24 h-64 w-64 rounded-full bg-gold/[0.04] blur-3xl" />
+        <div className="absolute -right-24 -top-24 h-64 w-64 rounded-full bg-emerald-500/[0.04] blur-3xl" />
 
         <div className="relative">
           <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
 
             <div>
-              <p className="text-xs font-bold uppercase tracking-[0.22em] text-gold">
+              <p className="text-xs font-bold uppercase tracking-[0.22em] text-emerald-400">
                 Market Watchlist
               </p>
 
@@ -445,8 +445,8 @@ export default function MarketWatchlistClient() {
               </p>
 
               <div className="mt-6 flex flex-wrap items-center gap-3">
-                <span className="inline-flex items-center gap-2 rounded-full border border-gold/20 bg-gold/[0.06] px-3 py-1.5 text-xs font-semibold text-gold">
-                  <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-gold" />
+                <span className="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/[0.06] px-3 py-1.5 text-xs font-semibold text-emerald-400">
+                  <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-emerald-500" />
                   Live data
                 </span>
 
@@ -466,7 +466,7 @@ export default function MarketWatchlistClient() {
                 loadMarkets(true)
               }
               disabled={refreshing}
-              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl border border-gold/25 bg-gold/[0.07] px-5 py-3 text-sm font-bold text-gold transition hover:border-gold/40 hover:bg-gold/[0.12] disabled:cursor-not-allowed disabled:opacity-50"
+              className="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl border border-emerald-500/25 bg-emerald-500/[0.07] px-5 py-3 text-sm font-bold text-emerald-400 transition hover:border-emerald-500/40 hover:bg-emerald-500/[0.12] disabled:cursor-not-allowed disabled:opacity-50"
             >
               <RefreshCw
                 className={`h-4 w-4 ${
@@ -491,13 +491,13 @@ export default function MarketWatchlistClient() {
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
 
         {/* Markets tracked */}
-        <div className="rounded-3xl border border-gold/20 bg-gold/[0.06] p-6">
+        <div className="rounded-3xl border border-emerald-500/20 bg-emerald-500/[0.06] p-6">
           <div className="flex items-center justify-between">
             <p className="text-sm !text-[#FFFFFF]">
               Markets tracked
             </p>
 
-            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gold/10 text-gold">
+            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400">
               <BarChart3 className="h-5 w-5" />
             </span>
           </div>
@@ -520,7 +520,7 @@ export default function MarketWatchlistClient() {
               Markets rising
             </p>
 
-            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gold/10 text-gold">
+            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400">
               <TrendingUp className="h-5 w-5" />
             </span>
           </div>
@@ -566,7 +566,7 @@ export default function MarketWatchlistClient() {
               Market status
             </p>
 
-            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-gold/10 text-gold">
+            <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400">
               <Activity className="h-5 w-5" />
             </span>
           </div>
@@ -595,7 +595,7 @@ export default function MarketWatchlistClient() {
 
       <section>
         <div className="mb-5">
-          <p className="text-xs font-bold uppercase tracking-[0.18em] text-gold">
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-emerald-400">
             Asset classes
           </p>
 
@@ -638,12 +638,12 @@ export default function MarketWatchlistClient() {
                   className={`group rounded-3xl border p-6 text-left transition ${
                     category ===
                     card.category
-                      ? "border-gold/30 bg-gold/[0.06]"
-                      : "border-white/10 bg-white/[0.03] hover:border-gold/20 hover:bg-white/[0.05]"
+                      ? "border-emerald-500/30 bg-emerald-500/[0.06]"
+                      : "border-white/10 bg-white/[0.03] hover:border-emerald-500/20 hover:bg-white/[0.05]"
                   }`}
                 >
                   <div className="flex items-start justify-between gap-4">
-                    <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gold/10 text-gold">
+                    <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-500/10 text-emerald-400">
                       <Icon className="h-5 w-5" />
                     </span>
 
@@ -668,7 +668,7 @@ export default function MarketWatchlistClient() {
                     }
                   </p>
 
-                  <p className="mt-4 text-xs font-bold text-gold">
+                  <p className="mt-4 text-xs font-bold text-emerald-400">
                     {count === 1
                       ? "1 market"
                       : `${count} markets`}
@@ -687,7 +687,7 @@ export default function MarketWatchlistClient() {
       <section>
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <p className="text-xs font-bold uppercase tracking-[0.18em] text-gold">
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-emerald-400">
               Markets
             </p>
 
@@ -718,7 +718,7 @@ export default function MarketWatchlistClient() {
                 )
               }
               placeholder="Search by name or symbol..."
-              className="w-full rounded-2xl border border-white/10 bg-white/[0.03] py-4 pl-12 pr-4 text-sm text-white outline-none placeholder:!text-[#FFFFFF] transition focus:border-gold/40 focus:bg-white/[0.04]"
+              className="w-full rounded-2xl border border-white/10 bg-white/[0.03] py-4 pl-12 pr-4 text-sm text-white outline-none placeholder:!text-[#FFFFFF] transition focus:border-emerald-500/40 focus:bg-white/[0.04]"
             />
           </div>
         </div>
@@ -761,7 +761,7 @@ export default function MarketWatchlistClient() {
                     className={`rounded-xl px-4 py-3 text-left text-sm transition ${
                       category ===
                       item
-                        ? "bg-gold text-white"
+                        ? "bg-emerald-500 text-white"
                         : "text-zinc-400 hover:bg-white/[0.05] hover:text-white"
                     }`}
                   >
@@ -799,8 +799,8 @@ export default function MarketWatchlistClient() {
                   }
                   className={`rounded-xl px-4 py-2 text-sm font-medium transition ${
                     active
-                      ? "bg-gold text-white"
-                      : "border border-white/10 bg-white/[0.03] text-zinc-400 hover:border-gold/30 hover:text-white"
+                      ? "bg-emerald-500 text-white"
+                      : "border border-white/10 bg-white/[0.03] text-zinc-400 hover:border-emerald-500/30 hover:text-white"
                   }`}
                 >
                   {item}
@@ -948,7 +948,7 @@ export default function MarketWatchlistClient() {
                         {/* Market */}
 
                         <div className="flex items-center gap-4">
-                          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-black/20 text-gold">
+                          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-black/20 text-emerald-400">
                             <Icon className="h-5 w-5" />
                           </div>
 
@@ -997,7 +997,7 @@ export default function MarketWatchlistClient() {
                           <span
                             className={`inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-medium ${
                               positive
-                                ? "bg-gold/10 text-gold"
+                                ? "bg-emerald-500/10 text-emerald-400"
                                 : negative
                                 ? "bg-red-400/10 text-red-400"
                                 : "bg-white/[0.05] text-zinc-500"
@@ -1040,14 +1040,14 @@ export default function MarketWatchlistClient() {
           DATA INFORMATION
           ===================================================== */}
 
-      <section className="rounded-3xl border border-yellow-400/10 bg-yellow-400/[0.03] p-6 sm:p-8">
+      <section className="rounded-3xl border border-blue-400/10 bg-blue-400/[0.03] p-6 sm:p-8">
         <div className="flex gap-4">
-          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-yellow-400/10 text-yellow-400">
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-400/10 text-blue-400">
             <Activity className="h-5 w-5" />
           </div>
 
           <div>
-            <h3 className="font-bold text-yellow-300">
+            <h3 className="font-bold text-blue-300">
               Market data information
             </h3>
 
@@ -1072,7 +1072,7 @@ export default function MarketWatchlistClient() {
       </section>
 
       <p className="text-center text-xs !text-[#FFFFFF]">
-        THÉSOROS • Market Watchlist
+        Edge Portfolio • Market Watchlist
       </p>
     </div>
   );

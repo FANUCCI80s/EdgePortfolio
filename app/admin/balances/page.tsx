@@ -232,7 +232,7 @@ export default function AdminBalancesPage() {
           {/* PAGE HEADER */}
           <header className="border-b border-white/10 bg-[#050505] px-5 py-6 sm:px-8 lg:px-10">
             <div className="mx-auto max-w-6xl">
-              <p className="text-xs uppercase tracking-[0.2em] text-gold">
+              <p className="text-xs uppercase tracking-[0.2em] text-emerald-400">
                 Administration
               </p>
 
@@ -251,7 +251,7 @@ export default function AdminBalancesPage() {
           <div className="mx-auto max-w-6xl px-5 py-8 sm:px-8 lg:px-10">
             {/* ALERTS */}
             {message && (
-              <div className="mb-6 rounded-2xl border border-gold/20 bg-gold/5 p-4 text-sm text-gold-light">
+              <div className="mb-6 rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-4 text-sm text-emerald-400-light">
                 {message}
               </div>
             )}
@@ -265,7 +265,7 @@ export default function AdminBalancesPage() {
             {/* USER SELECTION */}
             <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
               <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-gold">
+                <p className="text-xs uppercase tracking-[0.2em] text-emerald-400">
                   Step 01
                 </p>
 
@@ -309,7 +309,7 @@ export default function AdminBalancesPage() {
                         }
                         className={`flex w-full items-center justify-between border-b border-white/5 px-5 py-4 text-left transition last:border-b-0 ${
                           isSelected
-                            ? "bg-gold/10"
+                            ? "bg-emerald-500/10"
                             : "hover:bg-white/[0.04]"
                         }`}
                       >
@@ -324,7 +324,7 @@ export default function AdminBalancesPage() {
                         </div>
 
                         <div className="ml-4 text-right">
-                          <p className="text-sm font-bold text-gold">
+                          <p className="text-sm font-bold text-emerald-400">
                             {formatMoney(
                               user.balance?.available
                             )}
@@ -343,8 +343,8 @@ export default function AdminBalancesPage() {
 
             {/* CURRENT BALANCE */}
             {selectedUser && (
-              <section className="mt-6 rounded-3xl border border-gold/20 bg-gold/[0.04] p-6 sm:p-8">
-                <p className="text-xs uppercase tracking-[0.2em] text-gold">
+              <section className="mt-6 rounded-3xl border border-emerald-500/20 bg-emerald-500/[0.04] p-6 sm:p-8">
+                <p className="text-xs uppercase tracking-[0.2em] text-emerald-400">
                   Selected Account
                 </p>
 
@@ -365,7 +365,7 @@ export default function AdminBalancesPage() {
                       Available Balance
                     </p>
 
-                    <p className="mt-1 text-3xl font-bold text-gold">
+                    <p className="mt-1 text-3xl font-bold text-emerald-400">
                       {formatMoney(
                         selectedUser.balance?.available
                       )}
@@ -385,7 +385,7 @@ export default function AdminBalancesPage() {
             {/* BALANCE ADJUSTMENT */}
             <section className="mt-6 rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-8">
               <div>
-                <p className="text-xs uppercase tracking-[0.2em] text-gold">
+                <p className="text-xs uppercase tracking-[0.2em] text-emerald-400">
                   Step 02
                 </p>
 
@@ -412,7 +412,7 @@ export default function AdminBalancesPage() {
                       onClick={() => setType("CREDIT")}
                       className={`rounded-xl border px-4 py-3 text-sm font-semibold transition ${
                         type === "CREDIT"
-                          ? "border-gold/40 bg-gold/10 text-gold"
+                          ? "border-emerald-500/40 bg-emerald-500/10 text-emerald-400"
                           : "border-white/10 text-zinc-500 hover:text-white"
                       }`}
                     >
@@ -483,7 +483,7 @@ export default function AdminBalancesPage() {
                   onClick={submitAdjustment}
                   className={`rounded-xl px-6 py-3 text-sm font-semibold transition disabled:cursor-not-allowed disabled:opacity-50 ${
                     type === "CREDIT"
-                      ? "bg-gold text-white hover:bg-gold"
+                      ? "bg-emerald-500 text-white hover:bg-emerald-500"
                       : "bg-red-500 text-white hover:bg-red-400"
                   }`}
                 >
@@ -511,14 +511,14 @@ export default function AdminBalancesPage() {
             </section>
 
             {/* AUDIT NOTICE */}
-            <section className="mt-6 rounded-3xl border border-yellow-400/10 bg-yellow-400/[0.03] p-6">
+            <section className="mt-6 rounded-3xl border border-blue-400/10 bg-blue-400/[0.03] p-6">
               <div className="flex gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-yellow-400/10 text-yellow-400">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-400/10 text-blue-400">
                   !
                 </div>
 
                 <div>
-                  <h3 className="font-bold text-yellow-300">
+                  <h3 className="font-bold text-blue-300">
                     Balance Adjustment Audit
                   </h3>
 

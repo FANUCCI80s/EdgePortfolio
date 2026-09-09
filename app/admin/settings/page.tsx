@@ -14,11 +14,11 @@ accentColor: string;
 export default function AdminSettingsPage() {
 const [settings, setSettings] = useState<PlatformSettings | null>(null);
 
-const [platformName, setPlatformName] = useState("Thesoros");
+const [platformName, setPlatformName] = useState("EDGE PORTFOLIO");
 const [logoUrl, setLogoUrl] = useState("");
 const [primaryColor, setPrimaryColor] = useState("#E8C766");
 const [secondaryColor, setSecondaryColor] = useState("#FAF7F0");
-const [accentColor, setAccentColor] = useState("#D4AF37");
+const [accentColor, setAccentColor] = useState("#22C55E");
 
 const [loading, setLoading] = useState(true);
 const [saving, setSaving] = useState(false);
@@ -79,11 +79,11 @@ setError("");
   }
 
   setSettings(loaded);
-  setPlatformName(loaded.platformName || "Thesoros");
+  setPlatformName(loaded.platformName || "EDGE PORTFOLIO");
   setLogoUrl(loaded.logoUrl || "");
   setPrimaryColor(loaded.primaryColor || "#E8C766");
   setSecondaryColor(loaded.secondaryColor || "#FAF7F0");
-  setAccentColor(loaded.accentColor || "#D4AF37");
+  setAccentColor(loaded.accentColor || "#22C55E");
 } catch (err) {
   console.error("Admin settings load error:", err);
 
@@ -140,11 +140,11 @@ try {
 
   setSettings(data.settings);
 
-  setPlatformName(data.settings.platformName || "Thesoros");
+  setPlatformName(data.settings.platformName || "EDGE PORTFOLIO");
   setLogoUrl(data.settings.logoUrl || "");
   setPrimaryColor(data.settings.primaryColor || "#E8C766");
   setSecondaryColor(data.settings.secondaryColor || "#FAF7F0");
-  setAccentColor(data.settings.accentColor || "#D4AF37");
+  setAccentColor(data.settings.accentColor || "#22C55E");
 
   setSuccess("Platform settings saved successfully.");
 } catch (err) {
@@ -163,12 +163,12 @@ try {
 }
 
 if (loading) {
-return ( <main className="min-h-screen bg-[#050505] !text-[#FFFFFF]"> <div className="flex min-h-screen items-center justify-center"> <div className="text-center"> <div className="mx-auto mb-4 h-10 w-10 animate-spin rounded-full border-2 border-gold/20 border-t-gold" /> <p className="text-sm !text-[#FFFFFF]">
+return ( <main className="min-h-screen bg-[#050505] !text-[#FFFFFF]"> <div className="flex min-h-screen items-center justify-center"> <div className="text-center"> <div className="mx-auto mb-4 h-10 w-10 animate-spin rounded-full border-2 border-emerald-500/20 border-t-gold" /> <p className="text-sm !text-[#FFFFFF]">
 Loading platform settings... </p> </div> </div> </main>
 );
 }
 
-return ( <main className="min-h-screen bg-[#050505] !text-[#FFFFFF]"> <div className="mx-auto max-w-6xl px-6 py-10"> <div className="mb-8"> <p className="mb-2 text-sm font-bold uppercase tracking-wider text-gold">
+return ( <main className="min-h-screen bg-[#050505] !text-[#FFFFFF]"> <div className="mx-auto max-w-6xl px-6 py-10"> <div className="mb-8"> <p className="mb-2 text-sm font-bold uppercase tracking-wider text-emerald-400">
 Admin Panel </p>
 
 
@@ -177,7 +177,7 @@ Admin Panel </p>
       </h1>
 
       <p className="mt-2 text-sm !text-[#FFFFFF]">
-        Manage the basic branding settings for Thesoros.
+        Manage the basic branding settings for EDGE PORTFOLIO.
       </p>
     </div>
 
@@ -188,7 +188,7 @@ Admin Panel </p>
     )}
 
     {success && (
-      <div className="mb-6 rounded-xl border border-gold/20 bg-gold/10 px-4 py-3 text-sm text-gold">
+      <div className="mb-6 rounded-xl border border-emerald-500/20 bg-emerald-500/10 px-4 py-3 text-sm text-emerald-400">
         {success}
       </div>
     )}
@@ -221,8 +221,8 @@ Admin Panel </p>
               onChange={(event) =>
                 setPlatformName(event.target.value)
               }
-              placeholder="Thesoros"
-              className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none placeholder:!text-[#FFFFFF] focus:border-gold/50"
+              placeholder="EDGE PORTFOLIO"
+              className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
             />
           </div>
 
@@ -241,8 +241,8 @@ Admin Panel </p>
               onChange={(event) =>
                 setLogoUrl(event.target.value)
               }
-              placeholder="https://example.com/logo.png"
-              className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none placeholder:!text-[#FFFFFF] focus:border-gold/50"
+              placeholder="https://example.com/branding/edge-portfolio-edge-portfolio-edge-portfolio-logo.png"
+              className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-white outline-none placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
             />
           </div>
         </div>
@@ -317,7 +317,7 @@ Admin Panel </p>
               )}
 
               <span className="font-bold">
-                {platformName || "Thesoros"}
+                {platformName || "EDGE PORTFOLIO"}
               </span>
             </div>
 
@@ -364,15 +364,15 @@ Admin Panel </p>
         <button
           type="submit"
           disabled={saving}
-          className="rounded-xl bg-gold px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold disabled:cursor-not-allowed disabled:opacity-50"
+          className="rounded-xl bg-emerald-500 px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500 disabled:cursor-not-allowed disabled:opacity-50"
         >
           {saving ? "Saving..." : "Save Settings"}
         </button>
       </div>
     </form>
 
-    <section className="mt-8 rounded-2xl border border-yellow-500/20 bg-yellow-500/5 p-6">
-      <h2 className="text-lg font-bold text-yellow-400">
+    <section className="mt-8 rounded-2xl border border-blue-500/20 bg-blue-500/5 p-6">
+      <h2 className="text-lg font-bold text-blue-400">
         Admin Password
       </h2>
 
@@ -383,7 +383,7 @@ Admin Panel </p>
 
       <a
         href="/settings/password"
-        className="mt-4 inline-flex rounded-xl border border-yellow-500/20 bg-yellow-500/10 px-4 py-2 text-sm font-bold text-yellow-400 transition hover:bg-yellow-500/20"
+        className="mt-4 inline-flex rounded-xl border border-blue-500/20 bg-blue-500/10 px-4 py-2 text-sm font-bold text-blue-400 transition hover:bg-blue-500/20"
       >
         Reset Admin Password
       </a>
@@ -425,7 +425,7 @@ return ( <div> <label className="mb-2 block text-sm font-bold !text-[#FFFFFF]">
       value={value}
       onChange={(event) => onChange(event.target.value)}
       placeholder="#E8C766"
-      className="min-w-0 flex-1 rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm !text-[#FFFFFF] outline-none focus:border-gold/50"
+      className="min-w-0 flex-1 rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm !text-[#FFFFFF] outline-none focus:border-emerald-500/50"
     />
   </div>
 </div>

@@ -284,18 +284,18 @@ export default function DepositForm() {
       )}
 
       {success && (
-        <div className="rounded-2xl border border-gold/20 bg-gold/5 p-5">
+        <div className="rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-5">
           <div className="flex gap-3">
-            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gold/10 text-gold">
+            <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-emerald-500/10 text-emerald-400">
               ✓
             </div>
 
             <div>
-              <p className="font-bold text-gold-light">
+              <p className="font-bold text-emerald-400-light">
                 Deposit request submitted
               </p>
 
-              <p className="mt-1 text-sm leading-6 text-gold-light/60">
+              <p className="mt-1 text-sm leading-6 text-emerald-400-light/60">
                 {success}
               </p>
             </div>
@@ -320,8 +320,8 @@ export default function DepositForm() {
             </p>
           </div>
         ) : availableMethods.length === 0 ? (
-          <div className="mt-6 rounded-2xl border border-yellow-400/20 bg-yellow-400/5 p-6">
-            <p className="font-bold text-yellow-300">
+          <div className="mt-6 rounded-2xl border border-blue-400/20 bg-blue-400/5 p-6">
+            <p className="font-bold text-blue-300">
               No deposit methods are currently available.
             </p>
 
@@ -352,7 +352,7 @@ export default function DepositForm() {
                   )
                 }
                 required
-                className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm !text-[#FFFFFF] outline-none transition focus:border-gold/50"
+                className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm !text-[#FFFFFF] outline-none transition focus:border-emerald-500/50"
               >
                 <option
                   value=""
@@ -402,7 +402,7 @@ export default function DepositForm() {
                     setAmount(event.target.value)
                   }
                   placeholder="0.00"
-                  className="w-full rounded-xl border border-white/10 bg-black/30 py-3 pl-9 pr-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/50"
+                  className="w-full rounded-xl border border-white/10 bg-black/30 py-3 pl-9 pr-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
                 />
               </div>
             </div>
@@ -425,7 +425,7 @@ export default function DepositForm() {
                   setReference(event.target.value)
                 }
                 placeholder="Optional reference"
-                className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/50"
+                className="w-full rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
               />
             </div>
 
@@ -447,7 +447,7 @@ export default function DepositForm() {
                   setNotes(event.target.value)
                 }
                 placeholder="Add any information that may help us identify your deposit."
-                className="w-full resize-none rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-gold/50"
+                className="w-full resize-none rounded-xl border border-white/10 bg-black/30 px-4 py-3 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/50"
               />
             </div>
           </div>
@@ -476,8 +476,8 @@ export default function DepositForm() {
 
           {method === "BANK_TRANSFER" &&
             selectedBank && (
-              <div className="rounded-2xl border border-gold/10 bg-gold/5 p-6">
-                <p className="font-bold text-gold-light">
+              <div className="rounded-2xl border border-emerald-500/10 bg-emerald-500/5 p-6">
+                <p className="font-bold text-emerald-400-light">
                   Bank transfer details
                 </p>
 
@@ -538,8 +538,8 @@ export default function DepositForm() {
 
           {method === "CARD" &&
             selectedCard && (
-              <div className="rounded-2xl border border-gold/10 bg-gold/5 p-6">
-                <p className="font-bold text-gold-light">
+              <div className="rounded-2xl border border-emerald-500/10 bg-emerald-500/5 p-6">
+                <p className="font-bold text-emerald-400-light">
                   Card payment
                 </p>
 
@@ -552,7 +552,7 @@ export default function DepositForm() {
                   href={selectedCard.paymentLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-5 inline-flex rounded-xl bg-gold px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold"
+                  className="mt-5 inline-flex rounded-xl bg-emerald-500 px-5 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500"
                 >
                   Open secure payment page
                 </a>
@@ -573,8 +573,8 @@ export default function DepositForm() {
 
           {method === "CRYPTOCURRENCY" &&
             selectedCrypto && (
-              <div className="rounded-2xl border border-gold/10 bg-gold/5 p-6">
-                <p className="font-bold text-gold-light">
+              <div className="rounded-2xl border border-emerald-500/10 bg-emerald-500/5 p-6">
+                <p className="font-bold text-emerald-400-light">
                   Cryptocurrency payment
                 </p>
 
@@ -620,8 +620,8 @@ export default function DepositForm() {
             )}
 
           {selectedPayment && (
-            <div className="rounded-2xl border border-gold/10 bg-gold/5 p-6">
-              <p className="font-bold text-gold-light">
+            <div className="rounded-2xl border border-emerald-500/10 bg-emerald-500/5 p-6">
+              <p className="font-bold text-emerald-400-light">
                 {METHOD_LABELS[selectedPayment.method]} payment
               </p>
 
@@ -690,7 +690,7 @@ export default function DepositForm() {
             submitting ||
             availableMethods.length === 0
           }
-          className="rounded-xl bg-gold px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold disabled:cursor-not-allowed disabled:opacity-50"
+          className="rounded-xl bg-emerald-500 px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500 disabled:cursor-not-allowed disabled:opacity-50"
         >
           {submitting
             ? "Submitting..."
@@ -733,7 +733,7 @@ function InfoItem({
           <button
             type="button"
             onClick={copyValue}
-            className="shrink-0 text-xs text-gold transition hover:text-gold-light"
+            className="shrink-0 text-xs text-emerald-400 transition hover:text-emerald-400-light"
           >
             Copy
           </button>
@@ -745,8 +745,8 @@ function InfoItem({
 
 function UnavailableMessage() {
   return (
-    <div className="rounded-2xl border border-yellow-400/20 bg-yellow-400/5 p-6">
-      <p className="font-bold text-yellow-300">
+    <div className="rounded-2xl border border-blue-400/20 bg-blue-400/5 p-6">
+      <p className="font-bold text-blue-300">
         Payment information unavailable
       </p>
 

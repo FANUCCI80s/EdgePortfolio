@@ -167,8 +167,8 @@ export default function ActivityNotifications() {
         >
           <div className="rounded-2xl border border-white/10 bg-white/[0.03] p-4 shadow-xl shadow-black/20 backdrop-blur-xl">
             <div className="flex items-center gap-4">
-              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold/20 bg-gold/10">
-                <span className="text-lg text-gold">
+              <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-emerald-500/20 bg-emerald-500/10">
+                <span className="text-lg text-emerald-400">
                   ✓
                 </span>
               </div>
@@ -189,7 +189,7 @@ export default function ActivityNotifications() {
                 </p>
 
                 <div className="mt-2 flex flex-wrap items-center gap-2">
-                  <span className="rounded-full bg-gold/10 px-2.5 py-1 text-xs font-bold text-gold">
+                  <span className="rounded-full bg-emerald-500/10 px-2.5 py-1 text-xs font-bold text-emerald-400">
                     {activity.amount}
                   </span>
 

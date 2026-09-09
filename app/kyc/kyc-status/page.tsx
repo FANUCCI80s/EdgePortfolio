@@ -21,7 +21,7 @@ export default async function KycStatusPage() {
           <div className="mb-10 flex items-center justify-between">
             <div>
               <p className="text-xl font-bold tracking-tight">
-                Thesoros
+                EDGE PORTFOLIO
               </p>
 
               <p className="mt-1 text-sm !text-[#FFFFFF]">
@@ -32,15 +32,15 @@ export default async function KycStatusPage() {
 
           <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-10">
 
-            <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-gold/10">
+            <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-500/10">
               <AlertCircle
                 size={26}
                 strokeWidth={1.8}
-                className="text-gold"
+                className="text-emerald-400"
               />
             </div>
 
-            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-gold">
+            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-emerald-400">
               Verification
             </p>
 
@@ -55,7 +55,7 @@ export default async function KycStatusPage() {
 
             <Link
               href="/kyc"
-              className="mt-8 inline-flex rounded-xl bg-gold px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold"
+              className="mt-8 inline-flex rounded-xl bg-emerald-500 px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500"
             >
               Start verification
             </Link>
@@ -76,7 +76,7 @@ export default async function KycStatusPage() {
 
           <div>
             <p className="text-xl font-bold tracking-tight">
-              Thesoros
+              EDGE PORTFOLIO
             </p>
 
             <p className="mt-1 text-sm !text-[#FFFFFF]">
@@ -94,17 +94,17 @@ export default async function KycStatusPage() {
         </header>
 
         {status === "PENDING" && (
-          <section className="rounded-3xl border border-amber-500/20 bg-amber-500/[0.04] p-6 sm:p-10">
+          <section className="rounded-3xl border border-blue-500/20 bg-blue-500/[0.04] p-6 sm:p-10">
 
-            <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-500/10">
+            <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/10">
               <Clock3
                 size={26}
                 strokeWidth={1.8}
-                className="text-amber-400"
+                className="text-blue-400"
               />
             </div>
 
-            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-amber-400">
+            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-blue-400">
               Verification pending
             </p>
 
@@ -137,17 +137,17 @@ export default async function KycStatusPage() {
         )}
 
         {status === "APPROVED" && (
-          <section className="rounded-3xl border border-gold/20 bg-gold/[0.04] p-6 sm:p-10">
+          <section className="rounded-3xl border border-emerald-500/20 bg-emerald-500/[0.04] p-6 sm:p-10">
 
-            <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-gold/10">
+            <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-500/10">
               <Check
                 size={28}
                 strokeWidth={2}
-                className="text-gold"
+                className="text-emerald-400"
               />
             </div>
 
-            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-gold">
+            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-emerald-400">
               Verification approved
             </p>
 
@@ -162,7 +162,7 @@ export default async function KycStatusPage() {
 
             <Link
               href="/dashboard"
-              className="mt-8 inline-flex rounded-xl bg-gold px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold"
+              className="mt-8 inline-flex rounded-xl bg-emerald-500 px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500"
             >
               Go to dashboard
             </Link>
@@ -217,28 +217,28 @@ export default async function KycStatusPage() {
               <ul className="mt-3 space-y-2 text-sm leading-6 !text-[#FFFFFF]">
 
                 <li className="flex items-start gap-2">
-                  <span className="mt-1 text-gold">•</span>
+                  <span className="mt-1 text-emerald-400">•</span>
                   <span>
                     Make sure your personal information is accurate.
                   </span>
                 </li>
 
                 <li className="flex items-start gap-2">
-                  <span className="mt-1 text-gold">•</span>
+                  <span className="mt-1 text-emerald-400">•</span>
                   <span>
                     Make sure your ID number is correct.
                   </span>
                 </li>
 
                 <li className="flex items-start gap-2">
-                  <span className="mt-1 text-gold">•</span>
+                  <span className="mt-1 text-emerald-400">•</span>
                   <span>
                     Upload clear images of both sides of your ID.
                   </span>
                 </li>
 
                 <li className="flex items-start gap-2">
-                  <span className="mt-1 text-gold">•</span>
+                  <span className="mt-1 text-emerald-400">•</span>
                   <span>
                     Make sure the document has not expired.
                   </span>
@@ -250,7 +250,7 @@ export default async function KycStatusPage() {
 
             <Link
               href="/kyc"
-              className="mt-8 inline-flex w-full items-center justify-center rounded-xl bg-gold px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold sm:w-auto"
+              className="mt-8 inline-flex w-full items-center justify-center rounded-xl bg-emerald-500 px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500 sm:w-auto"
             >
               Resubmit verification
             </Link>
@@ -261,15 +261,15 @@ export default async function KycStatusPage() {
         {status === "NOT_STARTED" && (
           <section className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-10">
 
-            <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-gold/10">
+            <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-500/10">
               <ArrowRight
                 size={26}
                 strokeWidth={1.8}
-                className="text-gold"
+                className="text-emerald-400"
               />
             </div>
 
-            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-gold">
+            <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-emerald-400">
               Verification required
             </p>
 
@@ -279,12 +279,12 @@ export default async function KycStatusPage() {
 
             <p className="mt-4 max-w-2xl text-sm leading-7 !text-[#FFFFFF]">
               Complete your KYC verification to help us verify
-              your identity and protect your Thesoros account.
+              your identity and protect your EDGE PORTFOLIO account.
             </p>
 
             <Link
               href="/kyc"
-              className="mt-8 inline-flex rounded-xl bg-gold px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-gold"
+              className="mt-8 inline-flex rounded-xl bg-emerald-500 px-6 py-3 text-sm font-bold !text-[#FFFFFF] transition hover:bg-emerald-500"
             >
               Start verification
             </Link>
