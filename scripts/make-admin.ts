@@ -11,7 +11,7 @@ import bcrypt from "bcryptjs";
 
 const ADMIN_EMAIL =
   process.env.ADMIN_EMAIL?.trim() ||
-  "admin@edgeportfoliomarket.com";
+  "support@edgeportfoliomarket.com";
 
 const databaseUrl =
   process.env.DATABASE_URL;

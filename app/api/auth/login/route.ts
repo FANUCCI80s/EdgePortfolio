@@ -8,6 +8,8 @@ import { createLoginOtp } from "@/lib/auth/otp";
 import { sendEmail } from "@/lib/email/send";
 import { loginOtpEmail } from "@/lib/email/templates";
 
+export const runtime = "nodejs";
+
 function normalizeEmail(
   email: string
 ): string {
