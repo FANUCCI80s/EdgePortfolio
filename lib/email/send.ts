@@ -27,11 +27,11 @@ export async function sendEmail({
   text,
 }: SendEmailOptions): Promise<void> {
   const { error } = await resend.emails.send({
-    from: fromEmail,
+    from: fromEmail as string,
     to,
     subject,
     html,
-    text,
+    ...(text !== undefined ? { text } : {}),
   });
 
   if (error) {
