@@ -332,6 +332,7 @@ export default function LoginPage() {
                       />
                     </div>
 
+                    
                     <div>
                       <div className="mb-2 flex items-center justify-between">
                         <label
@@ -343,6 +344,9 @@ export default function LoginPage() {
 
                         <button
                           type="button"
+                          onClick={() => {
+                            window.location.href = "/forgot-password";
+                          }}
                           className="text-xs font-bold text-emerald-400 transition hover:text-emerald-400-light"
                         >
                           Forgot password?
@@ -362,6 +366,7 @@ export default function LoginPage() {
                         className="h-13 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 text-sm text-white outline-none transition placeholder:!text-[#FFFFFF] focus:border-emerald-500/60 focus:bg-white/[0.06] focus:ring-4 focus:ring-gold/10"
                       />
                     </div>
+
 
                     {error && (
                       <div className="rounded-xl border border-red-500/20 bg-red-500/10 px-4 py-3 text-sm leading-6 text-red-300">
